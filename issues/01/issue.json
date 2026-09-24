@@ -1,0 +1,537 @@
+{
+  "number": "01",
+  "page_title": "Wealth Tax Watch · September 2026",
+  "title": "Wealth Tax Watch · Issue 01 · September 2026",
+  "description": "Issue 01 of Wealth Tax Watch: California’s Proposition 40 polls, France’s Cour des comptes wealth levy, Canadian and UK proposals, and where BRICS, the G20 and the UN tax convention stand. September 1-23, 2026.",
+  "published": "2026-09-24",
+  "kicker": "No. 01 · September 1-23, 2026 · Biweekly",
+  "reading_time": "About 12 minutes",
+  "hero_lede": "Wealth taxation is now on a ballot, in a public audit and in budget-season proposals. It is not yet in any international agreement, and nothing we track this issue has become law.",
+  "countdowns": [
+    {
+      "date": "2026-09-30",
+      "label": "France presents its 2027 budget",
+      "when": "September 30"
+    },
+    {
+      "date": "2026-10-28",
+      "label": "UK budget",
+      "when": "October 28"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "California votes on Proposition 40",
+      "when": "November 3"
+    }
+  ],
+  "ticker": [
+    {
+      "value": "52%",
+      "label": "PPIC yes on Prop 40"
+    },
+    {
+      "value": "45%",
+      "label": "Citrin/Politico yes"
+    },
+    {
+      "value": "€1.83bn",
+      "label": "Cour des comptes net"
+    },
+    {
+      "value": "C$39bn+",
+      "label": "CCPA wealth tax"
+    },
+    {
+      "value": "£10.4bn",
+      "label": "UK 2% minimum tax"
+    },
+    {
+      "value": "92",
+      "label": "OECD jurisdictions"
+    },
+    {
+      "value": "US$100bn",
+      "label": "TJN tax-abuse estimate"
+    },
+    {
+      "value": "0",
+      "label": "Tracked items enacted"
+    }
+  ],
+  "overview": {
+    "eyebrow": "The global picture · September 2026",
+    "title": "A debate moving at different speeds"
+  },
+  "tracker": {
+    "eyebrow": "The tracker · idea to law",
+    "title": "Everything we follow, and how far it has got",
+    "intro": "Every development in this issue, placed on the road from research to enacted law. Select one for the short version. Filter by jurisdiction.",
+    "enacted_note": "Nothing tracked in this issue has become law. The only machinery actually adopted is for cooperation, not taxation.",
+    "items": [
+      {
+        "j": "eu",
+        "stage": "research",
+        "title": "OECD Tax Policy Reforms 2026",
+        "meta": "Sept 8 · 92 jurisdictions",
+        "kind": "Research",
+        "summary": "Covers 2025 reforms in 92 jurisdictions. Property taxes leaned towards raising revenue; changes to net wealth taxes stayed limited.",
+        "story": "europe"
+      },
+      {
+        "j": "eu",
+        "stage": "research",
+        "title": "European Commission wealth-tax study",
+        "meta": "April 15 · two volumes",
+        "kind": "Research",
+        "summary": "Wealth taxes examined were not major revenue sources, largely because of reliefs, exemptions and weak compliance. No policy recommendation.",
+        "story": "europe"
+      },
+      {
+        "j": "eu",
+        "stage": "research",
+        "title": "Tax Justice Network flows tracker",
+        "meta": "Sept 23 · US$673bn a year",
+        "kind": "Modelled estimate",
+        "summary": "About US$673 billion crosses European borders each year for tax abuse; about US$100 billion a year in tax is lost. A tax-abuse estimate, not wealth-tax revenue.",
+        "story": "europe"
+      },
+      {
+        "j": "un",
+        "stage": "research",
+        "title": "International Panel on Inequality",
+        "meta": "Sept 23 · proposed body",
+        "kind": "Diplomacy",
+        "summary": "Launched at UNGA by South Africa, Brazil, Norway and Spain. An evidence and coordination body modelled on the IPCC, not a tax instrument.",
+        "story": "multilateral"
+      },
+      {
+        "j": "un",
+        "stage": "research",
+        "title": "BRICS tax working groups",
+        "meta": "Sept 12 · New Delhi Declaration",
+        "kind": "Diplomacy",
+        "summary": "Two new working groups on international taxation and transfer pricing, and on revenue statistics. Cooperation machinery, with no shared wealth tax.",
+        "story": "multilateral"
+      },
+      {
+        "j": "un",
+        "stage": "research",
+        "title": "UN tax convention talks",
+        "meta": "Aug 3-13 · finalisation 2027",
+        "kind": "Diplomacy",
+        "summary": "Line-by-line negotiation of the framework convention and two early protocols began in New York. The protocols do not address wealth taxation.",
+        "story": "multilateral"
+      },
+      {
+        "j": "ca",
+        "stage": "proposal",
+        "title": "CCPA annual wealth tax",
+        "meta": "Sept 16 · above C$10 million",
+        "kind": "Advocacy costing",
+        "summary": "A progressive tax on net worth above C$10 million, estimated at more than C$39 billion in its first year. Not federal policy.",
+        "story": "canada"
+      },
+      {
+        "j": "ca",
+        "stage": "proposal",
+        "title": "CCPA inheritance tax",
+        "meta": "50% above C$2.5 million",
+        "kind": "Advocacy costing",
+        "summary": "A 50% tax on lifetime inheritances above C$2.5 million, about C$1.1 billion a year, alongside a 37% bracket above C$1 million.",
+        "story": "canada"
+      },
+      {
+        "j": "uk",
+        "stage": "proposal",
+        "title": "2% tax on net assets above £10m",
+        "meta": "Tax Justice UK via Compass",
+        "kind": "Advocacy",
+        "summary": "Up to £24 billion a year, per Tax Justice UK. Collected in Compass’s 70-option menu; backed by a petition and a “Proud to Pay” letter.",
+        "story": "uk"
+      },
+      {
+        "j": "uk",
+        "stage": "proposal",
+        "title": "2% minimum tax above £100m",
+        "meta": "Tippet & Zucman · July",
+        "kind": "Research estimate",
+        "summary": "Households worth over £100 million pay at least 2% of wealth in total personal taxes. About £10.4 billion in 2026 from fewer than 1,000 households; ten-year exit rule.",
+        "story": "uk"
+      },
+      {
+        "j": "uk",
+        "stage": "proposal",
+        "title": "0.7% tax on property value",
+        "meta": "Resolution Foundation",
+        "kind": "Research",
+        "summary": "Replace Council Tax and Stamp Duty on primary homes with a revenue-neutral 0.7% annual tax on current value. A property tax reform, not a net wealth tax.",
+        "story": "uk"
+      },
+      {
+        "j": "fr",
+        "stage": "proposal",
+        "title": "The Zucman tax, again",
+        "meta": "Sept 16 · Socialist Party budget",
+        "kind": "Opposition proposal",
+        "summary": "A 2% minimum tax on fortunes above €100 million, rejected by the Assemblée 228 to 172 in October 2025, now back in the Socialists’ alternative budget.",
+        "story": "france"
+      },
+      {
+        "j": "fr",
+        "stage": "official",
+        "title": "Cour des comptes package",
+        "meta": "Sept 21 · €1.83bn net",
+        "kind": "Public audit",
+        "summary": "A differential charge on non-business wealth, a stronger holding-company tax and narrower Pacte Dutreil relief, offset by cuts in transfer duties and inheritance tax.",
+        "story": "france"
+      },
+      {
+        "j": "us",
+        "stage": "vote",
+        "title": "Proposition 40",
+        "meta": "Nov 3 · one-time 5% on billionaires",
+        "kind": "Ballot measure",
+        "summary": "A one-time 5% tax on billionaires resident on January 1, 2026, mostly for health care. Polls range from 45% to 52% yes.",
+        "story": "california"
+      },
+      {
+        "j": "us",
+        "stage": "vote",
+        "title": "Propositions 41 and 42",
+        "meta": "Nov 3 · could void Prop 40",
+        "kind": "Ballot measure",
+        "summary": "Rival measures backed by a Brin-funded group. If either passes with more yes votes than Proposition 40, the billionaire tax could be voided.",
+        "story": "california"
+      }
+    ]
+  },
+  "lead": {
+    "story": "california",
+    "nav": "California",
+    "eyebrow": "Lead story · California",
+    "title": "A narrowing lead, and a ballot catch",
+    "lede": "A one-time 5% tax on billionaires faces three polls, two rival measures and more than $187 million in opposition money.",
+    "polls": {
+      "title": "Yes against no, three surveys",
+      "sub": "Percentage of respondents. Different methods and populations: compare within a row, not across rows.",
+      "rows": [
+        {
+          "name": "PPIC",
+          "population": "Likely voters",
+          "dates": "Sep 4-10",
+          "sample": "n=1,103, ±3.8",
+          "yes": 52,
+          "no": 46,
+          "undecided": 2
+        },
+        {
+          "name": "UC Berkeley IGS",
+          "population": "Likely voters",
+          "dates": "Aug 3-9",
+          "sample": "±2.5",
+          "yes": 48,
+          "no": 41,
+          "undecided": 11
+        },
+        {
+          "name": "Citrin Center / Politico",
+          "population": "Registered voters",
+          "dates": "Sep 8-14",
+          "sample": "n=2,418, ±2.7",
+          "yes": 45,
+          "no": 43,
+          "undecided": 12
+        }
+      ],
+      "note": "IGS polled online in English and Spanish and found a sharp partisan split: about 70% of Democrats in favour and 80% of Republicans opposed."
+    },
+    "trend": {
+      "title": "The one like-for-like trend",
+      "sub": "Citrin Center / Politico, same pollster, February vs September.",
+      "from": "Feb",
+      "to": "Sep",
+      "series": [
+        {
+          "label": "Yes",
+          "from": 50,
+          "to": 45
+        },
+        {
+          "label": "No",
+          "from": 28,
+          "to": 43
+        }
+      ],
+      "caption": "Support down 5 points, opposition up 15. The gap shrank from 22 points to 2."
+    },
+    "compare": {
+      "eyebrow": "The ballot catch",
+      "title": "If 41 or 42 beats 40, the billionaire tax could be voided",
+      "survey": "PPIC likely voters",
+      "rows": [
+        {
+          "label": "Prop 40",
+          "value": 52,
+          "highlight": true
+        },
+        {
+          "label": "Prop 41",
+          "value": 51
+        },
+        {
+          "label": "Prop 42",
+          "value": 54
+        }
+      ],
+      "text": "Same survey (PPIC, likely voters), so these bars compare directly. Proposition 41 would nullify new state taxes enacted after January 1, 2026 that sit outside the spending limit; Proposition 42 would bar new state taxes on personal property. Both are backed by a group funded largely by Sergey Brin. Governor Newsom opposes Proposition 40."
+    },
+    "links": [
+      {
+        "label": "PPIC survey",
+        "url": "https://www.ppic.org/publication/ppic-statewide-survey-californians-and-their-government-september-2026/"
+      },
+      {
+        "label": "Berkeley IGS",
+        "url": "https://news.berkeley.edu/2026/08/17/california-prop-40-the-billionaire-tax-holds-lead-in-new-uc-berkeley-igs-poll/"
+      },
+      {
+        "label": "Citrin/Politico report",
+        "url": "https://www.yahoo.com/news/politics/articles/fewer-half-california-voters-back-012052987.html"
+      },
+      {
+        "label": "CalMatters on the money",
+        "url": "https://calmatters.org/health/2026/09/california-wealth-tax-prop-40-41-42/"
+      }
+    ]
+  },
+  "numbers": {
+    "eyebrow": "By the numbers",
+    "title": "Six figures, six different kinds of claim",
+    "intro": "Each number is tagged by what it is. A poll is not a costing, and an advocacy estimate is not an official score. None of them add up.",
+    "items": [
+      {
+        "value": 52,
+        "suffix": "%",
+        "kind": "Poll",
+        "text": "PPIC likely voters backing California’s Proposition 40 (46% against)."
+      },
+      {
+        "value": 1.83,
+        "decimals": 2,
+        "prefix": "€",
+        "suffix": "bn",
+        "kind": "Official audit",
+        "text": "Net revenue of the Cour des comptes package, after its tax cuts."
+      },
+      {
+        "value": 39,
+        "prefix": "C$",
+        "suffix": "bn+",
+        "kind": "Advocacy costing",
+        "text": "CCPA first-year estimate for a wealth tax above C$10 million."
+      },
+      {
+        "value": 10.4,
+        "decimals": 1,
+        "prefix": "£",
+        "suffix": "bn",
+        "kind": "Research estimate",
+        "text": "A UK 2% minimum tax on fewer than 1,000 households worth over £100 million, in 2026."
+      },
+      {
+        "value": 92,
+        "kind": "Research",
+        "text": "Jurisdictions in the OECD’s Tax Policy Reforms 2026 review."
+      },
+      {
+        "value": 100,
+        "prefix": "US$",
+        "suffix": "bn",
+        "kind": "Modelled estimate",
+        "text": "Tax Justice Network estimate of annual European losses to tax abuse. Not wealth-tax revenue."
+      }
+    ],
+    "note": "Different currencies, tax bases and methods. Do not add or compare them."
+  },
+  "calendar": {
+    "eyebrow": "What to watch",
+    "title": "Ten weeks that will test these proposals",
+    "intro": "Placed to scale. The pink marker is today; the hatched band is Canada’s budget, due this fall with no date set.",
+    "start": "2026-09-20",
+    "end": "2026-12-24",
+    "events": [
+      {
+        "date": "2026-09-30",
+        "label": "Sept 30",
+        "j": "fr",
+        "text": "France presents its 2027 budget to cabinet. “No new tax”; watch the Pacte Dutreil and pacte Papin.",
+        "side": "up"
+      },
+      {
+        "date": "2026-10-05",
+        "label": "Oct 5",
+        "j": "us",
+        "text": "California counties begin mailing ballots.",
+        "side": "down"
+      },
+      {
+        "date": "2026-10-15",
+        "label": "Oct 15",
+        "j": "un",
+        "text": "G20 finance ministers meet in Bangkok.",
+        "side": "up"
+      },
+      {
+        "date": "2026-10-28",
+        "label": "Oct 28",
+        "j": "uk",
+        "text": "UK budget with the OBR forecast: capital gains or property reform?",
+        "side": "down"
+      },
+      {
+        "date": "2026-11-03",
+        "label": "Nov 3",
+        "j": "us",
+        "text": "California votes on Propositions 40, 41 and 42.",
+        "side": "up"
+      },
+      {
+        "date": "2026-11-20",
+        "label": "Fall, TBA",
+        "j": "ca",
+        "text": "Canada’s Budget 2026. Date not yet announced.",
+        "side": "down",
+        "range": [
+          "2026-09-22",
+          "2026-12-21"
+        ]
+      }
+    ],
+    "later": {
+      "label": "2027",
+      "text": "Target to finalise the UN tax convention; China takes the BRICS chair."
+    }
+  },
+  "dispatches": {
+    "eyebrow": "Dispatches",
+    "title": "The full stories",
+    "intro": "Each dispatch is labelled by what it is: a ballot measure, a proposal, research, an audit or diplomacy."
+  },
+  "discussion": {
+    "eyebrow": "For the cohort · discussion",
+    "title": "Four designs. The same three problems.",
+    "levers": [
+      "Who and what is taxed",
+      "Mobility: stopping exits",
+      "How credible is the revenue"
+    ],
+    "designs": [
+      {
+        "j": "us",
+        "title": "California’s one-time levy",
+        "source": "Proposition 40",
+        "answers": [
+          "Billionaires’ net worth, once, at 5%. Most revenue goes to health care.",
+          "Residency is fixed in the past: anyone resident on January 1, 2026 owes it, so leaving now does not help.",
+          "The Legislative Analyst sees “tens of billions” over several years, plus a possible ongoing income-tax loss if billionaires leave. The sponsor’s ~$100bn is a campaign figure."
+        ]
+      },
+      {
+        "j": "uk",
+        "title": "UK minimum tax",
+        "source": "Tippet & Zucman",
+        "answers": [
+          "Households above £100 million must pay at least 2% of wealth a year in total personal taxes; taxes already paid count towards it.",
+          "A ten-year post-emigration liability: people stay liable for a decade after leaving.",
+          "About £10.4bn in 2026 from fewer than 1,000 households, after avoidance and behavioural responses. A research estimate."
+        ]
+      },
+      {
+        "j": "fr",
+        "title": "France’s differential charge",
+        "source": "Cour des comptes",
+        "answers": [
+          "Non-business wealth only, alongside the real-estate wealth tax. Business assets stay out.",
+          "Stronger taxation of personal holding companies and narrower Pacte Dutreil relief close common routes around the tax.",
+          "€1.83bn net after the package’s own tax cuts. An official audit, not a government bill."
+        ]
+      },
+      {
+        "j": "ca",
+        "title": "Canada’s holdings plus inheritance",
+        "source": "CCPA",
+        "answers": [
+          "An annual progressive tax on net worth above C$10 million, plus a 50% tax on lifetime inheritances above C$2.5 million.",
+          "Paired with C$2 billion over three years for CRA enforcement, against planned CRA job cuts.",
+          "More than C$39bn in year one, an advocacy costing built on Oxfam Canada modelling, not a PBO or Finance Canada score."
+        ]
+      }
+    ],
+    "question": "Which design choice would survive in your own jurisdiction, and which assumption would fail first?"
+  },
+  "sources": {
+    "cutoff": "September 23, 2026",
+    "items": [
+      {
+        "url": "https://www.ppic.org/publication/ppic-statewide-survey-californians-and-their-government-september-2026/",
+        "title": "Californians and Their Government",
+        "meta": "PPIC · September 2026"
+      },
+      {
+        "url": "https://news.berkeley.edu/2026/08/17/california-prop-40-the-billionaire-tax-holds-lead-in-new-uc-berkeley-igs-poll/",
+        "title": "Prop. 40 holds lead in IGS Poll",
+        "meta": "UC Berkeley · August 2026"
+      },
+      {
+        "url": "https://www.policyalternatives.ca/news-research/alternative-federal-budget-2026-27-taxation/",
+        "title": "Alternative Federal Budget 2026-27: Taxation",
+        "meta": "CCPA · Canada · September 16"
+      },
+      {
+        "url": "https://www.oecd.org/en/publications/tax-policy-reforms-2026_43d18a55-en.html",
+        "title": "Tax Policy Reforms 2026",
+        "meta": "OECD · September 8"
+      },
+      {
+        "url": "https://taxation-customs.ec.europa.eu/news/publication-study-wealth-taxation-including-net-wealth-capital-and-exit-taxes-2026-04-15_en",
+        "title": "Wealth Taxation study",
+        "meta": "European Commission · April 15"
+      },
+      {
+        "url": "https://taxjustice.net/press/europe-on-europe-tax-pillaging-revealed-by-new-tracker/",
+        "title": "Europe illicit flows tracker",
+        "meta": "Tax Justice Network · September 23"
+      },
+      {
+        "url": "https://g20.utoronto.ca/2026/260901-finance-statement.html",
+        "title": "G20 Chair’s Statement, Asheville",
+        "meta": "G20 Research Group · September 1"
+      },
+      {
+        "url": "https://financing.desa.un.org/unfcitc",
+        "title": "UN tax convention negotiations",
+        "meta": "UN DESA · INC documents"
+      },
+      {
+        "url": "https://webtv.un.org/en/asset/k1h/k1hm0rn4g0",
+        "title": "International Panel on Inequality event",
+        "meta": "UN Web TV · September 23"
+      },
+      {
+        "url": "https://taxobservatory.world/publication/taxing-extreme-wealth-in-the-united-kingdom-revenue-estimates-for-a-2-minimum-tax-on-ultra-high-net-worth-households/",
+        "title": "Taxing Extreme Wealth in the UK",
+        "meta": "International Tax Observatory · July 2026"
+      },
+      {
+        "url": "https://www.resolutionfoundation.org/publications/home-economics/",
+        "title": "Home Economics",
+        "meta": "Resolution Foundation · September 2026"
+      },
+      {
+        "url": "https://www.ifrap.org/budget-et-fiscalite/la-cour-propose-le-retour-de-lisf-sans-le-nommer",
+        "title": "On the Cour des comptes note",
+        "meta": "Fondation IFRAP · France · September 2026"
+      }
+    ]
+  }
+}
