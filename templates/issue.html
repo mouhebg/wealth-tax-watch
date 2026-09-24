@@ -4,6 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>document.documentElement.classList.add('js')</script>
 {{HEAD}}
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='58' fill='%23141A2B'/%3E%3Cdefs%3E%3CclipPath id='f'%3E%3Crect x='0' y='42.6' width='120' height='34.8'%3E%3C/rect%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23f)'%3E%3Crect x='45.3' y='42.6' width='29.4' height='8.8' fill='%23FF4F6B'%3E%3C/rect%3E%3Crect x='55.6' y='42.6' width='8.8' height='34.8' fill='%23FF4F6B'%3E%3C/rect%3E%3Cpolyline points='13.9,37.2 23.2,77.4 30.5,54.6 37.9,77.4 47.1,37.2' fill='none' stroke='%23E5F553' stroke-width='8.8' stroke-linejoin='miter' stroke-miterlimit='12' stroke-linecap='butt'%3E%3C/polyline%3E%3Cpolyline points='72.9,37.2 82.1,77.4 89.5,54.6 96.9,77.4 106.1,37.2' fill='none' stroke='%23E5F553' stroke-width='8.8' stroke-linejoin='miter' stroke-miterlimit='12' stroke-linecap='butt'%3E%3C/polyline%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -129,14 +130,24 @@ section.block{ padding:96px 0 0; }
 .back button:hover{ border-color:var(--lime); }
 .pipe-arrow{ display:flex; align-items:center; gap:10px; margin:14px 0 0; font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
 .pipe-arrow::after{ content:""; flex:1; height:2px; background:linear-gradient(90deg, var(--muted), var(--pink)); }
-.swipe-hint{ display:none; margin:0 0 10px; font-size:13px; font-weight:700; color:var(--muted); }
+.stepper{ display:none; }
 @media (max-width:980px){
-  .pipe{ grid-template-columns:none; grid-auto-flow:column; grid-auto-columns:minmax(250px,82%); overflow-x:auto; scroll-snap-type:x mandatory; gap:12px; margin:0 -24px; padding:2px 24px 12px; scroll-padding-left:24px; align-items:start; -webkit-overflow-scrolling:touch; }
-  .stage{ min-height:0; scroll-snap-align:start; }
-  .stage.enacted{ min-height:260px; }
-  .stage.enacted .zero{ font-size:80px; }
+  .stage{ min-height:0; }
+  .stage.enacted{ min-height:0; }
+  .stage.enacted .zero{ font-size:72px; margin-top:6px; }
+  .pipe{ grid-template-columns:1fr; }
   .pipe-arrow{ display:none; }
-  .swipe-hint{ display:block; }
+  html.js .stage{ display:none; }
+  html.js .stage.on{ display:flex; }
+  html.js .stepper{ display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:4px; position:relative; margin:0 0 14px; }
+  html.js .stepper::before{ content:""; position:absolute; left:10%; right:10%; top:21px; height:2px; background:linear-gradient(90deg, var(--muted), var(--pink)); }
+  .step-btn{ position:relative; display:flex; flex-direction:column; align-items:center; gap:6px; background:none; border:0; padding:0; color:var(--ink); font:inherit; cursor:pointer; min-width:0; }
+  .step-btn b{ display:grid; place-items:center; width:44px; height:44px; border-radius:50%; background:var(--paper); box-shadow:0 0 0 1.5px var(--hair); font-family:var(--display); font-weight:400; font-size:22px; line-height:1; }
+  .step-btn span{ font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); }
+  .step-btn[aria-pressed="true"] b{ background:var(--ink); color:var(--bg); box-shadow:0 0 0 3px var(--pink); }
+  .step-btn[aria-pressed="true"] span{ color:var(--ink); }
+  .step-btn[data-stage="law"] b{ color:var(--pink-text); }
+  .step-btn[data-stage="law"][aria-pressed="true"] b{ color:var(--pink); }
 }
 
 /* ---------- California ---------- */
@@ -213,8 +224,17 @@ section.block{ padding:96px 0 0; }
 .ev.past time{ color:var(--muted); text-decoration:line-through; }
 .range{ position:absolute; top:163px; height:17px; border-radius:9px; background:repeating-linear-gradient(135deg, color-mix(in srgb, var(--pink) 55%, transparent) 0 6px, transparent 6px 12px); border:1.5px solid var(--pink); }
 .tl-next{ position:absolute; right:0; top:108px; font-family:var(--display); font-size:18px; color:var(--muted); }
-.tl-hint{ font-size:13px; color:var(--muted); display:none; }
-@media (max-width:980px){ .tl-hint{ display:block; } }
+.tl-list{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+@media (max-width:980px){
+  .tl-wrap{ display:none; }
+  .tl-list{ position:static; width:auto; height:auto; overflow:visible; clip:auto; white-space:normal; list-style:none; margin:4px 0 0; padding:0 0 0 24px; border-left:3px solid var(--ink); }
+  .tl-list li{ position:relative; padding:0 0 22px; }
+  .tl-list li::before{ content:""; position:absolute; left:-33px; top:4px; width:15px; height:15px; border-radius:50%; background:var(--bg); border:3px solid var(--ink); }
+  .tl-list li:last-child{ padding-bottom:0; }
+  .tl-list time{ display:flex; align-items:center; gap:8px; font-family:var(--display); font-size:22px; line-height:1.1; }
+  .tl-list time svg{ width:24px; height:16px; border-radius:2px; box-shadow:0 0 0 1px rgba(20,26,43,.18); }
+  .tl-list p{ margin:4px 0 0; font-size:15px; color:var(--ink-2); }
+}
 
 /* ---------- Dispatches ---------- */
 .dispatches{ display:grid; gap:18px; }
@@ -405,6 +425,13 @@ footer a{ color:var(--night-ink); }
       var front = e.target.closest('.item'), backBtn = e.target.closest('.back button');
       if(front){ var card = front.closest('.card'); pipe.querySelectorAll('.card.flipped').forEach(function(c){ if(c !== card) flip(c, false); }); flip(card, true); }
       else if(backBtn){ var c2 = backBtn.closest('.card'); flip(c2, false); parts(c2).front.focus({preventScroll:true}); }
+    });
+    var stepper = document.querySelector('.stepper');
+    if(stepper) stepper.addEventListener('click', function(e){
+      var b = e.target.closest('.step-btn'); if(!b) return;
+      pipe.querySelectorAll('.card.flipped').forEach(function(c){ flip(c, false); });
+      stepper.querySelectorAll('.step-btn').forEach(function(o){ o.setAttribute('aria-pressed', o === b ? 'true' : 'false'); });
+      pipe.querySelectorAll('.stage').forEach(function(st){ st.classList.toggle('on', st.id === 'stage-' + b.dataset.stage); });
     });
     pipe.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ var c = e.target.closest('.card.flipped'); if(c){ flip(c, false); parts(c).front.focus(); } } });
     window.addEventListener('resize', function(){ pipe.querySelectorAll('.card.flipped').forEach(function(c){ var p = parts(c); p.inn.style.height = ''; c.dataset.fh = p.front.offsetHeight; p.inn.style.height = Math.max(p.back.scrollHeight, p.front.offsetHeight) + 'px'; }); });
