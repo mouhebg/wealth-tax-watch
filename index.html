@@ -162,6 +162,18 @@ section.block{ padding:96px 0 0; }
   .step-btn[aria-pressed="true"] span{ color:var(--ink); }
   .step-btn[data-stage="law"] b{ color:var(--pink-text); }
   .step-btn[data-stage="law"][aria-pressed="true"] b{ color:var(--pink); }
+  /* Compact cards: the step bar already shows each stage's number and count */
+  html.js .stage .step, html.js .stage .meter{ display:none; }
+  .stage{ padding:12px 10px 10px; gap:6px; border-radius:16px; }
+  .stage h3{ font-size:19px; margin:0 2px 2px; }
+  .item{ gap:9px; padding:8px 10px; border-radius:10px; align-items:center; }
+  .item svg{ width:20px; height:13px; margin-top:0; }
+  .item > span:not(.turn){ min-width:0; flex:1; }
+  .item b{ font-size:13.5px; line-height:1.22; }
+  .item small{ font-size:11.5px; margin-top:1px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .item .turn{ padding-top:0; }
+  .back{ padding:9px 11px 10px; gap:6px; border-radius:10px; }
+  .back p{ font-size:13.5px; line-height:1.38; }
 }
 
 /* ---------- California ---------- */
