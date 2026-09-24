@@ -111,7 +111,7 @@ h1,h2,h3{ font-weight:900; letter-spacing:-.02em; line-height:1.05; }
 .poll-top{ display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:baseline; }
 .poll-top h3{ font-size:20px; margin:0; letter-spacing:-.01em; }
 .poll-top small{ color:var(--muted); font-size:13px; }
-.polls{ display:grid; grid-template-columns:1fr 1fr; gap:36px; margin-top:18px; }
+.polls{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:36px; margin-top:18px; }
 .p{ border-top:2px solid var(--rule); padding-top:22px; }
 .p h4{ margin:0; font-size:13px; font-weight:800; letter-spacing:.12em; color:var(--muted); }
 .num{ display:flex; align-items:baseline; gap:10px; margin:12px 0 14px; }
@@ -348,7 +348,7 @@ h1, h2, h3, .wordmark, .brand b, .num strong, .facts b, .cc-name, .cc-next, .dis
         <span class="cc-top"><svg class="flag" width="76.0" height="40" aria-hidden="true"><use href="#flag-us"/></svg></span>
         <span class="cc-name">United States<small>California</small></span>
         <span class="cc-next"><small>Next milestone</small>Nov 3</span>
-        <span class="cc-line">Proposition 40 leads narrowly; Propositions 41 and 42 could void it.</span>
+        <span class="cc-line">Support for Proposition 40 is slipping; Propositions 41 and 42 could void it.</span>
         <span class="cc-cta">Read the California story <span aria-hidden="true">↓</span></span>
       </a></li>
       <li><a class="ccard" href="#multilateral">
@@ -361,7 +361,7 @@ h1, h2, h3, .wordmark, .brand b, .num strong, .facts b, .cc-name, .cc-next, .dis
       <li><a class="ccard" href="#france">
         <span class="cc-top"><svg class="flag" width="60.0" height="40" aria-hidden="true"><use href="#flag-fr"/></svg></span>
         <span class="cc-name">France</span>
-        <span class="cc-next"><small>Next milestone</small>End Sept</span>
+        <span class="cc-next"><small>Next milestone</small>Sept 30</span>
         <span class="cc-line">Does the 2027 budget bill pick up any of the Cour’s package?</span>
         <span class="cc-cta">Read the France story <span aria-hidden="true">↓</span></span>
       </a></li>
@@ -375,14 +375,14 @@ h1, h2, h3, .wordmark, .brand b, .num strong, .facts b, .cc-name, .cc-next, .dis
       <li><a class="ccard" href="#canada">
         <span class="cc-top"><svg class="flag" width="80" height="40" aria-hidden="true"><use href="#flag-ca"/></svg></span>
         <span class="cc-name">Canada</span>
-        <span class="cc-next"><small>Next milestone</small>None set</span>
-        <span class="cc-line">Costed wealth and inheritance taxes, but no federal commitment.</span>
+        <span class="cc-next"><small>Next milestone</small>Fall budget</span>
+        <span class="cc-line">Costed wealth and inheritance taxes; Budget 2026 is due this fall, date not yet set.</span>
         <span class="cc-cta">Read the Canada story <span aria-hidden="true">↓</span></span>
       </a></li>
       <li><a class="ccard" href="#uk">
         <span class="cc-top"><svg class="flag" width="80" height="40" aria-hidden="true"><use href="#flag-uk"/></svg></span>
         <span class="cc-name">United Kingdom</span>
-        <span class="cc-next"><small>Next milestone</small>Autumn</span>
+        <span class="cc-next"><small>Next milestone</small>Oct 28</span>
         <span class="cc-line">Chancellor’s first budget: capital gains or property tax reform?</span>
         <span class="cc-cta">Read the United Kingdom story <span aria-hidden="true">↓</span></span>
       </a></li>
@@ -394,19 +394,19 @@ h1, h2, h3, .wordmark, .brand b, .num strong, .facts b, .cc-name, .cc-next, .dis
       <div><svg class="flag" width="60.8" height="32" aria-hidden="true"><use href="#flag-us"/></svg><div class="where">United States</div><div class="where-sub">California</div><span class="kind">BALLOT MEASURE</span></div>
       <div>
         <h3>California’s narrow opening</h3>
-        <p>Proposition 40 would impose a one-time tax of up to 5% on the net worth of billionaires who were California residents on January 1, 2026, with most revenue directed to health care. The Legislative Analyst projects a temporary gain of tens of billions of dollars over several years, plus a possible ongoing income tax loss if some billionaires leave. The sponsoring union, SEIU-UHW, puts the figure near $100 billion; treat that as a campaign estimate, not an official one.</p>
+        <p>Proposition 40 would impose a one-time 5% tax on the net worth of billionaires who were California residents on January 1, 2026, with most revenue directed to health care. The Legislative Analyst projects a temporary gain of tens of billions of dollars over several years, plus a possible ongoing income tax loss if some billionaires leave. The sponsoring union, SEIU-UHW, puts the figure near $100 billion; treat that as a campaign estimate, not an official one.</p>
         <span class="vote">Vote: November 3 · Ballots mailed from October 5</span>
       </div>
     </article>
 
     <div class="poll">
       <div class="poll-top">
-        <h3>Likely voter support for Proposition 40</h3>
-        <small>Two separate surveys · percentage of respondents</small>
+        <h3>Voter support for Proposition 40</h3>
+        <small>Three separate surveys · percentage of respondents</small>
       </div>
       <div class="polls">
         <div class="p">
-          <h4>PPIC · SEPTEMBER 4-10 · N=1,103 · ±3.8</h4>
+          <h4>PPIC · LIKELY VOTERS · SEPTEMBER 4-10 · N=1,103 · ±3.8</h4>
           <div class="num"><strong>52%</strong><span>Yes</span></div>
           <div class="bar" role="img" aria-label="52 percent yes, 46 percent no, 2 percent unsure">
             <div class="y" style="width:52%"></div><div class="n" style="width:46%"></div>
@@ -418,7 +418,7 @@ h1, h2, h3, .wordmark, .brand b, .num strong, .facts b, .cc-name, .cc-next, .dis
           </div>
         </div>
         <div class="p">
-          <h4>UC BERKELEY IGS · AUGUST 3-9 · ±2.5</h4>
+          <h4>UC BERKELEY IGS · LIKELY VOTERS · AUGUST 3-9 · ±2.5</h4>
           <div class="num"><strong>48%</strong><span>Yes</span></div>
           <div class="bar" role="img" aria-label="48 percent yes, 41 percent no, 11 percent undecided">
             <div class="y" style="width:48%"></div><div class="n" style="width:41%"></div>
@@ -429,8 +429,20 @@ h1, h2, h3, .wordmark, .brand b, .num strong, .facts b, .cc-name, .cc-next, .dis
             <span style="--dot:var(--muted)">11 undecided</span>
           </div>
         </div>
+        <div class="p">
+          <h4>BERKELEY CITRIN CENTER / POLITICO · REGISTERED VOTERS · SEPTEMBER 8-14 · N=2,418 · ±2.7</h4>
+          <div class="num"><strong>45%</strong><span>Yes</span></div>
+          <div class="bar" role="img" aria-label="45 percent yes, 43 percent no, 12 percent undecided">
+            <div class="y" style="width:45%"></div><div class="n" style="width:43%"></div>
+          </div>
+          <div class="legend">
+            <span style="--dot:var(--blue)">45 yes</span>
+            <span style="--dot:var(--no)">43 no</span>
+            <span style="--dot:var(--muted)">12 undecided</span>
+          </div>
+        </div>
       </div>
-      <p class="poll-note">The surveys used different methods (IGS polled online in English and Spanish) and different question wording, so the gap between them is not evidence of a trend. IGS found a sharp partisan split: about 70% of Democrats in favour and 80% of Republicans opposed. <a class="src" href="https://www.ppic.org/publication/ppic-statewide-survey-californians-and-their-government-september-2026/" target="_blank" rel="noopener">PPIC survey ↗</a> · <a class="src" href="https://news.berkeley.edu/2026/08/17/california-prop-40-the-billionaire-tax-holds-lead-in-new-uc-berkeley-igs-poll/" target="_blank" rel="noopener">Berkeley IGS release ↗</a></p>
+      <p class="poll-note">The three surveys used different methods, populations and question wording (IGS polled online in English and Spanish), so the gaps between them are not evidence of a trend. The one like-for-like comparison is Citrin/Politico’s own: since its February poll, support has fallen from 50% to 45% and opposition has risen from 28% to 43%. IGS found a sharp partisan split: about 70% of Democrats in favour and 80% of Republicans opposed. <a class="src" href="https://www.ppic.org/publication/ppic-statewide-survey-californians-and-their-government-september-2026/" target="_blank" rel="noopener">PPIC survey ↗</a> · <a class="src" href="https://news.berkeley.edu/2026/08/17/california-prop-40-the-billionaire-tax-holds-lead-in-new-uc-berkeley-igs-poll/" target="_blank" rel="noopener">Berkeley IGS release ↗</a> · <a class="src" href="https://www.yahoo.com/news/politics/articles/fewer-half-california-voters-back-012052987.html" target="_blank" rel="noopener">Citrin/Politico poll report ↗</a></p>
     </div>
 
     <div class="callout">
@@ -461,7 +473,8 @@ h1, h2, h3, .wordmark, .brand b, .num strong, .facts b, .cc-name, .cc-next, .dis
       <div>
         <h3>A modest wealth levy within a wider reform</h3>
         <p>On September 21 the Cour des comptes published a note on household wealth taxation with sixteen recommendations. It argues that France’s wealth taxation, despite high headline rates, becomes regressive at the very top because of exemptions. The note draws heavily on the December 2025 report of the Conseil des prélèvements obligatoires, which modelled a differential charge on non-business wealth alongside the existing real-estate wealth tax (IFI). This is distinct from the 2% minimum on fortunes above €100 million, often called the Zucman tax, which the Cour does not adopt.</p>
-        <p>The package pairs tax increases (the differential wealth charge, a stronger tax on personal holding companies, narrower Pacte Dutreil relief for family businesses) with cuts: about €1.1 billion less in property transaction duties and a five-point cut across inheritance and gift tax brackets worth about €2.1 billion. The Cour puts the net effect at €1.83 billion, falling only on the largest fortunes. Where the CPO’s scenarios were revenue-neutral, the Cour’s version raises revenue. These are recommendations timed for the 2027 budget bill, which the government is due to table at the end of September; the prime minister has called for tax stability. <a class="src" href="https://www.boursorama.com/actualite-economique/actualites/la-cour-des-comptes-suggere-une-taxation-moderee-mais-progressive-des-gros-patrimoines-77f9551e8a8063ba789cc642bbbe1fc4" target="_blank" rel="noopener">AFP report on the presentation ↗</a> · <a class="src" href="https://www.ifrap.org/budget-et-fiscalite/la-cour-propose-le-retour-de-lisf-sans-le-nommer" target="_blank" rel="noopener">IFRAP critique ↗</a></p>
+        <p>The package pairs tax increases (the differential wealth charge, a stronger tax on personal holding companies, narrower Pacte Dutreil relief for family businesses) with cuts: about €1.1 billion less in property transaction duties and a five-point cut across inheritance and gift tax brackets worth about €2.1 billion. The Cour puts the net effect at €1.83 billion, falling only on the largest fortunes. Where the CPO’s scenarios were revenue-neutral, the Cour’s version raises revenue. These are recommendations timed for the 2027 budget bill, which the government presents to cabinet on September 30. Prime Minister Sébastien Lecornu has promised tax stability and “no new tax”, and has announced a new business-transfer scheme, the “pacte Papin”; how it relates to the Pacte Dutreil relief the Cour wants to narrow is not yet clear. <a class="src" href="https://www.boursorama.com/actualite-economique/actualites/la-cour-des-comptes-suggere-une-taxation-moderee-mais-progressive-des-gros-patrimoines-77f9551e8a8063ba789cc642bbbe1fc4" target="_blank" rel="noopener">AFP report on the presentation ↗</a> · <a class="src" href="https://www.ifrap.org/budget-et-fiscalite/la-cour-propose-le-retour-de-lisf-sans-le-nommer" target="_blank" rel="noopener">IFRAP critique ↗</a> · <a class="src" href="https://www.legifiscal.fr/actualites-fiscales/4639-projet-loi-finances-2027-annonces-sebastien-lecornu.html" target="_blank" rel="noopener">Lecornu’s budget announcements ↗</a></p>
+        <p><span class="sub">The Zucman tax returns.</span> On September 16 the Socialist Party presented an alternative budget built around the Zucman tax: a 2% minimum tax on fortunes above €100 million, which the Assemblée nationale rejected in October 2025 by 228 votes to 172. It is an opposition proposal, not a government measure, and it runs against the prime minister’s “no new tax” line.</p>
       </div>
     </article>
 
@@ -481,7 +494,7 @@ h1, h2, h3, .wordmark, .brand b, .num strong, .facts b, .cc-name, .cc-next, .dis
         <h3>Several routes to taxing wealth</h3>
         <p>The CCPA’s Alternative Federal Budget 2026-27 taxation chapter, released September 16, proposes an annual progressive tax on net worth above C$10 million, estimated to raise more than C$39 billion in its first year and to leave 99.4% of Canadians unaffected. The estimate rests on Oxfam Canada modelling from January 2026; the previous edition, published in October 2025, cited about C$37 billion.</p>
         <p>The chapter also costs four related measures: a 50% tax on lifetime inheritances above C$2.5 million (about C$1.1 billion a year); a 37% federal bracket on income above C$1 million (about 45,000 filers and C$1.4 billion in 2027); full inclusion of inflation-adjusted capital gains (about C$13 billion a year); and C$2 billion over three years for CRA enforcement, against planned CRA job cuts.</p>
-        <p>These tax holdings, transfers, income and gains, each with different valuation and enforcement problems, and the estimates are advocacy costings rather than PBO or Finance Canada scores. None is current federal policy. <a class="src" href="https://www.policyalternatives.ca/news-research/alternative-federal-budget-2026-27-taxation/" target="_blank" rel="noopener">CCPA taxation chapter ↗</a></p>
+        <p>These tax holdings, transfers, income and gains, each with different valuation and enforcement problems, and the estimates are advocacy costings rather than PBO or Finance Canada scores. None is current federal policy. Ottawa now tables its budget in the fall: Budget 2026 is due this autumn, and no date has been announced. <a class="src" href="https://www.policyalternatives.ca/news-research/alternative-federal-budget-2026-27-taxation/" target="_blank" rel="noopener">CCPA taxation chapter ↗</a></p>
       </div>
     </article>
 
@@ -489,9 +502,9 @@ h1, h2, h3, .wordmark, .brand b, .num strong, .facts b, .cc-name, .cc-next, .dis
       <div><svg class="flag" width="64" height="32" aria-hidden="true"><use href="#flag-uk"/></svg><div class="where">United Kingdom</div><span class="kind">PROPOSALS</span></div>
       <div>
         <h3>Three different ways to tax wealth</h3>
-        <p class="status">Context: Chancellor John Healey presents his first budget in autumn 2026 under Prime Minister Andy Burnham.</p>
+        <p class="status">Context: Chancellor John Healey presents his first budget on October 28 under Prime Minister Andy Burnham.</p>
         <p><span class="sub">Annual net wealth.</span> Compass’s Ending Business as Usual, published in early September, collects 70 policy options from 15 contributors and calls itself a menu, not a manifesto. It includes Tax Justice UK’s proposal for a 2% annual tax on net assets above £10 million, estimated at up to £24 billion a year. A parliamentary petition for the same tax followed a “Proud to Pay” letter from 120 UK millionaires. This is advocacy, not an announced government measure.</p>
-        <p><span class="sub">A minimum for the very wealthiest.</span> A July International Tax Observatory study by Ben Tippet and Gabriel Zucman proposes that households worth more than £100 million pay at least 2% of their wealth each year in total personal taxes, with taxes already paid counting towards it. It estimates about £10.4 billion in 2026 from roughly 1,000 households, after avoidance and behavioural responses, and includes a ten-year post-emigration liability. The £10 billion and £24 billion figures use different thresholds, tax units and mechanisms; do not add them together.</p>
+        <p><span class="sub">A minimum for the very wealthiest.</span> A July International Tax Observatory study by Ben Tippet and Gabriel Zucman proposes that households worth more than £100 million pay at least 2% of their wealth each year in total personal taxes, with taxes already paid counting towards it. It estimates about £10.4 billion in 2026 from fewer than 1,000 households, after avoidance and behavioural responses, and includes a ten-year post-emigration liability. The £10 billion and £24 billion figures use different thresholds, tax units and mechanisms; do not add them together.</p>
         <p><span class="sub">Existing capital and property taxes.</span> Compass also proposes a capital gains overhaul, including rate alignment with income tax and ending the uplift at death. The Institute for Fiscal Studies has long argued that valuation and avoidance make an annual wealth tax hard to run and favours reforming taxes on capital income and transfers instead. Separately, the Resolution Foundation’s September report Home Economics proposes replacing Council Tax and Stamp Duty on primary residences with a revenue-neutral 0.7% annual tax on current property value, paid by occupiers, with rebates for low-income households and deferral for the asset-rich but cash-poor. It finds Londoners underpay by about £3.1 billion relative to the rest of England, and warns that abolishing Stamp Duty alone would leave a £15 billion hole. That is a property tax reform, not a net wealth tax.</p>
       </div>
     </article>
@@ -502,11 +515,12 @@ h1, h2, h3, .wordmark, .brand b, .num strong, .facts b, .cc-name, .cc-next, .dis
     <h2 class="big" style="max-width:none">Dates that will test these proposals</h2>
     <div class="watch">
       <ol>
-        <li><time datetime="2026-09">End of September 2026</time><div><svg class="flag" width="27.0" height="18" aria-hidden="true"><use href="#flag-fr"/></svg><p style="margin-top:6px">France tables its 2027 budget bill. Watch whether any part of the Cour des comptes package, especially the Pacte Dutreil changes, appears.</p></div></li>
+        <li><time datetime="2026-09-30">September 30, 2026</time><div><svg class="flag" width="27.0" height="18" aria-hidden="true"><use href="#flag-fr"/></svg><p style="margin-top:6px">France presents its 2027 budget bill. The prime minister has promised no new tax; watch whether the Pacte Dutreil is narrowed or folded into the new “pacte Papin”, and how the Socialists’ Zucman tax amendment fares.</p></div></li>
         <li><time datetime="2026-10-05">October 5, 2026</time><div><svg class="flag" width="34.2" height="18" aria-hidden="true"><use href="#flag-us"/></svg><p style="margin-top:6px">California counties begin mailing ballots for Propositions 40, 41 and 42.</p></div></li>
         <li><time datetime="2026-10-15">October 15, 2026</time><div><svg class="flag" width="27.0" height="18" aria-hidden="true"><use href="#flag-un"/></svg><p style="margin-top:6px">G20 finance ministers and central bank governors meet in Bangkok.</p></div></li>
-        <li><time datetime="2026">Autumn 2026</time><div><svg class="flag" width="36" height="18" aria-hidden="true"><use href="#flag-uk"/></svg><p style="margin-top:6px">UK budget. The test is whether capital gains or property tax reform appears, rather than an annual wealth tax.</p></div></li>
+        <li><time datetime="2026-10-28">October 28, 2026</time><div><svg class="flag" width="36" height="18" aria-hidden="true"><use href="#flag-uk"/></svg><p style="margin-top:6px">UK budget, with the OBR forecast. The test is whether capital gains or property tax reform appears, rather than an annual wealth tax.</p></div></li>
         <li><time datetime="2026-11-03">November 3, 2026</time><div><svg class="flag" width="34.2" height="18" aria-hidden="true"><use href="#flag-us"/></svg><p style="margin-top:6px">California election. If more than one of Propositions 40, 41 and 42 passes, the vote counts decide what takes effect.</p></div></li>
+        <li><time datetime="2026">Fall 2026</time><div><svg class="flag" width="36" height="18" aria-hidden="true"><use href="#flag-ca"/></svg><p style="margin-top:6px">Canada tables Budget 2026 (date not yet announced). The test is whether any wealth, inheritance or top-bracket measure appears.</p></div></li>
         <li><time datetime="2027">2027</time><div><svg class="flag" width="27.0" height="18" aria-hidden="true"><use href="#flag-un"/></svg><p style="margin-top:6px">Target date to finalise the UN tax convention and its two early protocols. China takes the BRICS chair.</p></div></li>
       </ol>
     </div>
