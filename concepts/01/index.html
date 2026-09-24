@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Wealth Tax Watch · Concept edition · No. 01</title>
+<meta name="description" content="A design concept for Wealth Tax Watch issue 01: every proposal tracked from idea to law.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='58' fill='%23141A2B'/%3E%3Cdefs%3E%3CclipPath id='f'%3E%3Crect x='0' y='42.6' width='120' height='34.8'%3E%3C/rect%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23f)'%3E%3Crect x='45.3' y='42.6' width='29.4' height='8.8' fill='%23FF4F6B'%3E%3C/rect%3E%3Crect x='55.6' y='42.6' width='8.8' height='34.8' fill='%23FF4F6B'%3E%3C/rect%3E%3Cpolyline points='13.9,37.2 23.2,77.4 30.5,54.6 37.9,77.4 47.1,37.2' fill='none' stroke='%23E5F553' stroke-width='8.8' stroke-linejoin='miter' stroke-miterlimit='12' stroke-linecap='butt'%3E%3C/polyline%3E%3Cpolyline points='72.9,37.2 82.1,77.4 89.5,54.6 96.9,77.4 106.1,37.2' fill='none' stroke='%23E5F553' stroke-width='8.8' stroke-linejoin='miter' stroke-miterlimit='12' stroke-linecap='butt'%3E%3C/polyline%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F1EEE6; --paper:#FDFCF8; --ink:#141A2B; --ink-2:#3A4152; --muted:#5E6474; --hair:#D6D1C4; --rule:#141A2B;
+  --lime:#E5F553; --pink:#FF4F6B; --pink-text:#C8203F; --blue:#2B46EE; --sky:#BCE3FB;
+  --yes:#2B46EE; --no:#F0435F; --und:#CFC9BC; --track:#E3DED3;
+  --night:#141A2B; --night-ink:#F1EEE6; --night-muted:#A3A8B6; --night-hair:#2C3345;
+  --font:'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --display:'Anton', Impact, 'Arial Narrow', sans-serif;
+  --serif:'PT Serif', Georgia, serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#10131C; --paper:#181D2A; --ink:#EEEAE0; --ink-2:#C9C6BD; --muted:#A3A8B6; --hair:#2C3345; --rule:#EEEAE0;
+    --pink-text:#FF4F6B; --blue:#8C9CFF; --sky:#1E3A55; --yes:#6A7FF7; --no:#E0445F; --und:#4A5163; --track:#262C3B;
+    --night:#0A0C12; --night-hair:#262C3B; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10131C; --paper:#181D2A; --ink:#EEEAE0; --ink-2:#C9C6BD; --muted:#A3A8B6; --hair:#2C3345; --rule:#EEEAE0;
+  --pink-text:#FF4F6B; --blue:#8C9CFF; --sky:#1E3A55; --yes:#6A7FF7; --no:#E0445F; --und:#4A5163; --track:#262C3B;
+  --night:#0A0C12; --night-hair:#262C3B; color-scheme:dark;
+}
+*,*::before,*::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; scroll-padding-top:80px; }
+body{ margin:0; background:var(--bg); color:var(--ink); font-family:var(--font); font-size:17px; line-height:1.55; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+a{ color:inherit; }
+:focus-visible{ outline:3px solid var(--blue); outline-offset:3px; border-radius:4px; }
+.wrap{ max-width:1160px; margin:0 auto; padding:0 24px; }
+.skip{ position:absolute; left:-9999px; }
+.skip:focus{ left:12px; top:12px; z-index:100; background:var(--ink); color:var(--bg); padding:10px 14px; }
+.eyebrow{ font-weight:700; font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--blue); margin:0 0 14px; }
+.display{ font-family:var(--display); font-weight:400; letter-spacing:.005em; line-height:1.02; margin:0; }
+.sr{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+.concept-flag{ background:var(--lime); color:#141A2B; font-size:13px; font-weight:700; text-align:center; padding:8px 16px; }
+.concept-flag a{ font-weight:700; }
+
+/* ---------- Top bar ---------- */
+.bar-top{ position:sticky; top:0; z-index:30; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--hair); }
+.bar-top .wrap{ display:flex; align-items:center; justify-content:space-between; gap:14px; height:62px; }
+.brand{ display:flex; align-items:center; gap:10px; text-decoration:none; font-family:var(--display); font-size:21px; letter-spacing:.02em; white-space:nowrap; }
+.brand em{ color:var(--pink-text); }
+.brand svg{ width:34px; height:34px; flex:none; }
+.top-nav{ display:flex; gap:4px; align-items:center; }
+.top-nav a{ text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:8px 10px; border-radius:8px; }
+.top-nav a:hover{ background:var(--paper); }
+.theme-btn{ border:1.5px solid var(--ink); background:transparent; color:var(--ink); border-radius:999px; width:38px; height:38px; display:grid; place-items:center; cursor:pointer; flex:none; }
+.theme-btn svg{ width:18px; height:18px; }
+.progress{ position:absolute; left:0; bottom:-1px; height:3px; width:100%; transform-origin:0 50%; transform:scaleX(0); background:var(--pink); }
+@media (max-width:820px){ .top-nav a:not(.keep){ display:none; } }
+@media (max-width:480px){ .top-nav a.keep{ display:none; } .brand{ font-size:19px; } }
+
+/* ---------- Hero ---------- */
+.hero{ background:var(--night); color:var(--night-ink); position:relative; overflow:hidden; }
+.hero .wrap{ position:relative; padding-top:64px; padding-bottom:0; }
+.hero-grid{ display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:48px; align-items:end; }
+.hero .kicker{ display:flex; align-items:center; gap:12px; font-weight:700; font-size:13px; letter-spacing:.16em; margin:0 0 26px; color:var(--night-muted); }
+.hero .kicker::before{ content:""; width:34px; height:8px; border-radius:6px; background:var(--pink); }
+.hero h1{ font-family:var(--display); font-weight:400; font-size:clamp(76px,15vw,196px); line-height:.86; letter-spacing:.005em; margin:0; }
+.hero h1 span{ display:block; }
+.hero h1 em{ color:var(--pink); font-style:italic; }
+.hero h1 .l2{ color:var(--lime); }
+.hero-side{ padding-bottom:18px; }
+.hero-side p{ font-family:var(--serif); font-size:22px; line-height:1.4; margin:0 0 22px; }
+.hero-side small{ display:block; color:var(--night-muted); font-size:13px; font-weight:700; letter-spacing:.04em; }
+.seal-float{ position:absolute; right:-70px; top:-60px; width:340px; opacity:.13; animation:spin 90s linear infinite; pointer-events:none; }
+@keyframes spin{ to{ transform:rotate(360deg); } }
+
+/* countdown strip */
+.countdown{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); margin-top:54px; border-top:1px solid var(--night-hair); }
+.cd{ padding:22px 22px 26px 0; border-right:1px solid var(--night-hair); }
+.cd:last-child{ border-right:0; }
+.cd + .cd{ padding-left:22px; }
+.cd .n{ font-family:var(--display); font-size:clamp(48px,7vw,84px); line-height:.9; color:var(--lime); font-variant-numeric:tabular-nums; }
+.cd .n small{ font-size:.34em; color:var(--night-ink); margin-left:6px; letter-spacing:.04em; }
+.cd .l{ font-weight:700; font-size:14px; margin-top:8px; }
+.cd .d{ color:var(--night-muted); font-size:13px; }
+@media (max-width:760px){ .hero-grid{ grid-template-columns:1fr; gap:26px; } .countdown{ grid-template-columns:1fr; } .cd{ border-right:0; border-bottom:1px solid var(--night-hair); padding:16px 0 !important; display:flex; align-items:baseline; gap:16px; } .cd .n{ font-size:52px; min-width:120px; } }
+
+/* ticker */
+.ticker{ background:var(--lime); color:#141A2B; overflow:hidden; white-space:nowrap; border-top:2px solid #141A2B; border-bottom:2px solid #141A2B; }
+.ticker-track{ display:inline-flex; gap:0; animation:tick 60s linear infinite; padding:12px 0; }
+.ticker:hover .ticker-track{ animation-play-state:paused; }
+.ticker span{ font-family:var(--display); font-size:22px; letter-spacing:.02em; padding:0 22px; }
+.ticker span b{ font-family:var(--font); font-size:13px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; margin-left:8px; }
+.ticker span::after{ content:"✦"; margin-left:44px; color:#FF4F6B; font-family:var(--font); font-size:14px; vertical-align:3px; }
+@keyframes tick{ to{ transform:translateX(-50%); } }
+
+/* ---------- Sections ---------- */
+section.block{ padding:96px 0 0; }
+.sec-head{ display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:40px; align-items:end; margin-bottom:34px; }
+.sec-head h2{ font-family:var(--display); font-weight:400; font-size:clamp(40px,6vw,72px); line-height:.98; margin:0; letter-spacing:.005em; }
+.sec-head p{ margin:0; color:var(--ink-2); font-size:17px; max-width:48ch; }
+.lede{ font-family:var(--serif); font-size:clamp(20px,2.4vw,26px); line-height:1.4; max-width:34ch; }
+@media (max-width:760px){ .sec-head{ grid-template-columns:1fr; gap:14px; } section.block{ padding-top:72px; } }
+
+/* ---------- Pipeline: idea to law ---------- */
+.filters{ display:flex; flex-wrap:wrap; gap:8px; margin:0 0 18px; }
+.chip-f{ display:inline-flex; align-items:center; gap:8px; border:1.5px solid var(--hair); background:var(--paper); color:var(--ink); border-radius:999px; padding:7px 14px 7px 10px; font:700 13px var(--font); cursor:pointer; }
+.chip-f[aria-pressed="true"]{ border-color:var(--ink); background:var(--ink); color:var(--bg); }
+.chip-f svg{ width:21px; height:14px; border-radius:2px; }
+.pipe{ display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:10px; position:relative; }
+.stage{ background:var(--paper); border-radius:18px; padding:16px 14px 18px; min-height:330px; display:flex; flex-direction:column; gap:10px; position:relative; box-shadow:0 0 0 1px var(--hair); }
+.stage h3{ margin:0; font-family:var(--display); font-weight:400; font-size:22px; letter-spacing:.01em; line-height:1.05; }
+.stage .step{ font-size:11px; font-weight:700; letter-spacing:.14em; color:var(--muted); text-transform:uppercase; }
+.stage .meter{ height:6px; border-radius:6px; background:var(--track); overflow:hidden; margin:2px 0 6px; }
+.stage .meter i{ display:block; height:100%; background:var(--pink); border-radius:6px; }
+.stage.enacted{ background:transparent; box-shadow:none; border:2px dashed var(--muted); }
+.stage.enacted .zero{ font-family:var(--display); font-size:120px; line-height:.9; color:var(--pink-text); margin-top:auto; }
+.stage.enacted p{ font-size:14px; color:var(--ink-2); margin:0; }
+.item{ text-align:left; width:100%; display:flex; gap:10px; align-items:flex-start; background:var(--bg); color:var(--ink); border:1.5px solid transparent; border-radius:12px; padding:10px 10px 11px; cursor:pointer; font:inherit; transition:transform .2s ease, border-color .2s, opacity .3s; }
+.item:hover{ transform:translateY(-2px); border-color:var(--ink); }
+.item[aria-expanded="true"]{ border-color:var(--pink); background:var(--paper); box-shadow:0 0 0 1px var(--pink); }
+.item svg{ width:24px; height:16px; flex:none; margin-top:3px; border-radius:2px; box-shadow:0 0 0 1px rgba(20,26,43,.18); }
+.item b{ display:block; font-size:14px; line-height:1.25; }
+.item small{ display:block; font-size:12px; color:var(--muted); margin-top:2px; }
+.item.dim{ opacity:.18; }
+.pipe-arrow{ display:flex; align-items:center; gap:10px; margin:14px 0 0; font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+.pipe-arrow::after{ content:""; flex:1; height:2px; background:linear-gradient(90deg, var(--muted), var(--pink)); }
+.detail{ margin-top:18px; background:var(--night); color:var(--night-ink); border-radius:20px; padding:26px 28px; display:grid; grid-template-columns:auto 1fr auto; gap:22px; align-items:start; }
+.detail[hidden]{ display:none; }
+.detail h4{ margin:0 0 6px; font-family:var(--display); font-weight:400; font-size:30px; letter-spacing:.01em; }
+.detail .stamp{ display:inline-block; border:1.5px solid var(--lime); color:var(--lime); border-radius:999px; padding:2px 10px; font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; margin-bottom:10px; }
+.detail p{ margin:0; font-family:var(--serif); font-size:18px; line-height:1.5; max-width:62ch; }
+.detail .go{ color:var(--lime); font-weight:700; font-size:14px; white-space:nowrap; }
+.detail svg.big{ width:60px; height:40px; border-radius:6px; }
+.detail .x{ background:none; border:1.5px solid var(--night-hair); color:var(--night-ink); border-radius:999px; width:34px; height:34px; cursor:pointer; font-size:18px; line-height:1; }
+@media (max-width:980px){ .pipe{ grid-template-columns:1fr; } .stage{ min-height:0; } .stage.enacted .zero{ font-size:72px; margin-top:0; } .detail{ grid-template-columns:1fr; } .pipe-arrow{ display:none; } }
+
+/* ---------- California ---------- */
+.ca{ background:var(--paper); border-radius:28px; padding:36px 36px 30px; box-shadow:0 0 0 1px var(--hair); }
+.ca-grid{ display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr); gap:44px; }
+.chart-title{ font-family:var(--display); font-weight:400; font-size:26px; margin:0 0 4px; letter-spacing:.01em; }
+.chart-sub{ margin:0 0 18px; color:var(--muted); font-size:14px; }
+.legend{ display:flex; gap:16px; flex-wrap:wrap; font-size:13px; font-weight:700; margin:0 0 16px; }
+.legend span::before{ content:""; display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:6px; vertical-align:-1px; background:var(--c); }
+.tug{ margin:0 0 18px; }
+.tug-head{ display:flex; justify-content:space-between; gap:10px; font-size:12px; font-weight:700; letter-spacing:.06em; color:var(--muted); text-transform:uppercase; margin-bottom:6px; }
+.tug-bar{ position:relative; display:flex; gap:2px; height:34px; }
+.tug-bar div{ height:100%; position:relative; transition:flex-basis 1.2s cubic-bezier(.2,.8,.2,1); flex:0 0 0%; }
+.tug-bar .y{ background:var(--yes); border-radius:4px 0 0 4px; }
+.tug-bar .u{ background:var(--und); }
+.tug-bar .no{ background:var(--no); border-radius:0 4px 4px 0; }
+.tug-bar div:focus-visible{ outline-offset:2px; }
+.tug-bar::after{ content:""; position:absolute; left:50%; top:-6px; bottom:-6px; width:2px; background:var(--ink); }
+.tug-vals{ display:flex; justify-content:space-between; font-family:var(--display); font-size:30px; line-height:1; margin-top:6px; }
+.tug-vals .vy{ color:var(--ink); } .tug-vals .vn{ color:var(--ink); }
+.tug-vals small{ font-family:var(--font); font-size:12px; font-weight:700; color:var(--muted); letter-spacing:.06em; margin-left:6px; }
+.tug-vals .vn small{ margin:0 6px 0 0; }
+.fifty{ font-size:12px; color:var(--muted); text-align:center; margin:-4px 0 18px; }
+.slope svg{ width:100%; height:auto; display:block; overflow:visible; }
+.slope text{ font-family:var(--font); font-size:13px; fill:var(--ink); }
+.slope .ax{ font-size:12px; fill:var(--muted); font-weight:700; letter-spacing:.06em; }
+.slope .big{ font-family:var(--display); font-size:22px; }
+.catch{ margin-top:30px; display:grid; grid-template-columns:200px 1fr; gap:26px; background:var(--sky); border-radius:20px; padding:22px 24px; }
+.catch h4{ margin:0; font-family:var(--display); font-weight:400; font-size:26px; line-height:1.05; letter-spacing:.01em; }
+.props{ display:grid; gap:10px; }
+.prop{ display:grid; grid-template-columns:92px 1fr 46px; gap:12px; align-items:center; font-size:14px; font-weight:700; }
+.prop .pb{ height:14px; border-radius:4px; background:color-mix(in srgb, var(--ink) 12%, transparent); position:relative; }
+.prop .pb i{ position:absolute; inset:0 auto 0 0; background:var(--ink); border-radius:4px; width:0; transition:width 1.2s cubic-bezier(.2,.8,.2,1); }
+.prop.p40 .pb i{ background:var(--yes); }
+.prop .pb::after{ content:""; position:absolute; left:50%; top:-4px; bottom:-4px; width:2px; background:var(--pink-text); }
+.catch p{ margin:12px 0 0; font-size:15px; }
+.table-toggle{ margin-top:18px; font-size:14px; }
+.table-toggle summary{ cursor:pointer; font-weight:700; }
+.table-toggle table{ border-collapse:collapse; margin-top:10px; font-size:14px; width:100%; }
+.table-toggle th,.table-toggle td{ text-align:left; padding:6px 10px 6px 0; border-bottom:1px solid var(--hair); }
+.src{ font-weight:700; text-decoration:underline; text-decoration-thickness:1.5px; text-underline-offset:3px; }
+.tip{ position:fixed; z-index:50; pointer-events:none; background:var(--ink); color:var(--bg); font-size:13px; font-weight:700; padding:7px 10px; border-radius:8px; transform:translate(-50%, calc(-100% - 12px)); opacity:0; transition:opacity .12s; white-space:nowrap; }
+@media (max-width:900px){ .ca{ padding:24px 18px; } .ca-grid{ grid-template-columns:1fr; gap:34px; } .catch{ grid-template-columns:1fr; gap:12px; } }
+
+/* ---------- Numbers wall ---------- */
+.wall{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; border-top:3px solid var(--rule); }
+.stat{ padding:26px 24px 28px 0; border-bottom:1px solid var(--hair); position:relative; }
+.stat:nth-child(3n+2), .stat:nth-child(3n){ padding-left:24px; border-left:1px solid var(--hair); }
+.stat .v{ font-family:var(--display); font-size:clamp(46px,6vw,76px); line-height:.95; font-variant-numeric:tabular-nums; }
+.stat .k{ display:inline-block; font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; border:1.5px solid currentColor; color:var(--muted); border-radius:999px; padding:2px 9px; margin:12px 0 8px; }
+.stat p{ margin:0; font-size:15px; color:var(--ink-2); max-width:32ch; }
+.wall-note{ font-family:var(--serif); font-style:italic; color:var(--muted); margin-top:16px; }
+@media (max-width:860px){ .wall{ grid-template-columns:1fr 1fr; } .stat:nth-child(n){ padding-left:0; border-left:0; } .stat:nth-child(2n){ padding-left:18px; border-left:1px solid var(--hair); } }
+@media (max-width:540px){ .wall{ grid-template-columns:1fr; } .stat:nth-child(2n){ padding-left:0; border-left:0; } }
+
+/* ---------- Timeline ---------- */
+.tl-wrap{ overflow-x:auto; padding-bottom:10px; -webkit-overflow-scrolling:touch; }
+.tl{ position:relative; min-width:980px; height:330px; margin-top:10px; }
+.tl .axis{ position:absolute; left:0; right:0; top:170px; height:3px; background:var(--ink); border-radius:3px; }
+.tl .month{ position:absolute; top:182px; font-size:12px; font-weight:700; letter-spacing:.12em; color:var(--muted); text-transform:uppercase; transform:translateX(-1px); padding-left:6px; border-left:1px solid var(--hair); height:22px; }
+.tl .today{ position:absolute; top:120px; height:110px; width:2px; background:var(--pink); }
+.tl .today span{ position:absolute; top:-26px; left:50%; transform:translateX(-50%); background:var(--pink); color:#141A2B; font-size:11px; font-weight:700; letter-spacing:.1em; padding:3px 8px; border-radius:999px; white-space:nowrap; }
+.ev{ position:absolute; width:158px; transform:translateX(-12px); }
+.ev::before{ content:""; position:absolute; left:6px; width:14px; height:14px; border-radius:50%; background:var(--bg); border:3px solid var(--ink); }
+.ev.up{ bottom:calc(330px - 164px); padding-bottom:24px; }
+.ev.up::before{ bottom:-12px; }
+.ev.up::after{ content:""; position:absolute; left:12px; bottom:0; height:16px; width:2px; background:var(--ink); }
+.ev.down{ top:190px; padding-top:40px; }
+.ev.down::before{ top:-26px; }
+.ev.down::after{ content:""; position:absolute; left:12px; top:-12px; height:44px; width:2px; background:var(--ink); }
+.ev time{ display:block; font-family:var(--display); font-size:22px; line-height:1; }
+.ev svg{ width:24px; height:16px; border-radius:2px; vertical-align:-2px; margin-right:6px; box-shadow:0 0 0 1px rgba(20,26,43,.18); }
+.ev p{ margin:4px 0 0; font-size:13px; line-height:1.35; color:var(--ink-2); }
+.ev.past time{ color:var(--muted); text-decoration:line-through; }
+.range{ position:absolute; top:163px; height:17px; border-radius:9px; background:repeating-linear-gradient(135deg, color-mix(in srgb, var(--pink) 55%, transparent) 0 6px, transparent 6px 12px); border:1.5px solid var(--pink); }
+.tl-next{ position:absolute; right:0; top:108px; font-family:var(--display); font-size:18px; color:var(--muted); }
+.tl-hint{ font-size:13px; color:var(--muted); display:none; }
+@media (max-width:980px){ .tl-hint{ display:block; } }
+
+/* ---------- Dispatches ---------- */
+.dispatches{ display:grid; gap:18px; }
+.disp{ display:grid; grid-template-columns:260px minmax(0,1fr); gap:34px; background:var(--paper); border-radius:24px; padding:32px 34px; box-shadow:0 0 0 1px var(--hair); }
+.disp .who svg{ width:60px; height:40px; border-radius:6px; box-shadow:0 0 0 1px rgba(20,26,43,.18); }
+.disp .where{ font-family:var(--display); font-size:34px; line-height:1; margin-top:14px; }
+.disp .where small{ display:block; font-family:var(--font); font-size:15px; font-weight:700; color:var(--muted); margin-top:6px; letter-spacing:0; }
+.disp .kind{ display:inline-block; margin-top:14px; font-size:11px; font-weight:700; letter-spacing:.14em; padding:5px 11px; border-radius:999px; background:var(--ink); color:var(--bg); transform:rotate(-2deg); }
+.disp .body h3{ font-family:var(--display); font-weight:400; font-size:clamp(30px,3.6vw,44px); line-height:1; margin:0 0 16px; letter-spacing:.01em; }
+.disp .body p{ margin:0 0 13px; max-width:68ch; }
+.disp .body p:first-of-type{ font-family:var(--serif); font-size:19px; }
+.disp .body .sub{ font-weight:700; }
+.disp .body .status{ font-size:13px; font-weight:700; color:var(--muted); font-family:var(--font) !important; }
+.disp .vote{ display:inline-block; background:var(--lime); color:#141A2B; padding:5px 11px; border-radius:6px; font-weight:700; font-size:14px; }
+@media (max-width:860px){ .disp{ grid-template-columns:1fr; gap:14px; padding:24px 20px; } }
+
+/* ---------- Design matrix ---------- */
+.discuss{ background:var(--night); color:var(--night-ink); border-radius:32px; padding:54px 48px; }
+.discuss .eyebrow{ color:var(--lime); }
+.discuss h2{ font-family:var(--display); font-weight:400; font-size:clamp(40px,6vw,76px); line-height:.96; margin:0 0 26px; max-width:16ch; }
+.designs{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:0 0 30px; }
+.design{ text-align:left; background:transparent; color:var(--night-ink); border:1.5px solid var(--night-hair); border-radius:18px; padding:18px 16px; cursor:pointer; font:inherit; transition:border-color .2s, background .2s; }
+.design:hover, .design[aria-pressed="true"]{ border-color:var(--lime); }
+.design[aria-pressed="true"]{ background:color-mix(in srgb, var(--lime) 10%, transparent); }
+.design svg{ width:36px; height:24px; border-radius:3px; }
+.design b{ display:block; font-family:var(--display); font-weight:400; font-size:22px; margin-top:12px; letter-spacing:.01em; line-height:1.05; }
+.design span{ display:block; font-size:13px; color:var(--night-muted); margin-top:6px; }
+.levers{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; border-top:1px solid var(--night-hair); }
+.lever{ padding:18px 20px 4px 0; }
+.lever + .lever{ padding-left:20px; border-left:1px solid var(--night-hair); }
+.lever h5{ margin:0 0 8px; font-size:12px; font-weight:700; letter-spacing:.14em; color:var(--lime); text-transform:uppercase; }
+.lever p{ margin:0; font-family:var(--serif); font-size:18px; line-height:1.45; min-height:4.5em; }
+.question{ font-family:var(--serif); font-style:italic; font-size:clamp(20px,2.4vw,26px); line-height:1.4; margin:34px 0 0; max-width:48ch; border-left:4px solid var(--pink); padding-left:20px; }
+@media (max-width:900px){ .designs{ grid-template-columns:1fr 1fr; } .levers{ grid-template-columns:1fr; } .lever + .lever{ padding-left:0; border-left:0; border-top:1px solid var(--night-hair); } .discuss{ padding:34px 20px; } }
+
+/* ---------- Sources & footer ---------- */
+.shelf{ columns:3 260px; column-gap:28px; border-top:3px solid var(--rule); padding-top:8px; }
+.shelf a{ display:block; break-inside:avoid; text-decoration:none; padding:14px 0; border-bottom:1px solid var(--hair); }
+.shelf b{ display:block; font-size:16px; line-height:1.25; }
+.shelf a:hover b{ text-decoration:underline; }
+.shelf span{ display:block; color:var(--muted); font-size:13px; margin-top:4px; }
+footer{ margin-top:100px; background:var(--night); color:var(--night-muted); padding:40px 0 56px; font-size:14px; }
+footer .wrap{ display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+footer b{ color:var(--night-ink); }
+footer a{ color:var(--night-ink); }
+
+/* ---------- Reveal ---------- */
+.reveal{ opacity:0; transform:translateY(24px); transition:opacity .8s ease, transform .8s cubic-bezier(.2,.8,.2,1); }
+.reveal.in{ opacity:1; transform:none; }
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  .reveal{ opacity:1; transform:none; transition:none; }
+  .seal-float, .ticker-track{ animation:none; }
+  .tug-bar div, .prop .pb i, .item{ transition:none; }
+}
+@media print{
+  .bar-top, .ticker, .filters, .theme-btn, .concept-flag, .seal-float{ display:none !important; }
+  .reveal{ opacity:1; transform:none; }
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="flag-us" viewBox="0 0 190 100"><rect width="190" height="100" fill="#fff"/><rect y="0.000" width="190" height="7.742" fill="#B22234"/><rect y="15.385" width="190" height="7.742" fill="#B22234"/><rect y="30.769" width="190" height="7.742" fill="#B22234"/><rect y="46.154" width="190" height="7.742" fill="#B22234"/><rect y="61.538" width="190" height="7.742" fill="#B22234"/><rect y="76.923" width="190" height="7.742" fill="#B22234"/><rect y="92.308" width="190" height="7.742" fill="#B22234"/><rect width="76" height="53.85" fill="#3C3B6E"/><g fill="#fff"><circle cx="6.3" cy="5.4" r="1.9"/><circle cx="19.0" cy="5.4" r="1.9"/><circle cx="31.6" cy="5.4" r="1.9"/><circle cx="44.3" cy="5.4" r="1.9"/><circle cx="57.0" cy="5.4" r="1.9"/><circle cx="69.6" cy="5.4" r="1.9"/><circle cx="12.7" cy="10.8" r="1.9"/><circle cx="25.3" cy="10.8" r="1.9"/><circle cx="38.0" cy="10.8" r="1.9"/><circle cx="50.6" cy="10.8" r="1.9"/><circle cx="63.3" cy="10.8" r="1.9"/><circle cx="6.3" cy="16.2" r="1.9"/><circle cx="19.0" cy="16.2" r="1.9"/><circle cx="31.6" cy="16.2" r="1.9"/><circle cx="44.3" cy="16.2" r="1.9"/><circle cx="57.0" cy="16.2" r="1.9"/><circle cx="69.6" cy="16.2" r="1.9"/><circle cx="12.7" cy="21.5" r="1.9"/><circle cx="25.3" cy="21.5" r="1.9"/><circle cx="38.0" cy="21.5" r="1.9"/><circle cx="50.6" cy="21.5" r="1.9"/><circle cx="63.3" cy="21.5" r="1.9"/><circle cx="6.3" cy="26.9" r="1.9"/><circle cx="19.0" cy="26.9" r="1.9"/><circle cx="31.6" cy="26.9" r="1.9"/><circle cx="44.3" cy="26.9" r="1.9"/><circle cx="57.0" cy="26.9" r="1.9"/><circle cx="69.6" cy="26.9" r="1.9"/><circle cx="12.7" cy="32.3" r="1.9"/><circle cx="25.3" cy="32.3" r="1.9"/><circle cx="38.0" cy="32.3" r="1.9"/><circle cx="50.6" cy="32.3" r="1.9"/><circle cx="63.3" cy="32.3" r="1.9"/><circle cx="6.3" cy="37.7" r="1.9"/><circle cx="19.0" cy="37.7" r="1.9"/><circle cx="31.6" cy="37.7" r="1.9"/><circle cx="44.3" cy="37.7" r="1.9"/><circle cx="57.0" cy="37.7" r="1.9"/><circle cx="69.6" cy="37.7" r="1.9"/><circle cx="12.7" cy="43.1" r="1.9"/><circle cx="25.3" cy="43.1" r="1.9"/><circle cx="38.0" cy="43.1" r="1.9"/><circle cx="50.6" cy="43.1" r="1.9"/><circle cx="63.3" cy="43.1" r="1.9"/><circle cx="6.3" cy="48.5" r="1.9"/><circle cx="19.0" cy="48.5" r="1.9"/><circle cx="31.6" cy="48.5" r="1.9"/><circle cx="44.3" cy="48.5" r="1.9"/><circle cx="57.0" cy="48.5" r="1.9"/><circle cx="69.6" cy="48.5" r="1.9"/></g></symbol>
+  <symbol id="flag-fr" viewBox="0 0 90 60"><rect width="30" height="60" fill="#0055A4"/><rect x="30" width="30" height="60" fill="#fff"/><rect x="60" width="30" height="60" fill="#EF4135"/></symbol>
+  <symbol id="flag-ca" viewBox="0 0 120 60"><rect width="120" height="60" fill="#fff"/><rect width="30" height="60" fill="#D52B1E"/><rect x="90" width="30" height="60" fill="#D52B1E"/><polygon points="60,10 64,19 69,17 67,29 74,22 76,26 83,25 80,33 84,35 72,44 73,48 61,46 61,54 59,54 59,46 47,48 48,44 36,35 40,33 37,25 44,26 46,22 53,29 51,17 56,19" fill="#D52B1E"/></symbol>
+  <symbol id="flag-uk" viewBox="0 0 60 30"><clipPath id="ukc"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#ukc)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></symbol>
+  <symbol id="flag-eu" viewBox="0 0 90 60"><rect width="90" height="60" fill="#003399"/><g fill="#FFCC00"><polygon points="45.00,6.60 45.79,8.91 48.23,8.95 46.28,10.42 47.00,12.75 45.00,11.35 43.00,12.75 43.72,10.42 41.77,8.95 44.21,8.91"/><polygon points="55.00,9.28 55.79,11.59 58.23,11.63 56.28,13.10 57.00,15.43 55.00,14.03 53.00,15.43 53.72,13.10 51.77,11.63 54.21,11.59"/><polygon points="62.32,16.60 63.11,18.91 65.55,18.95 63.60,20.42 64.32,22.75 62.32,21.35 60.32,22.75 61.04,20.42 59.09,18.95 61.53,18.91"/><polygon points="65.00,26.60 65.79,28.91 68.23,28.95 66.28,30.42 67.00,32.75 65.00,31.35 63.00,32.75 63.72,30.42 61.77,28.95 64.21,28.91"/><polygon points="62.32,36.60 63.11,38.91 65.55,38.95 63.60,40.42 64.32,42.75 62.32,41.35 60.32,42.75 61.04,40.42 59.09,38.95 61.53,38.91"/><polygon points="55.00,43.92 55.79,46.23 58.23,46.27 56.28,47.74 57.00,50.07 55.00,48.67 53.00,50.07 53.72,47.74 51.77,46.27 54.21,46.23"/><polygon points="45.00,46.60 45.79,48.91 48.23,48.95 46.28,50.42 47.00,52.75 45.00,51.35 43.00,52.75 43.72,50.42 41.77,48.95 44.21,48.91"/><polygon points="35.00,43.92 35.79,46.23 38.23,46.27 36.28,47.74 37.00,50.07 35.00,48.67 33.00,50.07 33.72,47.74 31.77,46.27 34.21,46.23"/><polygon points="27.68,36.60 28.47,38.91 30.91,38.95 28.96,40.42 29.68,42.75 27.68,41.35 25.68,42.75 26.40,40.42 24.45,38.95 26.89,38.91"/><polygon points="25.00,26.60 25.79,28.91 28.23,28.95 26.28,30.42 27.00,32.75 25.00,31.35 23.00,32.75 23.72,30.42 21.77,28.95 24.21,28.91"/><polygon points="27.68,16.60 28.47,18.91 30.91,18.95 28.96,20.42 29.68,22.75 27.68,21.35 25.68,22.75 26.40,20.42 24.45,18.95 26.89,18.91"/><polygon points="35.00,9.28 35.79,11.59 38.23,11.63 36.28,13.10 37.00,15.43 35.00,14.03 33.00,15.43 33.72,13.10 31.77,11.63 34.21,11.59"/></g></symbol>
+  <symbol id="flag-un" viewBox="0 0 90 60"><rect width="90" height="60" fill="#141A2B"/><g fill="none" stroke="#E5F553" stroke-width="2.6"><circle cx="45" cy="30" r="20"/><ellipse cx="45" cy="30" rx="8.5" ry="20"/><path d="M25 30 H65 M28.5 20 H61.5 M28.5 40 H61.5"/></g></symbol>
+</svg>
+<a class="skip" href="#tracker">Skip to the tracker</a>
+<div class="concept-flag">Design concept for issue 01. The published issue is <a href="../../issues/01/">here</a>.</div>
+
+<header class="bar-top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Wealth Tax Watch, back to top">
+      <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="58" fill="#141A2B"/><circle cx="60" cy="60" r="44" fill="none" stroke="#E5F553" stroke-width="3"/><defs><clipPath id="bc"><rect x="0" y="45.7" width="120" height="28.6"/></clipPath></defs><g clip-path="url(#bc)"><rect x="47.9" y="45.7" width="24.2" height="7.2" fill="#FF4F6B"/><rect x="56.4" y="45.7" width="7.2" height="28.6" fill="#FF4F6B"/><polyline points="22.2,41.3 29.8,74.3 35.8,55.6 41.9,74.3 49.4,41.3" fill="none" stroke="#E5F553" stroke-width="7.2"/><polyline points="70.6,41.3 78.2,74.3 84.2,55.6 90.3,74.3 97.8,41.3" fill="none" stroke="#E5F553" stroke-width="7.2"/></g></svg>
+      <span>WEALTH TAX <em>WATCH</em></span>
+    </a>
+    <nav class="top-nav" aria-label="Sections">
+      <a href="#tracker" class="keep">Tracker</a>
+      <a href="#california">California</a>
+      <a href="#numbers">Numbers</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#dispatches">Dispatches</a>
+      <a href="#sources">Sources</a>
+      <button class="theme-btn" type="button" id="themeBtn" aria-label="Switch to dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </nav>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="hero-title">
+  <svg class="seal-float" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="arcT" d="M12,60 A48,48 0 0,1 108,60"/><path id="arcB" d="M6,60 A54,54 0 0,0 114,60"/></defs><circle cx="60" cy="60" r="58" fill="none" stroke="#F1EEE6" stroke-width="1"/><circle cx="60" cy="60" r="42" fill="none" stroke="#E5F553" stroke-width="1.5"/><text font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="8.4" letter-spacing="1.4" fill="#F1EEE6" text-anchor="middle"><textPath href="#arcT" startOffset="50%">WEALTH TAX WATCH</textPath></text><text font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="8.4" letter-spacing="1.2" fill="#F1EEE6" text-anchor="middle"><textPath href="#arcB" startOffset="50%">GLOBAL TAX FAIRNESS</textPath></text></svg>
+  <div class="wrap">
+    <p class="kicker">NO. 01 · SEPTEMBER 1-23, 2026 · BIWEEKLY</p>
+    <div class="hero-grid">
+      <h1 id="hero-title"><span>Wealth</span><span class="l2">Tax</span><span><em>Watch</em></span></h1>
+      <div class="hero-side">
+        <p>Wealth taxation is now on a ballot, in a public audit and in budget-season proposals. It is not yet in any international agreement, and nothing we track this issue has become law.</p>
+        <small>Global Tax Fairness Fellowship · Published September 24, 2026 · About 12 minutes</small>
+      </div>
+    </div>
+    <div class="countdown" aria-label="Countdown to the next decisions">
+      <div class="cd" data-date="2026-09-30"><div class="n" aria-hidden="true">–</div><div><div class="l">France presents its 2027 budget</div><div class="d">September 30</div></div></div>
+      <div class="cd" data-date="2026-10-28"><div class="n" aria-hidden="true">–</div><div><div class="l">UK budget</div><div class="d">October 28</div></div></div>
+      <div class="cd" data-date="2026-11-03"><div class="n" aria-hidden="true">–</div><div><div class="l">California votes on Proposition 40</div><div class="d">November 3</div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker"></div></div>
+
+<!-- Tracker -->
+<section class="block" id="tracker" aria-labelledby="tracker-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><p class="eyebrow">The tracker · idea to law</p><h2 id="tracker-title">Everything we follow, and how far it has got</h2></div>
+      <p>Every development in this issue, placed on the road from research to enacted law. Select one for the short version. Filter by jurisdiction.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter by jurisdiction" id="filters"></div>
+    <div class="pipe reveal" id="pipe"></div>
+    <div class="pipe-arrow" aria-hidden="true">Closer to law</div>
+    <div class="detail" id="detail" hidden aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- California -->
+<section class="block" id="california" aria-labelledby="ca-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><p class="eyebrow">Lead story · California</p><h2 id="ca-title">A narrowing lead, and a ballot catch</h2></div>
+      <p class="lede">A one-time 5% tax on billionaires faces three polls, two rival measures and more than $187 million in opposition money.</p>
+    </div>
+    <div class="ca reveal">
+      <div class="ca-grid">
+        <div>
+          <h3 class="chart-title">Yes against no, three surveys</h3>
+          <p class="chart-sub">Percentage of respondents. Different methods and populations: compare within a row, not across rows.</p>
+          <div class="legend" aria-hidden="true"><span style="--c:var(--yes)">Yes</span><span style="--c:var(--und)">Undecided</span><span style="--c:var(--no)">No</span></div>
+          <div id="tugs"></div>
+          <details class="table-toggle">
+            <summary>Show as a table</summary>
+            <table>
+              <thead><tr><th>Survey</th><th>Population</th><th>Dates</th><th>Yes</th><th>No</th><th>Undecided</th></tr></thead>
+              <tbody>
+                <tr><td>PPIC</td><td>Likely voters, n=1,103, ±3.8</td><td>Sep 4-10</td><td>52</td><td>46</td><td>2</td></tr>
+                <tr><td>UC Berkeley IGS</td><td>Likely voters, ±2.5</td><td>Aug 3-9</td><td>48</td><td>41</td><td>11</td></tr>
+                <tr><td>Berkeley Citrin Center / Politico</td><td>Registered voters, n=2,418, ±2.7</td><td>Sep 8-14</td><td>45</td><td>43</td><td>12</td></tr>
+              </tbody>
+            </table>
+          </details>
+        </div>
+        <div class="slope">
+          <h3 class="chart-title">The one like-for-like trend</h3>
+          <p class="chart-sub">Citrin Center / Politico, same pollster, February vs September.</p>
+          <svg viewBox="0 0 360 250" role="img" aria-label="Citrin Center and Politico poll: yes fell from 50 to 45 percent, no rose from 28 to 43 percent between February and September.">
+            <line x1="40" y1="20" x2="40" y2="215" stroke="var(--hair)" stroke-width="1"/>
+            <line x1="270" y1="20" x2="270" y2="215" stroke="var(--hair)" stroke-width="1"/>
+            <text class="ax" x="40" y="240" text-anchor="middle">FEB</text>
+            <text class="ax" x="270" y="240" text-anchor="middle">SEP</text>
+            <g id="slopeLines"></g>
+          </svg>
+          <p class="chart-sub" style="margin-top:8px">Support down 5 points, opposition up 15. The gap shrank from 22 points to 2.</p>
+        </div>
+      </div>
+      <div class="catch">
+        <div><p class="eyebrow" style="margin-bottom:8px">The ballot catch</p><h4>If 41 or 42 beats 40, the billionaire tax could be voided</h4></div>
+        <div>
+          <div class="props" id="props" role="img" aria-label="PPIC likely voters: Proposition 40 at 52 percent, Proposition 41 at 51 percent, Proposition 42 at 54 percent."></div>
+          <p>Same survey (PPIC, likely voters), so these bars compare directly. Proposition 41 would nullify new state taxes enacted after January 1, 2026 that sit outside the spending limit; Proposition 42 would bar new state taxes on personal property. Both are backed by a group funded largely by Sergey Brin. Governor Newsom opposes Proposition 40.</p>
+        </div>
+      </div>
+      <p style="font-size:14px;color:var(--muted);margin:18px 0 0"><a class="src" href="https://www.ppic.org/publication/ppic-statewide-survey-californians-and-their-government-september-2026/" target="_blank" rel="noopener">PPIC survey ↗</a> · <a class="src" href="https://news.berkeley.edu/2026/08/17/california-prop-40-the-billionaire-tax-holds-lead-in-new-uc-berkeley-igs-poll/" target="_blank" rel="noopener">Berkeley IGS ↗</a> · <a class="src" href="https://www.yahoo.com/news/politics/articles/fewer-half-california-voters-back-012052987.html" target="_blank" rel="noopener">Citrin/Politico report ↗</a> · <a class="src" href="https://calmatters.org/health/2026/09/california-wealth-tax-prop-40-41-42/" target="_blank" rel="noopener">CalMatters on the money ↗</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- Numbers -->
+<section class="block" id="numbers" aria-labelledby="num-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><p class="eyebrow">By the numbers</p><h2 id="num-title">Six figures, six different kinds of claim</h2></div>
+      <p>Each number is tagged by what it is. A poll is not a costing, and an advocacy estimate is not an official score. None of them add up.</p>
+    </div>
+    <div class="wall reveal">
+      <div class="stat"><div class="v" data-count="52" data-suffix="%">52%</div><span class="k">Poll</span><p>PPIC likely voters backing California’s Proposition 40 (46% against).</p></div>
+      <div class="stat"><div class="v" data-count="1.83" data-prefix="€" data-suffix="bn" data-dec="2">€1.83bn</div><span class="k">Official audit</span><p>Net revenue of the Cour des comptes package, after its tax cuts.</p></div>
+      <div class="stat"><div class="v" data-count="39" data-prefix="C$" data-suffix="bn+">C$39bn+</div><span class="k">Advocacy costing</span><p>CCPA first-year estimate for a wealth tax above C$10 million.</p></div>
+      <div class="stat"><div class="v" data-count="10.4" data-prefix="£" data-suffix="bn" data-dec="1">£10.4bn</div><span class="k">Research estimate</span><p>A UK 2% minimum tax on fewer than 1,000 households worth over £100 million, in 2026.</p></div>
+      <div class="stat"><div class="v" data-count="92">92</div><span class="k">Research</span><p>Jurisdictions in the OECD’s Tax Policy Reforms 2026 review.</p></div>
+      <div class="stat"><div class="v" data-count="100" data-prefix="US$" data-suffix="bn">US$100bn</div><span class="k">Modelled estimate</span><p>Tax Justice Network estimate of annual European losses to tax abuse. Not wealth-tax revenue.</p></div>
+    </div>
+    <p class="wall-note">Different currencies, tax bases and methods. Do not add or compare them.</p>
+  </div>
+</section>
+
+<!-- Calendar -->
+<section class="block" id="calendar" aria-labelledby="cal-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><p class="eyebrow">What to watch</p><h2 id="cal-title">Ten weeks that will test these proposals</h2></div>
+      <p>Placed to scale. The pink marker is today; the hatched band is Canada’s budget, due this fall with no date set.</p>
+    </div>
+    <p class="tl-hint">Scroll sideways to see the whole calendar.</p>
+    <div class="tl-wrap reveal" tabindex="0" aria-label="Calendar, scrollable">
+      <div class="tl" id="tl"><div class="axis"></div></div>
+    </div>
+    <ol class="sr" id="tlList"></ol>
+  </div>
+</section>
+
+<!-- Dispatches -->
+<section class="block" id="dispatches" aria-labelledby="disp-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><p class="eyebrow">Dispatches</p><h2 id="disp-title">The full stories</h2></div>
+      <p>Each dispatch is labelled by what it is: a ballot measure, a proposal, research, an audit or diplomacy.</p>
+    </div>
+    <div class="dispatches">
+      <article class="disp reveal" id="d-california">
+        <div class="who"><svg aria-hidden="true"><use href="#flag-us"/></svg><div class="where">United States<small>California</small></div><span class="kind">BALLOT MEASURE</span></div>
+        <div class="body">
+        <h3>California’s narrow opening</h3>
+        <p>Proposition 40 would impose a one-time 5% tax on the net worth of billionaires who were California residents on January 1, 2026, with most revenue directed to health care. The Legislative Analyst projects a temporary gain of tens of billions of dollars over several years, plus a possible ongoing income tax loss if some billionaires leave. The sponsoring union, SEIU-UHW, puts the figure near $100 billion; treat that as a campaign estimate, not an official one.</p>
+        <p><span class="vote">Vote: November 3 · Ballots mailed from October 5</span></p>
+        </div>
+      </article>
+      <article class="disp reveal" id="d-multilateral">
+        <div class="who"><svg aria-hidden="true"><use href="#flag-un"/></svg><div class="where">BRICS, G20 &amp; UN</div><span class="kind">DIPLOMACY</span></div>
+        <div class="body">
+        <h3>Cooperation, without a common tax</h3>
+        <p><span class="sub">BRICS.</span> The New Delhi Declaration, adopted September 12, welcomes two new working groups (international taxation and transfer pricing; revenue statistics). At a BRICS tax heads meeting on September 23, India’s finance minister argued that BRICS must shape the rules now being renegotiated, including in the UN convention talks. None of this commits members to a shared wealth tax.</p>
+        <p><span class="sub">G20.</span> Under the US presidency, the Asheville meeting (August 31 to September 1) ended with a chair’s statement rather than an agreed communiqué. It focuses on growth, debt, payments and digital assets, and contains no language on taxing ultra-high-net-worth individuals. That is a visible retreat from the 2024 Rio declaration, in which G20 ministers said they would engage on the issue. Silence in a chair’s statement does not establish individual members’ positions.</p>
+        <p><span class="sub">UN tax convention.</span> The first complete draft texts (the framework convention and two early protocols, on cross-border services and on tax disputes) were released on July 20 and 21. Delegations began line-by-line negotiation at the fifth session in New York, August 3 to 13, with finalisation targeted for 2027. According to Tax Justice Network’s session recap, some delegations pushed for clearer commitments on taxing high-net-worth individuals; the early protocols themselves do not address wealth taxation.</p>
+        <p><span class="sub">Inequality panel.</span> South Africa, Brazil, Norway and Spain hosted a high-level event on September 23 to launch a proposed International Panel on Inequality, modelled on the IPCC and growing out of the Stiglitz-chaired G20 inequality committee. It is an evidence and coordination body, not a tax instrument.</p>
+        </div>
+      </article>
+      <article class="disp reveal" id="d-france">
+        <div class="who"><svg aria-hidden="true"><use href="#flag-fr"/></svg><div class="where">France</div><span class="kind">PUBLIC AUDIT</span></div>
+        <div class="body">
+        <h3>A modest wealth levy within a wider reform</h3>
+        <p>On September 21 the Cour des comptes published a note on household wealth taxation with sixteen recommendations. It argues that France’s wealth taxation, despite high headline rates, becomes regressive at the very top because of exemptions. The note draws heavily on the December 2025 report of the Conseil des prélèvements obligatoires, which modelled a differential charge on non-business wealth alongside the existing real-estate wealth tax (IFI). This is distinct from the 2% minimum on fortunes above €100 million, often called the Zucman tax, which the Cour does not adopt.</p>
+        <p>The package pairs tax increases (the differential wealth charge, a stronger tax on personal holding companies, narrower Pacte Dutreil relief for family businesses) with cuts: about €1.1 billion less in property transaction duties and a five-point cut across inheritance and gift tax brackets worth about €2.1 billion. The Cour puts the net effect at €1.83 billion, falling only on the largest fortunes. Where the CPO’s scenarios were revenue-neutral, the Cour’s version raises revenue. These are recommendations timed for the 2027 budget bill, which the government presents to cabinet on September 30. Prime Minister Sébastien Lecornu has promised tax stability and “no new tax”, and has announced a new business-transfer scheme, the “pacte Papin”; how it relates to the Pacte Dutreil relief the Cour wants to narrow is not yet clear. <a class="src" href="https://www.boursorama.com/actualite-economique/actualites/la-cour-des-comptes-suggere-une-taxation-moderee-mais-progressive-des-gros-patrimoines-77f9551e8a8063ba789cc642bbbe1fc4" target="_blank" rel="noopener">AFP report on the presentation ↗</a> · <a class="src" href="https://www.ifrap.org/budget-et-fiscalite/la-cour-propose-le-retour-de-lisf-sans-le-nommer" target="_blank" rel="noopener">IFRAP critique ↗</a> · <a class="src" href="https://www.legifiscal.fr/actualites-fiscales/4639-projet-loi-finances-2027-annonces-sebastien-lecornu.html" target="_blank" rel="noopener">Lecornu’s budget announcements ↗</a></p>
+        <p><span class="sub">The Zucman tax returns.</span> On September 16 the Socialist Party presented an alternative budget built around the Zucman tax: a 2% minimum tax on fortunes above €100 million, which the Assemblée nationale rejected in October 2025 by 228 votes to 172. It is an opposition proposal, not a government measure, and it runs against the prime minister’s “no new tax” line. It can only be put to a vote as an amendment once the budget bill reaches Parliament, after September 30.</p>
+        </div>
+      </article>
+      <article class="disp reveal" id="d-europe">
+        <div class="who"><svg aria-hidden="true"><use href="#flag-eu"/></svg><div class="where">Europe &amp; OECD</div><span class="kind">RESEARCH</span></div>
+        <div class="body">
+        <h3>More debate than adoption</h3>
+        <p>The OECD’s Tax Policy Reforms 2026, published September 8, covers measures introduced or announced during 2025 in 92 jurisdictions. Property tax reforms leaned more towards raising revenue than in past years, mainly through recurrent taxes on immovable property, while changes to net wealth taxes remained limited. The release date should not be confused with the period the data cover.</p>
+        <p>The European Commission’s April study (two volumes, with case studies from Austria, France, Germany, Spain, Norway, Switzerland and Colombia) finds that the wealth taxes examined were not major revenue sources, and attributes much of the shortfall to reliefs, exemptions and weak compliance. It stresses beneficial ownership data, asset registers and third-party reporting, and makes no policy recommendation.</p>
+        <p>On September 23 the Tax Justice Network launched an updated illicit financial flows tracker. It estimates that about US$673 billion crosses European borders each year for tax abuse purposes, mostly into other European countries, and that wealthy individuals and multinationals keep roughly US$100 billion a year that would otherwise be paid in tax. That is a modelled estimate of tax abuse, not projected wealth tax revenue.</p>
+        </div>
+      </article>
+      <article class="disp reveal" id="d-canada">
+        <div class="who"><svg aria-hidden="true"><use href="#flag-ca"/></svg><div class="where">Canada</div><span class="kind">PROPOSAL</span></div>
+        <div class="body">
+        <h3>Several routes to taxing wealth</h3>
+        <p>The CCPA’s Alternative Federal Budget 2026-27 taxation chapter, released September 16, proposes an annual progressive tax on net worth above C$10 million, estimated to raise more than C$39 billion in its first year and to leave 99.4% of Canadians unaffected. The estimate rests on Oxfam Canada modelling from January 2026; the previous edition, published in October 2025, cited about C$37 billion.</p>
+        <p>The chapter also costs four related measures: a 50% tax on lifetime inheritances above C$2.5 million (about C$1.1 billion a year); a 37% federal bracket on income above C$1 million (about 45,000 filers and C$1.4 billion in 2027); full inclusion of inflation-adjusted capital gains (about C$13 billion a year); and C$2 billion over three years for CRA enforcement, against planned CRA job cuts.</p>
+        <p>These tax holdings, transfers, income and gains, each with different valuation and enforcement problems, and the estimates are advocacy costings rather than PBO or Finance Canada scores. None is current federal policy. Ottawa now tables its budget in the fall: Budget 2026 is due this autumn, and no date has been announced. <a class="src" href="https://www.policyalternatives.ca/news-research/alternative-federal-budget-2026-27-taxation/" target="_blank" rel="noopener">CCPA taxation chapter ↗</a></p>
+        </div>
+      </article>
+      <article class="disp reveal" id="d-uk">
+        <div class="who"><svg aria-hidden="true"><use href="#flag-uk"/></svg><div class="where">United Kingdom</div><span class="kind">PROPOSALS</span></div>
+        <div class="body">
+        <h3>Three different ways to tax wealth</h3>
+        <p class="status">Context: Chancellor John Healey presents his first budget on October 28 under Prime Minister Andy Burnham.</p>
+        <p><span class="sub">Annual net wealth.</span> Compass’s Ending Business as Usual, published in early September, collects 70 policy options from 15 contributors and calls itself a menu, not a manifesto. It includes Tax Justice UK’s proposal for a 2% annual tax on net assets above £10 million, estimated at up to £24 billion a year. A parliamentary petition for the same tax followed a “Proud to Pay” letter from 120 UK millionaires. This is advocacy, not an announced government measure.</p>
+        <p><span class="sub">A minimum for the very wealthiest.</span> A July International Tax Observatory study by Ben Tippet and Gabriel Zucman proposes that households worth more than £100 million pay at least 2% of their wealth each year in total personal taxes, with taxes already paid counting towards it. It estimates about £10.4 billion in 2026 from fewer than 1,000 households, after avoidance and behavioural responses, and includes a ten-year post-emigration liability. The £10 billion and £24 billion figures use different thresholds, tax units and mechanisms; do not add them together.</p>
+        <p><span class="sub">Existing capital and property taxes.</span> Compass also proposes a capital gains overhaul, including rate alignment with income tax and ending the uplift at death. The Institute for Fiscal Studies has long argued that valuation and avoidance make an annual wealth tax hard to run and favours reforming taxes on capital income and transfers instead. Separately, the Resolution Foundation’s September report Home Economics proposes replacing Council Tax and Stamp Duty on primary residences with a revenue-neutral 0.7% annual tax on current property value, paid by occupiers, with rebates for low-income households and deferral for the asset-rich but cash-poor. It finds Londoners underpay by about £3.1 billion relative to the rest of England, and warns that abolishing Stamp Duty alone would leave a £15 billion hole. That is a property tax reform, not a net wealth tax.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Discussion -->
+<section class="block" id="discussion" aria-labelledby="dq-title">
+  <div class="wrap">
+    <div class="discuss reveal">
+      <p class="eyebrow">For the cohort · discussion</p>
+      <h2 id="dq-title">Four designs. The same three problems.</h2>
+      <div class="designs" role="group" aria-label="Choose a design" id="designs"></div>
+      <div class="levers" aria-live="polite">
+        <div class="lever"><h5>Who and what is taxed</h5><p id="lv-base"></p></div>
+        <div class="lever"><h5>Mobility: stopping exits</h5><p id="lv-move"></p></div>
+        <div class="lever"><h5>How credible is the revenue</h5><p id="lv-rev"></p></div>
+      </div>
+      <p class="question">Which design choice would survive in your own jurisdiction, and which assumption would fail first?</p>
+    </div>
+  </div>
+</section>
+
+<!-- Sources -->
+<section class="block" id="sources" aria-labelledby="src-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><p class="eyebrow">Source shelf</p><h2 id="src-title">Primary reading</h2></div>
+      <p>Primary documents where available. Cutoff: September 23, 2026.</p>
+    </div>
+    <div class="shelf">
+      <a href="https://www.ppic.org/publication/ppic-statewide-survey-californians-and-their-government-september-2026/" target="_blank" rel="noopener"><b>Californians and Their Government ↗</b><span>PPIC · September 2026</span></a>
+      <a href="https://news.berkeley.edu/2026/08/17/california-prop-40-the-billionaire-tax-holds-lead-in-new-uc-berkeley-igs-poll/" target="_blank" rel="noopener"><b>Prop. 40 holds lead in IGS Poll ↗</b><span>UC Berkeley · August 2026</span></a>
+      <a href="https://www.policyalternatives.ca/news-research/alternative-federal-budget-2026-27-taxation/" target="_blank" rel="noopener"><b>Alternative Federal Budget 2026-27: Taxation ↗</b><span>CCPA · Canada · September 16</span></a>
+      <a href="https://www.oecd.org/en/publications/tax-policy-reforms-2026_43d18a55-en.html" target="_blank" rel="noopener"><b>Tax Policy Reforms 2026 ↗</b><span>OECD · September 8</span></a>
+      <a href="https://taxation-customs.ec.europa.eu/news/publication-study-wealth-taxation-including-net-wealth-capital-and-exit-taxes-2026-04-15_en" target="_blank" rel="noopener"><b>Wealth Taxation study ↗</b><span>European Commission · April 15</span></a>
+      <a href="https://taxjustice.net/press/europe-on-europe-tax-pillaging-revealed-by-new-tracker/" target="_blank" rel="noopener"><b>Europe illicit flows tracker ↗</b><span>Tax Justice Network · September 23</span></a>
+      <a href="https://g20.utoronto.ca/2026/260901-finance-statement.html" target="_blank" rel="noopener"><b>G20 Chair’s Statement, Asheville ↗</b><span>G20 Research Group · September 1</span></a>
+      <a href="https://financing.desa.un.org/unfcitc" target="_blank" rel="noopener"><b>UN tax convention negotiations ↗</b><span>UN DESA · INC documents</span></a>
+      <a href="https://webtv.un.org/en/asset/k1h/k1hm0rn4g0" target="_blank" rel="noopener"><b>International Panel on Inequality event ↗</b><span>UN Web TV · September 23</span></a>
+      <a href="https://taxobservatory.world/publication/taxing-extreme-wealth-in-the-united-kingdom-revenue-estimates-for-a-2-minimum-tax-on-ultra-high-net-worth-households/" target="_blank" rel="noopener"><b>Taxing Extreme Wealth in the UK ↗</b><span>International Tax Observatory · July 2026</span></a>
+      <a href="https://www.resolutionfoundation.org/publications/home-economics/" target="_blank" rel="noopener"><b>Home Economics ↗</b><span>Resolution Foundation · September 2026</span></a>
+      <a href="https://www.ifrap.org/budget-et-fiscalite/la-cour-propose-le-retour-de-lisf-sans-le-nommer" target="_blank" rel="noopener"><b>On the Cour des comptes note ↗</b><span>Fondation IFRAP · France · September 2026</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><b>Global Tax Fairness Fellowship</b> · Wealth Tax Watch · Issue 01, September 2026</span>
+    <span>Ideas, polling and adopted law are identified separately. <a href="../../archive.html">All issues</a> · <a href="#top">Back to top ↑</a></span>
+  </div>
+</footer>
+<div class="tip" id="tip" role="presentation"></div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root = document.documentElement;
+
+  /* Theme toggle (remembered per browser when storage is available) */
+  var btn = document.getElementById('themeBtn');
+  function isDark(){ var t = root.getAttribute('data-theme'); return t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches; }
+  function syncBtn(){ btn.setAttribute('aria-label', isDark() ? 'Switch to light mode' : 'Switch to dark mode'); }
+  try{ var saved = localStorage.getItem('wtw-theme'); if(saved) root.setAttribute('data-theme', saved); }catch(e){}
+  syncBtn();
+  btn.addEventListener('click', function(){ var next = isDark() ? 'light' : 'dark'; root.setAttribute('data-theme', next); try{ localStorage.setItem('wtw-theme', next); }catch(e){} syncBtn(); });
+
+  /* Reading progress */
+  var bar = document.getElementById('progress');
+  function onScroll(){ var h = document.documentElement; var p = h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight); bar.style.transform = 'scaleX(' + Math.min(1, Math.max(0, p)) + ')'; }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* Countdown */
+  var today = new Date(); today.setHours(0,0,0,0);
+  function daysTo(iso){ var d = new Date(iso + 'T00:00:00'); return Math.round((d - today) / 86400000); }
+  document.querySelectorAll('.cd').forEach(function(el){
+    var n = daysTo(el.dataset.date), out = el.querySelector('.n');
+    if(n > 1) out.innerHTML = n + '<small>DAYS</small>';
+    else if(n === 1) out.innerHTML = '1<small>DAY</small>';
+    else if(n === 0) out.innerHTML = 'Today';
+    else out.innerHTML = 'Done';
+    el.setAttribute('aria-label', el.querySelector('.l').textContent + ', ' + el.querySelector('.d').textContent + (n > 0 ? ', in ' + n + ' days' : n === 0 ? ', today' : ', passed'));
+  });
+
+  /* Ticker */
+  var tick = ['52% <b>PPIC yes on Prop 40</b>','45% <b>Citrin/Politico yes</b>','€1.83bn <b>Cour des comptes net</b>','C$39bn+ <b>CCPA wealth tax</b>','£10.4bn <b>UK 2% minimum tax</b>','92 <b>OECD jurisdictions</b>','US$100bn <b>TJN tax-abuse estimate</b>','0 <b>Tracked items enacted</b>'];
+  var tt = document.getElementById('ticker'); var once = tick.map(function(t){ return '<span>' + t + '</span>'; }).join(''); tt.innerHTML = once + once;
+
+  /* Tracker data: every item comes from this issue */
+  var J = { us:'United States', fr:'France', uk:'United Kingdom', ca:'Canada', eu:'Europe & OECD', un:'Multilateral' };
+  var STAGES = [
+    {id:'research', t:'Research & talks', s:'Studies, reviews, negotiations'},
+    {id:'proposal', t:'Proposal', s:'Advocacy and opposition plans'},
+    {id:'official', t:'Official recommendation', s:'Audits and government bodies'},
+    {id:'vote', t:'On a ballot or in a bill', s:'Voters or lawmakers decide'},
+    {id:'law', t:'Enacted', s:'In force'}
+  ];
+  var ITEMS = [
+    {j:'eu', st:'research', t:'OECD Tax Policy Reforms 2026', m:'Sept 8 · 92 jurisdictions', kind:'Research', p:'Covers 2025 reforms in 92 jurisdictions. Property taxes leaned towards raising revenue; changes to net wealth taxes stayed limited.', a:'#d-europe'},
+    {j:'eu', st:'research', t:'European Commission wealth-tax study', m:'April 15 · two volumes', kind:'Research', p:'Wealth taxes examined were not major revenue sources, largely because of reliefs, exemptions and weak compliance. No policy recommendation.', a:'#d-europe'},
+    {j:'eu', st:'research', t:'Tax Justice Network flows tracker', m:'Sept 23 · US$673bn a year', kind:'Modelled estimate', p:'About US$673 billion crosses European borders each year for tax abuse; about US$100 billion a year in tax is lost. A tax-abuse estimate, not wealth-tax revenue.', a:'#d-europe'},
+    {j:'un', st:'research', t:'International Panel on Inequality', m:'Sept 23 · proposed body', kind:'Diplomacy', p:'Launched at UNGA by South Africa, Brazil, Norway and Spain. An evidence and coordination body modelled on the IPCC, not a tax instrument.', a:'#d-multilateral'},
+    {j:'un', st:'research', t:'BRICS tax working groups', m:'Sept 12 · New Delhi Declaration', kind:'Diplomacy', p:'Two new working groups on international taxation and transfer pricing, and on revenue statistics. Cooperation machinery, with no shared wealth tax.', a:'#d-multilateral'},
+    {j:'un', st:'research', t:'UN tax convention talks', m:'Aug 3-13 · finalisation 2027', kind:'Diplomacy', p:'Line-by-line negotiation of the framework convention and two early protocols began in New York. The protocols do not address wealth taxation.', a:'#d-multilateral'},
+    {j:'ca', st:'proposal', t:'CCPA annual wealth tax', m:'Sept 16 · above C$10 million', kind:'Advocacy costing', p:'A progressive tax on net worth above C$10 million, estimated at more than C$39 billion in its first year. Not federal policy.', a:'#d-canada'},
+    {j:'ca', st:'proposal', t:'CCPA inheritance tax', m:'50% above C$2.5 million', kind:'Advocacy costing', p:'A 50% tax on lifetime inheritances above C$2.5 million, about C$1.1 billion a year, alongside a 37% bracket above C$1 million.', a:'#d-canada'},
+    {j:'uk', st:'proposal', t:'2% tax on net assets above £10m', m:'Tax Justice UK via Compass', kind:'Advocacy', p:'Up to £24 billion a year, per Tax Justice UK. Collected in Compass’s 70-option menu; backed by a petition and a “Proud to Pay” letter.', a:'#d-uk'},
+    {j:'uk', st:'proposal', t:'2% minimum tax above £100m', m:'Tippet & Zucman · July', kind:'Research estimate', p:'Households worth over £100 million pay at least 2% of wealth in total personal taxes. About £10.4 billion in 2026 from fewer than 1,000 households; ten-year exit rule.', a:'#d-uk'},
+    {j:'uk', st:'proposal', t:'0.7% tax on property value', m:'Resolution Foundation', kind:'Research', p:'Replace Council Tax and Stamp Duty on primary homes with a revenue-neutral 0.7% annual tax on current value. A property tax reform, not a net wealth tax.', a:'#d-uk'},
+    {j:'fr', st:'proposal', t:'The Zucman tax, again', m:'Sept 16 · Socialist Party budget', kind:'Opposition proposal', p:'A 2% minimum tax on fortunes above €100 million, rejected by the Assemblée 228 to 172 in October 2025, now back in the Socialists’ alternative budget.', a:'#d-france'},
+    {j:'fr', st:'official', t:'Cour des comptes package', m:'Sept 21 · €1.83bn net', kind:'Public audit', p:'A differential charge on non-business wealth, a stronger holding-company tax and narrower Pacte Dutreil relief, offset by cuts in transfer duties and inheritance tax.', a:'#d-france'},
+    {j:'us', st:'vote', t:'Proposition 40', m:'Nov 3 · one-time 5% on billionaires', kind:'Ballot measure', p:'A one-time 5% tax on billionaires resident on January 1, 2026, mostly for health care. Polls range from 45% to 52% yes.', a:'#d-california'},
+    {j:'us', st:'vote', t:'Propositions 41 and 42', m:'Nov 3 · could void Prop 40', kind:'Ballot measure', p:'Rival measures backed by a Brin-funded group. If either passes with more yes votes than Proposition 40, the billionaire tax could be voided.', a:'#d-california'}
+  ];
+
+  var FLAG = { us:'flag-us', fr:'flag-fr', uk:'flag-uk', ca:'flag-ca', eu:'flag-eu', un:'flag-un' };
+  function flag(j, cls){ return '<svg' + (cls ? ' class="' + cls + '"' : '') + ' aria-hidden="true"><use href="#' + FLAG[j] + '"/></svg>'; }
+  var pipe = document.getElementById('pipe'), detail = document.getElementById('detail');
+  var total = ITEMS.length;
+  pipe.innerHTML = STAGES.map(function(s, i){
+    var its = ITEMS.filter(function(x){ return x.st === s.id; });
+    if(s.id === 'law'){
+      return '<div class="stage enacted"><span class="step">Stage 5</span><h3>' + s.t + '</h3><p>Nothing tracked in this issue has become law. The only machinery actually adopted is for cooperation, not taxation.</p><div class="zero" aria-label="Zero items">0</div></div>';
+    }
+    return '<div class="stage"><span class="step">Stage ' + (i+1) + ' · ' + its.length + ' of ' + total + '</span><h3>' + s.t + '</h3><div class="meter" aria-hidden="true"><i style="width:' + (its.length/total*100) + '%"></i></div>' +
+      its.map(function(x){ var k = ITEMS.indexOf(x); return '<button class="item" type="button" data-k="' + k + '" data-j="' + x.j + '" aria-expanded="false" aria-controls="detail">' + flag(x.j) + '<span><b>' + x.t + '</b><small>' + x.m + '</small></span></button>'; }).join('') + '</div>';
+  }).join('');
+  function openItem(k, btnEl){
+    var x = ITEMS[k];
+    pipe.querySelectorAll('.item').forEach(function(b){ b.setAttribute('aria-expanded', b === btnEl ? 'true' : 'false'); });
+    detail.hidden = false;
+    detail.innerHTML = flag(x.j, 'big') + '<div><span class="stamp">' + x.kind + ' · ' + J[x.j] + '</span><h4>' + x.t + '</h4><p>' + x.p + '</p></div><div style="display:flex;flex-direction:column;gap:14px;align-items:flex-end"><button class="x" type="button" aria-label="Close">×</button><a class="go" href="' + x.a + '">Full story ↓</a></div>';
+    detail.querySelector('.x').addEventListener('click', function(){ detail.hidden = true; btnEl.setAttribute('aria-expanded','false'); btnEl.focus(); });
+  }
+  pipe.addEventListener('click', function(e){ var b = e.target.closest('.item'); if(!b) return; if(b.getAttribute('aria-expanded') === 'true'){ detail.hidden = true; b.setAttribute('aria-expanded','false'); return; } openItem(+b.dataset.k, b); });
+
+  var filters = document.getElementById('filters');
+  filters.innerHTML = '<button class="chip-f" type="button" data-j="all" aria-pressed="true">All</button>' + Object.keys(J).map(function(j){ return '<button class="chip-f" type="button" data-j="' + j + '" aria-pressed="false">' + flag(j) + J[j] + '</button>'; }).join('');
+  filters.addEventListener('click', function(e){
+    var b = e.target.closest('.chip-f'); if(!b) return;
+    filters.querySelectorAll('.chip-f').forEach(function(c){ c.setAttribute('aria-pressed', c === b ? 'true' : 'false'); });
+    var j = b.dataset.j;
+    pipe.querySelectorAll('.item').forEach(function(it){ it.classList.toggle('dim', j !== 'all' && it.dataset.j !== j); });
+  });
+
+  /* Polls */
+  var POLLS = [
+    {n:'PPIC', p:'Likely voters · Sep 4-10', y:52, no:46, u:2},
+    {n:'UC Berkeley IGS', p:'Likely voters · Aug 3-9', y:48, no:41, u:11},
+    {n:'Citrin Center / Politico', p:'Registered voters · Sep 8-14', y:45, no:43, u:12}
+  ];
+  var tugs = document.getElementById('tugs');
+  tugs.innerHTML = POLLS.map(function(p){
+    return '<div class="tug"><div class="tug-head"><span>' + p.n + '</span><span>' + p.p + '</span></div>' +
+      '<div class="tug-bar" role="img" aria-label="' + p.n + ': ' + p.y + ' percent yes, ' + p.u + ' percent undecided, ' + p.no + ' percent no">' +
+      '<div class="y" data-w="' + p.y + '" data-tip="Yes ' + p.y + '%"></div><div class="u" data-w="' + p.u + '" data-tip="Undecided ' + p.u + '%"></div><div class="no" data-w="' + p.no + '" data-tip="No ' + p.no + '%"></div></div>' +
+      '<div class="tug-vals"><span class="vy">' + p.y + '%<small>YES</small></span><span class="vn"><small>NO</small>' + p.no + '%</span></div></div>';
+  }).join('') + '<p class="fifty">The dark line marks 50%.</p>';
+
+  var props = document.getElementById('props');
+  props.innerHTML = [['Prop 40',52,'p40'],['Prop 41',51,''],['Prop 42',54,'']].map(function(r){
+    return '<div class="prop ' + r[2] + '"><span>' + r[0] + '</span><span class="pb" data-tip="' + r[0] + ': ' + r[1] + '% yes"><i data-w="' + r[1] + '"></i></span><span>' + r[1] + '%</span></div>';
+  }).join('');
+
+  /* Slope chart: Citrin/Politico Feb -> Sep (0-60% scale) */
+  var sl = document.getElementById('slopeLines');
+  function yv(v){ return 215 - v / 60 * 195; }
+  var lines = [{k:'Yes', a:50, b:45, c:'var(--yes)'}, {k:'No', a:28, b:43, c:'var(--no)'}];
+  sl.innerHTML = '<line x1="40" x2="270" y1="' + yv(50) + '" y2="' + yv(50) + '" stroke="var(--hair)" stroke-dasharray="3 4"/><text class="ax" x="276" y="' + (yv(50)+4) + '" style="display:none">50%</text>' +
+    lines.map(function(l){
+      return '<line x1="40" y1="' + yv(l.a) + '" x2="270" y2="' + yv(l.b) + '" stroke="' + l.c + '" stroke-width="3" stroke-linecap="round"/>' +
+        '<circle cx="40" cy="' + yv(l.a) + '" r="6" fill="' + l.c + '" stroke="var(--paper)" stroke-width="2"/><circle cx="270" cy="' + yv(l.b) + '" r="6" fill="' + l.c + '" stroke="var(--paper)" stroke-width="2"/>' +
+        '<text class="big" x="30" y="' + (yv(l.a)+7) + '" text-anchor="end">' + l.a + '</text><text x="30" y="' + (yv(l.a)+24) + '" text-anchor="end" style="font-weight:700;fill:var(--muted);font-size:11px">' + l.k.toUpperCase() + '</text>' +
+        '<text x="284" y="' + (yv(l.b) + (l.k === 'Yes' ? -8 : 26)) + '"><tspan class="big">' + l.b + '</tspan><tspan dx="6" style="font-weight:700;fill:var(--muted);font-size:12px">' + l.k.toUpperCase() + '</tspan></text>';
+    }).join('');
+
+  /* Tooltips on bars */
+  var tip = document.getElementById('tip');
+  document.addEventListener('pointermove', function(e){
+    var t = e.target.closest('[data-tip]');
+    if(!t){ tip.style.opacity = 0; return; }
+    tip.textContent = t.dataset.tip; tip.style.left = e.clientX + 'px'; tip.style.top = e.clientY + 'px'; tip.style.opacity = 1;
+  });
+
+  /* Timeline to scale */
+  var EVENTS = [
+    {d:'2026-09-30', t:'Sept 30', j:'fr', p:'France presents its 2027 budget. “No new tax”; watch the Pacte Dutreil and pacte Papin.', pos:'up'},
+    {d:'2026-10-05', t:'Oct 5', j:'us', p:'California counties begin mailing ballots.', pos:'down'},
+    {d:'2026-10-15', t:'Oct 15', j:'un', p:'G20 finance ministers meet in Bangkok.', pos:'up'},
+    {d:'2026-10-28', t:'Oct 28', j:'uk', p:'UK budget with the OBR forecast: capital gains or property reform?', pos:'down'},
+    {d:'2026-11-03', t:'Nov 3', j:'us', p:'California votes on Propositions 40, 41 and 42.', pos:'up'},
+    {d:'2026-11-20', t:'Fall, TBA', j:'ca', p:'Canada’s Budget 2026. Date not yet announced.', pos:'down', range:['2026-09-22','2026-12-21']}
+  ];
+  var start = new Date('2026-09-20T00:00:00'), end = new Date('2026-12-24T00:00:00');
+  function x(iso){ return (new Date(iso + 'T00:00:00') - start) / (end - start) * 100; }
+  var tl = document.getElementById('tl'), html = '';
+  ['2026-10-01','2026-11-01','2026-12-01'].forEach(function(m){ html += '<div class="month" style="left:' + x(m) + '%">' + new Date(m + 'T00:00:00').toLocaleString('en', {month:'long'}) + '</div>'; });
+  EVENTS.forEach(function(ev){
+    if(ev.range) html += '<div class="range" style="left:' + x(ev.range[0]) + '%;width:' + (x(ev.range[1]) - x(ev.range[0])) + '%" aria-hidden="true"></div>';
+    var past = !ev.range && new Date(ev.d + 'T00:00:00') < today;
+    html += '<div class="ev ' + ev.pos + (past ? ' past' : '') + '" style="left:' + x(ev.d) + '%"><time datetime="' + ev.d + '">' + flag(ev.j) + ev.t + '</time><p>' + ev.p + '</p></div>';
+  });
+  var tx = x(today.toISOString().slice(0,10));
+  if(tx >= 0 && tx <= 100) html += '<div class="today" style="left:' + tx + '%"><span>TODAY</span></div>';
+  html += '<div class="tl-next" title="2027: UN tax convention target; China chairs BRICS">2027 →</div>';
+  tl.insertAdjacentHTML('beforeend', html);
+  document.getElementById('tlList').innerHTML = EVENTS.map(function(ev){ return '<li>' + ev.t + ': ' + ev.p + '</li>'; }).join('') + '<li>2027: target to finalise the UN tax convention; China takes the BRICS chair.</li>';
+
+  /* Design matrix */
+  var DESIGNS = [
+    {j:'us', t:'California’s one-time levy', s:'Proposition 40', base:'Billionaires’ net worth, once, at 5%. Most revenue goes to health care.', move:'Residency is fixed in the past: anyone resident on January 1, 2026 owes it, so leaving now does not help.', rev:'The Legislative Analyst sees “tens of billions” over several years, plus a possible ongoing income-tax loss if billionaires leave. The sponsor’s ~$100bn is a campaign figure.'},
+    {j:'uk', t:'UK minimum tax', s:'Tippet & Zucman', base:'Households above £100 million must pay at least 2% of wealth a year in total personal taxes; taxes already paid count towards it.', move:'A ten-year post-emigration liability: people stay liable for a decade after leaving.', rev:'About £10.4bn in 2026 from fewer than 1,000 households, after avoidance and behavioural responses. A research estimate.'},
+    {j:'fr', t:'France’s differential charge', s:'Cour des comptes', base:'Non-business wealth only, alongside the real-estate wealth tax. Business assets stay out.', move:'Stronger taxation of personal holding companies and narrower Pacte Dutreil relief close common routes around the tax.', rev:'€1.83bn net after the package’s own tax cuts. An official audit, not a government bill.'},
+    {j:'ca', t:'Canada’s holdings plus inheritance', s:'CCPA', base:'An annual progressive tax on net worth above C$10 million, plus a 50% tax on lifetime inheritances above C$2.5 million.', move:'Paired with C$2 billion over three years for CRA enforcement, against planned CRA job cuts.', rev:'More than C$39bn in year one, an advocacy costing built on Oxfam Canada modelling, not a PBO or Finance Canada score.'}
+  ];
+  var dz = document.getElementById('designs');
+  dz.innerHTML = DESIGNS.map(function(d, i){ return '<button class="design" type="button" aria-pressed="' + (i === 0) + '" data-i="' + i + '">' + flag(d.j) + '<b>' + d.t + '</b><span>' + d.s + '</span></button>'; }).join('');
+  function showDesign(i){ var d = DESIGNS[i]; document.getElementById('lv-base').textContent = d.base; document.getElementById('lv-move').textContent = d.move; document.getElementById('lv-rev').textContent = d.rev; dz.querySelectorAll('.design').forEach(function(b){ b.setAttribute('aria-pressed', +b.dataset.i === i ? 'true' : 'false'); }); }
+  dz.addEventListener('click', function(e){ var b = e.target.closest('.design'); if(b) showDesign(+b.dataset.i); });
+  showDesign(0);
+
+  /* Reveal, bar growth and count-up on scroll */
+  function grow(scope){
+    scope.querySelectorAll('.tug-bar div').forEach(function(d){ d.style.flexBasis = d.dataset.w + '%'; });
+    scope.querySelectorAll('.prop .pb i').forEach(function(i){ i.style.width = i.dataset.w + '%'; });
+    scope.querySelectorAll('[data-count]').forEach(function(el){
+      var to = parseFloat(el.dataset.count), dec = +(el.dataset.dec || 0), pre = el.dataset.prefix || '', suf = el.dataset.suffix || '';
+      if(reduce){ return; }
+      var t0 = null; function step(ts){ if(!t0) t0 = ts; var k = Math.min(1, (ts - t0) / 1300); var e = 1 - Math.pow(1 - k, 3); el.textContent = pre + (to * e).toFixed(dec) + suf; if(k < 1) requestAnimationFrame(step); }
+      requestAnimationFrame(step);
+    });
+  }
+  var els = document.querySelectorAll('.reveal');
+  if(reduce || !('IntersectionObserver' in window)){ els.forEach(function(e){ e.classList.add('in'); grow(e); }); }
+  else {
+    var io = new IntersectionObserver(function(entries){ entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); grow(en.target); io.unobserve(en.target); } }); }, {threshold:.12});
+    els.forEach(function(e){ io.observe(e); });
+  }
+})();
+</script>
+</body>
+</html>
