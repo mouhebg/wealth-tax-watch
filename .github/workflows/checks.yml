@@ -1,0 +1,41 @@
+name: Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 7 * * 1" # Mondays 07:00 UTC: catch source links that break between issues
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  generated-files:
+    name: Generated files up to date
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 scripts/build.py --check
+
+  links:
+    name: Links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          # Only issue pages: the root copy and archive link to the same sources.
+          # 403/429 are accepted because several news and think-tank sites block
+          # automated checkers even when the page is fine.
+          args: >-
+            --no-progress
+            --accept 200..=299,403,429
+            --exclude "^https://wealth-tax-watch\.vercel\.app"
+            --exclude "^https://fonts\.(googleapis|gstatic)\.com"
+            "issues/**/*.html"
+          fail: true
