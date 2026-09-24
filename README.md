@@ -1,6 +1,6 @@
 # Wealth Tax Watch
 
-Biweekly global briefing on wealth tax proposals, public opinion and international tax cooperation, published for the Global Tax Fairness Fellowship cohort.
+A personal tracker of wealth tax developments around the world: proposals, public opinion and international tax cooperation, with a new issue every two weeks.
 
 - **Latest issue:** No. 01, September 1-23, 2026
 - **Live site:** https://wealth-tax-watch.vercel.app
@@ -50,7 +50,7 @@ Text in `issue.json` is plain text (no HTML). Prose with links, bold labels and 
 3. Run `python3 scripts/build.py`. It renders `issues/02/index.html` and rebuilds `index.html`, `archive.html` and `feed.xml`. It stops with a message if something is inconsistent (for example, a tracker item pointing to a dispatch that doesn't exist).
 4. Commit and push. Each push to `main` redeploys the site on Vercel.
 
-Earlier issues stay at their own addresses (`/issues/01/`), so links shared with the cohort keep working.
+Earlier issues stay at their own addresses (`/issues/01/`), so links you have already shared keep working.
 
 ## Checks
 
