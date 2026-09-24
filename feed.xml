@@ -4,7 +4,7 @@
     <title>Wealth Tax Watch</title>
     <link>https://wealth-tax-watch.vercel.app/</link>
     <atom:link href="https://wealth-tax-watch.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>Biweekly global briefing on wealth tax proposals, public opinion and international tax cooperation, published for the Global Tax Fairness Fellowship cohort.</description>
+    <description>A personal tracker of wealth tax developments around the world: proposals, public opinion and international tax cooperation, with a new issue every two weeks.</description>
     <language>en</language>
     <lastBuildDate>Thu, 24 Sep 2026 12:00:00 +0000</lastBuildDate>
     <item>

@@ -250,7 +250,7 @@ def render(issue_dir, site_url):
         "NAV": "\n      ".join(nav),
         "KICKER": e(d["kicker"]),
         "HERO_LEDE": e(d["hero_lede"]),
-        "META_LINE": "Global Tax Fairness Fellowship · Published %s · %s" % (e(long_date(d["published"])), e(d["reading_time"])),
+        "META_LINE": "Published %s · %s" % (e(long_date(d["published"])), e(d["reading_time"])),
         "PUBLISHED": d["published"],
         "COUNTDOWNS": countdowns,
         "OVERVIEW": overview_html,
@@ -261,7 +261,7 @@ def render(issue_dir, site_url):
         "DISPATCHES": render_dispatches(d["dispatches"], dispatches),
         "DISCUSSION": render_discussion(d["discussion"]),
         "SOURCES": render_sources(d["sources"]),
-        "FOOTER": "<b>Global Tax Fairness Fellowship</b> · Wealth Tax Watch · Issue %s, %s" % (e(d["number"]), e(datetime.strptime(d["published"], "%Y-%m-%d").strftime("%B %Y"))),
+        "FOOTER": "<b>Wealth Tax Watch</b> · Issue %s, %s" % (e(d["number"]), e(datetime.strptime(d["published"], "%Y-%m-%d").strftime("%B %Y"))),
         "DATA": data_json,
     }
     page = TEMPLATE.read_text(encoding="utf-8")
