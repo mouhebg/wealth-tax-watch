@@ -22,13 +22,18 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:ital,wght@0,400..900;1,400..900&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<!-- Proxima Nova (body text) is a paid Adobe Fonts typeface. To use it, add your own
+     Adobe Fonts web project link here, e.g. <link rel="stylesheet" href="https://use.typekit.net/XXXXXXX.css">
+     Without it, body text falls back to Figtree, a free font with similar proportions. -->
 <style>
 :root{
   --bg:#F1EEE6; --paper:#FDFCF8; --ink:#141A2B; --muted:#5E6474; --rule:#141A2B; --hair:#D6D1C4;
   --lime:#E5F553; --pink:#FF4F6B; --pink-text:#C8203F; --blue:#2B46EE; --sky:#BCE3FB; --track:#E3DED3; --no:#F0435F;
   --seal-edge:transparent; --discuss-bg:#141A2B;
-  --font:'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font:'proxima-nova', 'Figtree', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:'Anton', Impact, 'Arial Narrow', sans-serif;
+  --font-serif:'PT Serif', Georgia, serif;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
@@ -230,6 +235,23 @@ a.src:hover{ color:var(--blue); }
 .dispatch .where-sub{ font-size:15px; font-weight:700; color:var(--muted); margin-top:2px; }
 .dispatch-lead .vote{ margin-top:4px; }
 
+/* Typography: Anton for display, PT Serif for accents. Anton ships in one weight (400)
+   with no italic, so weight is reset to stop browsers faking a bolder version. */
+h1, h2, h3, .wordmark, .brand b, .num strong, .facts b, .cc-name, .cc-next, .dispatch .where, .watch time{
+  font-family:var(--font-display); font-weight:400; letter-spacing:.005em; line-height:1.08;
+}
+.wordmark{ line-height:.92; }
+.big{ max-width:20ch; }
+.discuss h2{ max-width:24ch; }
+.brand b{ font-size:21px; letter-spacing:.02em; }
+@media (max-width:560px){ .brand b{ font-size:18px; } .brand span{ letter-spacing:.08em; } }
+@media (max-width:380px){ .site .wrap{ gap:10px; } .brand{ gap:10px; } .seal-sm{ width:38px; height:38px; } .nav .btn{ padding:9px 12px; font-size:11px; letter-spacing:.06em; } .wordmark{ font-size:44px; } .logo{ gap:14px; } .seal-lg{ width:96px; } }
+.num strong, .cc-next{ line-height:1; }
+.jump h2, .dateline h2{ font-family:var(--font); font-weight:800; letter-spacing:.12em; }
+.cc-name small{ font-family:var(--font); }
+.lede{ font-family:var(--font-serif); font-weight:400; }
+.discuss p:not(.eyebrow){ font-family:var(--font-serif); font-style:italic; }
+
 @media print{
   :root, :root:not([data-theme="light"]), :root[data-theme="dark"]{
     --bg:#fff; --paper:#fff; --ink:#141A2B; --muted:#5E6474; --rule:#141A2B; --hair:#D6D1C4;
@@ -279,7 +301,7 @@ a.src:hover{ color:var(--blue); }
 
   <div class="hero">
     <div class="logo" role="img" aria-label="Wealth Tax Watch">
-      <svg class="seal-lg" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="sealArcHeroTop" d="M12,60 A48,48 0 0,1 108,60"></path><path id="sealArcHeroBot" d="M6,60 A54,54 0 0,0 114,60"></path></defs><circle cx="60" cy="60" r="58" fill="#141A2B"/><circle cx="60" cy="60" r="42" fill="none" stroke="#E5F553" stroke-width="1.5"/><text font-family="Archivo, sans-serif" font-weight="800" font-size="8.4" letter-spacing="1.4" fill="#F1EEE6" text-anchor="middle"><textPath href="#sealArcHeroTop" startOffset="50%">WEALTH TAX WATCH</textPath></text><text font-family="Archivo, sans-serif" font-weight="800" font-size="8.4" letter-spacing="1.2" fill="#F1EEE6" text-anchor="middle"><textPath href="#sealArcHeroBot" startOffset="50%">GLOBAL TAX FAIRNESS</textPath></text><circle cx="8.5" cy="60" r="1.8" fill="#FF4F6B"></circle><circle cx="111.5" cy="60" r="1.8" fill="#FF4F6B"></circle><defs><clipPath id="wtwClipHero"><rect x="0" y="47" width="120" height="26"></rect></clipPath></defs><g clip-path="url(#wtwClipHero)"><rect x="49" y="47" width="22" height="6.5" fill="#FF4F6B"></rect><rect x="56.75" y="47" width="6.5" height="26" fill="#FF4F6B"></rect><polyline points="25.6,43 32.5,73 38,56 43.5,73 50.4,43" fill="none" stroke="#E5F553" stroke-width="6.5" stroke-linejoin="miter" stroke-miterlimit="12" stroke-linecap="butt"></polyline><polyline points="69.6,43 76.5,73 82,56 87.5,73 94.4,43" fill="none" stroke="#E5F553" stroke-width="6.5" stroke-linejoin="miter" stroke-miterlimit="12" stroke-linecap="butt"></polyline></g></svg>
+      <svg class="seal-lg" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="sealArcHeroTop" d="M12,60 A48,48 0 0,1 108,60"></path><path id="sealArcHeroBot" d="M6,60 A54,54 0 0,0 114,60"></path></defs><circle cx="60" cy="60" r="58" fill="#141A2B"/><circle cx="60" cy="60" r="42" fill="none" stroke="#E5F553" stroke-width="1.5"/><text font-family="Figtree, sans-serif" font-weight="800" font-size="8.4" letter-spacing="1.4" fill="#F1EEE6" text-anchor="middle"><textPath href="#sealArcHeroTop" startOffset="50%">WEALTH TAX WATCH</textPath></text><text font-family="Figtree, sans-serif" font-weight="800" font-size="8.4" letter-spacing="1.2" fill="#F1EEE6" text-anchor="middle"><textPath href="#sealArcHeroBot" startOffset="50%">GLOBAL TAX FAIRNESS</textPath></text><circle cx="8.5" cy="60" r="1.8" fill="#FF4F6B"></circle><circle cx="111.5" cy="60" r="1.8" fill="#FF4F6B"></circle><defs><clipPath id="wtwClipHero"><rect x="0" y="47" width="120" height="26"></rect></clipPath></defs><g clip-path="url(#wtwClipHero)"><rect x="49" y="47" width="22" height="6.5" fill="#FF4F6B"></rect><rect x="56.75" y="47" width="6.5" height="26" fill="#FF4F6B"></rect><polyline points="25.6,43 32.5,73 38,56 43.5,73 50.4,43" fill="none" stroke="#E5F553" stroke-width="6.5" stroke-linejoin="miter" stroke-miterlimit="12" stroke-linecap="butt"></polyline><polyline points="69.6,43 76.5,73 82,56 87.5,73 94.4,43" fill="none" stroke="#E5F553" stroke-width="6.5" stroke-linejoin="miter" stroke-miterlimit="12" stroke-linecap="butt"></polyline></g></svg>
       <div class="wordmark" aria-hidden="true"><span>WEALTH</span><span>TAX <em style="display:inline">WATCH</em></span></div>
     </div>
     <aside class="dateline">

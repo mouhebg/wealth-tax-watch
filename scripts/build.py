@@ -89,24 +89,24 @@ def render_archive(issues):
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400..900&display=swap" rel="stylesheet">
 <style>
 :root{{ --bg:#F1EEE6; --paper:#FDFCF8; --ink:#141A2B; --muted:#5E6474; --hair:#D6D1C4; --pink-text:#C8203F; --blue:#2B46EE; }}
 @media (prefers-color-scheme: dark){{ :root{{ --bg:#12151F; --paper:#1B2030; --ink:#EEEAE0; --muted:#A3A8B6; --hair:#333A4D; --pink-text:#FF4F6B; --blue:#7E92FF; }} }}
 *{{ box-sizing:border-box; }}
-body{{ margin:0; background:var(--bg); color:var(--ink); font-family:'Archivo','Helvetica Neue',Arial,sans-serif; font-size:17px; line-height:1.55; }}
+body{{ margin:0; background:var(--bg); color:var(--ink); font-family:'proxima-nova','Figtree','Helvetica Neue',Arial,sans-serif; font-size:17px; line-height:1.55; }}
 .wrap{{ max-width:860px; margin:0 auto; padding:56px 24px 64px; }}
 a{{ color:inherit; }}
 :focus-visible{{ outline:3px solid var(--blue); outline-offset:3px; border-radius:4px; }}
 .eyebrow{{ color:var(--blue); font-weight:800; font-size:13px; letter-spacing:.12em; margin:0 0 12px; }}
-h1{{ font-weight:900; font-size:clamp(34px,6vw,52px); letter-spacing:-.03em; line-height:1; margin:0 0 14px; }}
+h1{{ font-family:'Anton',Impact,'Arial Narrow',sans-serif; font-weight:400; font-size:clamp(34px,6vw,52px); letter-spacing:.005em; line-height:1.05; margin:0 0 14px; }}
 h1 em{{ color:var(--pink-text); font-style:italic; }}
 p.lede{{ color:var(--muted); margin:0 0 32px; max-width:60ch; }}
 ol{{ list-style:none; margin:0; padding:0; border-top:3px solid var(--ink); }}
 li a{{ display:grid; grid-template-columns:90px 1fr auto; gap:6px 20px; padding:20px 0; border-bottom:1px solid var(--hair); text-decoration:none; }}
 li a:hover .t{{ text-decoration:underline; text-decoration-thickness:2px; text-underline-offset:3px; }}
 .no{{ font-weight:800; font-size:13px; letter-spacing:.08em; color:var(--pink-text); padding-top:4px; }}
-.t{{ font-weight:900; font-size:20px; line-height:1.2; }}
+.t{{ font-family:'Anton',Impact,'Arial Narrow',sans-serif; font-weight:400; font-size:21px; line-height:1.2; letter-spacing:.01em; }}
 time{{ font-weight:700; font-size:14px; color:var(--muted); white-space:nowrap; padding-top:4px; }}
 .d{{ grid-column:2 / -1; color:var(--muted); font-size:15px; }}
 footer{{ margin-top:40px; font-size:14px; color:var(--muted); }}
