@@ -14,11 +14,11 @@ ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "templates" / "issue.html"
 
 STAGES = [
-    ("research", "Research & talks"),
-    ("proposal", "Proposal"),
-    ("official", "Official recommendation"),
-    ("vote", "On a ballot or in a bill"),
-    ("law", "Enacted"),
+    ("research", "Research & talks", "Research"),
+    ("proposal", "Proposal", "Proposal"),
+    ("official", "Official recommendation", "Official"),
+    ("vote", "On a ballot or in a bill", "Ballot"),
+    ("law", "Enacted", "Law"),
 ]
 JURISDICTIONS = {
     "us": "United States", "fr": "France", "uk": "United Kingdom",
@@ -67,16 +67,24 @@ def render_tracker(t):
                '<button class="chip-f" type="button" data-j="all" aria-pressed="true">All</button>'
                + "".join('<button class="chip-f" type="button" data-j="%s" aria-pressed="false">%s%s</button>'
                          % (j, flag(j), e(JURISDICTIONS[j])) for j in used) + "</div>")
-    out.append('<p class="swipe-hint">Swipe through the five stages →</p><div class="pipe reveal" id="pipe">')
-    for n, (sid, name) in enumerate(STAGES, 1):
+    # Phones: a five-step bar shows one stage at a time (no sideways scrolling).
+    out.append('<div class="stepper" role="group" aria-label="Choose a stage">' + "".join(
+        '<button class="step-btn" type="button" data-stage="%s" aria-pressed="%s" aria-controls="stage-%s" aria-label="Stage %d, %s: %d item%s">'
+        '<b>%d</b><span>%s</span></button>'
+        % (sid, "true" if n == 1 else "false", sid, n, e(name), cnt, "" if cnt == 1 else "s", cnt, e(short))
+        for n, (sid, name, short) in enumerate(STAGES, 1)
+        for cnt in [sum(1 for i in items if i["stage"] == sid)]) + "</div>")
+    out.append('<div class="pipe reveal" id="pipe">')
+    for n, (sid, name, _short) in enumerate(STAGES, 1):
         its = [(k, i) for k, i in enumerate(items) if i["stage"] == sid]
+        on = " on" if n == 1 else ""
         if sid == "law" and not its:
-            out.append('<div class="stage enacted"><span class="step">Stage %d</span><h3>%s</h3><p>%s</p>'
-                       '<div class="zero">0</div></div>' % (n, name, e(t["enacted_note"])))
+            out.append('<div class="stage enacted%s" id="stage-%s"><span class="step">Stage %d</span><h3>%s</h3><p>%s</p>'
+                       '<div class="zero">0</div></div>' % (on, sid, n, name, e(t["enacted_note"])))
             continue
-        out.append('<div class="stage"><span class="step">Stage %d · %d of %d</span><h3>%s</h3>'
+        out.append('<div class="stage%s" id="stage-%s"><span class="step">Stage %d · %d of %d</span><h3>%s</h3>'
                    '<div class="meter" aria-hidden="true"><i style="width:%.1f%%"></i></div>'
-                   % (n, len(its), total, e(name), len(its) / total * 100))
+                   % (on, sid, n, len(its), total, e(name), len(its) / total * 100))
         for k, i in its:
             out.append('<div class="card" data-j="%s"><div class="card-in">'
                        '<button class="item" type="button" aria-expanded="false" aria-controls="back-%d">%s'
@@ -146,15 +154,16 @@ def render_numbers(nb):
 
 
 def render_calendar(cal):
-    items = "".join("<li>%s: %s</li>" % (e(ev["label"]), e(ev["text"])) for ev in cal["events"])
+    # The list is the calendar on phones and for screen readers; wide screens draw the to-scale version.
+    items = "".join('<li><time datetime="%s">%s%s</time><p>%s</p></li>' % (e(ev["date"]), flag(ev["j"]), e(ev["label"]), e(ev["text"]))
+                    for ev in cal["events"])
     if cal.get("later"):
-        items += "<li>%s: %s</li>" % (e(cal["later"]["label"]), e(cal["later"]["text"]))
+        items += '<li><time>%s</time><p>%s</p></li>' % (e(cal["later"]["label"]), e(cal["later"]["text"]))
     return "\n".join([
         '<section class="block" id="calendar" aria-labelledby="cal-title"><div class="wrap">',
         sec_head(cal["eyebrow"], cal["title"], cal["intro"], "cal-title"),
-        '<p class="tl-hint">Scroll sideways to see the whole calendar.</p>',
-        '<div class="tl-wrap reveal" tabindex="0" aria-label="Calendar, scrollable"><div class="tl" id="tl" aria-hidden="true"><div class="axis"></div></div></div>',
-        '<ol class="sr">%s</ol></div></section>' % items])
+        '<div class="tl-wrap reveal"><div class="tl" id="tl" aria-hidden="true"><div class="axis"></div></div></div>',
+        '<ol class="tl-list">%s</ol></div></section>' % items])
 
 
 def render_dispatches(meta, stories):
@@ -198,7 +207,7 @@ def render(issue_dir, site_url):
     for i in d["tracker"]["items"]:
         if i["story"] not in ids:
             raise SystemExit("tracker item %r points to unknown story %r" % (i["title"], i["story"]))
-        if i["stage"] not in dict(STAGES):
+        if i["stage"] not in [s[0] for s in STAGES]:
             raise SystemExit("tracker item %r has unknown stage %r" % (i["title"], i["stage"]))
 
     slug = issue_dir.name
