@@ -67,7 +67,7 @@ def render_tracker(t):
                '<button class="chip-f" type="button" data-j="all" aria-pressed="true">All</button>'
                + "".join('<button class="chip-f" type="button" data-j="%s" aria-pressed="false">%s%s</button>'
                          % (j, flag(j), e(JURISDICTIONS[j])) for j in used) + "</div>")
-    out.append('<div class="pipe reveal" id="pipe">')
+    out.append('<p class="swipe-hint">Swipe through the five stages →</p><div class="pipe reveal" id="pipe">')
     for n, (sid, name) in enumerate(STAGES, 1):
         its = [(k, i) for k, i in enumerate(items) if i["stage"] == sid]
         if sid == "law" and not its:
@@ -78,12 +78,16 @@ def render_tracker(t):
                    '<div class="meter" aria-hidden="true"><i style="width:%.1f%%"></i></div>'
                    % (n, len(its), total, e(name), len(its) / total * 100))
         for k, i in its:
-            out.append('<button class="item" type="button" data-k="%d" data-j="%s" aria-expanded="false" aria-controls="detail">%s'
-                       '<span><b>%s</b><small>%s</small></span></button>'
-                       % (k, i["j"], flag(i["j"]), e(i["title"]), e(i["meta"])))
+            out.append('<div class="card" data-j="%s"><div class="card-in">'
+                       '<button class="item" type="button" aria-expanded="false" aria-controls="back-%d">%s'
+                       '<span><b>%s</b><small>%s</small></span><span class="turn" aria-hidden="true">↻</span></button>'
+                       '<div class="back" id="back-%d" aria-hidden="true" inert><span class="stamp">%s · %s</span><p>%s</p>'
+                       '<div class="back-row"><a href="#d-%s">Full story ↓</a><button type="button" aria-label="Flip back: %s">↺ Back</button></div></div>'
+                       '</div></div>'
+                       % (i["j"], k, flag(i["j"]), e(i["title"]), e(i["meta"]), k, e(i["kind"]), e(JURISDICTIONS[i["j"]]),
+                          e(i["summary"]), i["story"], e(i["title"])))
         out.append("</div>")
-    out.append('</div><div class="pipe-arrow" aria-hidden="true">Closer to law</div>'
-               '<div class="detail" id="detail" hidden aria-live="polite"></div></div></section>')
+    out.append('</div><div class="pipe-arrow" aria-hidden="true">Closer to law</div></div></section>')
     return "\n".join(out)
 
 
@@ -233,8 +237,6 @@ def render(issue_dir, site_url):
 
     # Data the page script needs for charts and interactions (plain text only).
     data = {
-        "items": [{k: i[k] for k in ("j", "title", "kind", "summary", "story")} for i in d["tracker"]["items"]],
-        "jurisdictions": JURISDICTIONS,
         "polls": lead["polls"]["rows"] if lead else [],
         "trend": lead.get("trend") if lead else None,
         "compare": lead.get("compare", {}).get("rows") if lead else None,
