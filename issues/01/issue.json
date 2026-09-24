@@ -24,40 +24,6 @@
       "when": "November 3"
     }
   ],
-  "ticker": [
-    {
-      "value": "52%",
-      "label": "PPIC yes on Prop 40"
-    },
-    {
-      "value": "45%",
-      "label": "Citrin/Politico yes"
-    },
-    {
-      "value": "€1.83bn",
-      "label": "Cour des comptes net"
-    },
-    {
-      "value": "C$39bn+",
-      "label": "CCPA wealth tax"
-    },
-    {
-      "value": "£10.4bn",
-      "label": "UK 2% minimum tax"
-    },
-    {
-      "value": "92",
-      "label": "OECD jurisdictions"
-    },
-    {
-      "value": "US$100bn",
-      "label": "TJN tax-abuse estimate"
-    },
-    {
-      "value": "0",
-      "label": "Tracked items enacted"
-    }
-  ],
   "overview": {
     "eyebrow": "The global picture · September 2026",
     "title": "A debate moving at different speeds"

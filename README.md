@@ -31,7 +31,6 @@ You only edit `issue.json` and `stories.html`. Everything else about an issue pa
 | `page_title`, `title`, `description`, `published` | Browser tab, link previews, archive and RSS (`published` is `YYYY-MM-DD`) |
 | `kicker`, `hero_lede`, `reading_time` | The dark hero |
 | `countdowns` | The day counters under the hero (they count down from each reader's date) |
-| `ticker` | The scrolling yellow strip |
 | `overview` | Heading for the intro; the text is the `overview` article in `stories.html` |
 | `tracker.items` | The idea-to-law board. `stage` is one of `research`, `proposal`, `official`, `vote`, `law`; `j` is the flag; `story` is the dispatch it links to |
 | `lead` | Optional lead-story block: `polls`, `trend` and `compare` are each optional |
