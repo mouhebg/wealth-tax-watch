@@ -233,7 +233,6 @@ def render(issue_dir, site_url):
 
     # Data the page script needs for charts and interactions (plain text only).
     data = {
-        "ticker": d["ticker"],
         "items": [{k: i[k] for k in ("j", "title", "kind", "summary", "story")} for i in d["tracker"]["items"]],
         "jurisdictions": JURISDICTIONS,
         "polls": lead["polls"]["rows"] if lead else [],

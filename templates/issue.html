@@ -86,14 +86,6 @@ a{ color:inherit; }
 .cd .d{ color:var(--night-muted); font-size:13px; }
 @media (max-width:760px){ .hero-grid{ grid-template-columns:1fr; gap:26px; } .countdown{ grid-template-columns:1fr; } .cd{ border-right:0; border-bottom:1px solid var(--night-hair); padding:16px 0 !important; display:flex; align-items:baseline; gap:16px; } .cd .n{ font-size:44px; min-width:110px; } }
 
-/* ticker */
-.ticker{ background:var(--lime); color:#141A2B; overflow:hidden; white-space:nowrap; border-top:2px solid #141A2B; border-bottom:2px solid #141A2B; }
-.ticker-track{ display:inline-flex; gap:0; animation:tick 60s linear infinite; padding:12px 0; }
-.ticker:hover .ticker-track{ animation-play-state:paused; }
-.ticker span{ font-family:var(--display); font-size:22px; letter-spacing:.02em; padding:0 22px; }
-.ticker span b{ font-family:var(--font); font-size:13px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; margin-left:8px; }
-.ticker span::after{ content:"✦"; margin-left:44px; color:#FF4F6B; font-family:var(--font); font-size:14px; vertical-align:3px; }
-@keyframes tick{ to{ transform:translateX(-50%); } }
 
 /* ---------- Sections ---------- */
 section.block{ padding:96px 0 0; }
@@ -265,11 +257,11 @@ footer a{ color:var(--night-ink); }
 @media (prefers-reduced-motion: reduce){
   html{ scroll-behavior:auto; }
   .reveal{ opacity:1; transform:none; transition:none; }
-  .seal-float, .ticker-track{ animation:none; }
+  .seal-float{ animation:none; }
   .tug-bar div, .prop .pb i, .item{ transition:none; }
 }
 @media print{
-  .bar-top, .ticker, .filters, .theme-btn, .seal-float{ display:none !important; }
+  .bar-top, .filters, .theme-btn, .seal-float{ display:none !important; }
   .reveal{ opacity:1; transform:none; }
 }
 
@@ -323,8 +315,6 @@ footer a{ color:var(--night-ink); }
   </div>
 </section>
 
-<div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker"></div></div>
-
 {{OVERVIEW}}
 {{TRACKER}}
 {{LEAD}}
@@ -372,10 +362,6 @@ footer a{ color:var(--night-ink); }
     out.innerHTML = n > 1 ? n + '<small>DAYS</small>' : n === 1 ? '1<small>DAY</small>' : n === 0 ? 'Today' : 'Done';
     el.setAttribute('aria-label', el.querySelector('.l').textContent + ', ' + el.querySelector('.d').textContent + (n > 0 ? ', in ' + n + ' days' : n === 0 ? ', today' : ', passed'));
   });
-
-  /* Ticker */
-  var once = D.ticker.map(function(t){ return '<span>' + esc(t.value) + ' <b>' + esc(t.label) + '</b></span>'; }).join('');
-  document.getElementById('ticker').innerHTML = once + once;
 
   /* Tracker: detail panel and filters */
   var pipe = document.getElementById('pipe'), detail = document.getElementById('detail');
