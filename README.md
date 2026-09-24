@@ -19,7 +19,7 @@ scripts/og-image.*     Source for the link-preview image
 
 Each issue page has inline CSS and inline SVG flags and logo.
 
-**Fonts** (following moralambition.org): Anton for headings and big numbers, PT Serif for accents (the intro line and the discussion prompt), and Proxima Nova for body text. Anton, PT Serif and the Figtree fallback load from Google Fonts. Proxima Nova is a paid Adobe Fonts typeface: to use it, create an Adobe Fonts web project for your domain and paste its `<link>` where the comment in each issue's `<head>` says. Without it, body text uses Figtree. The site has no build step on the host. `scripts/build.py` runs locally and its output is committed.
+**Fonts:** Anton for headings and big numbers, and PT Serif for accents (the intro line and the discussion prompt), both from Google Fonts. Body text and navigation use the Helvetica/Arial system fonts already installed on readers' devices, so nothing extra is downloaded for them.
 
 ## Publishing a new issue
 
