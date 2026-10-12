@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11",
+ "updated": "2026-10-12",
  "countries": [
   {
    "iso3": "ARG",
@@ -16,19 +16,19 @@
    "iso3": "AUS",
    "name": "Australia",
    "status": "debate",
-   "headline": "Parliamentary Budget Office costs the Greens' billionaire wealth tax, but the government does not back it",
-   "summary": "Australia has no wealth tax. For the 2025 election the Greens proposed an annual levy on personal net wealth above A$100m, aimed at the country's roughly 150 billionaires. The Parliamentary Budget Office costed it at about A$50bn over a decade. Labor has not adopted it.",
+   "headline": "Greens keep a billionaire wealth tax on the table as Labor targets property and super tax breaks instead",
+   "summary": "Australia has no wealth tax. The Greens, whose votes the government often needs in the Senate, took a billionaire tax to the May 2025 election. The Parliamentary Budget Office (PBO) costed a 5% annual tax on net wealth between A$100m and A$1bn and 10% above A$1bn. The Greens said an earlier 10% version would raise A$23bn over four years and about A$50bn over a decade. Labor has not adopted it. Instead, Parliament passed higher tax on earnings from super balances above A$3m from July 2026. The May 2026 budget plans to replace the 50% capital gains discount with indexation and a 30% minimum tax from July 2027, and to limit negative gearing to new homes.",
    "rate": "",
    "threshold": "",
    "revenue": "",
-   "updated": "2025-05-03"
+   "updated": "2026-05-12"
   },
   {
    "iso3": "AUT",
    "name": "Austria",
    "status": "debate",
-   "headline": "Vice-Chancellor Babler (SPÖ) presses for a millionaires' tax, but coalition partners ÖVP and NEOS oppose it",
-   "summary": "Austria abolished its net wealth tax in 1994. SPÖ leader and Vice-Chancellor Andreas Babler wants a tax on net wealth above €1m, with a €1.5m allowance for the family home. The party says it would raise about €5bn a year. Coalition partners ÖVP and NEOS reject it, and no government bill exists.",
+   "headline": "Austria's SPÖ wants a millionaires' tax, but the coalition's 2027–28 budget rules out wealth taxes",
+   "summary": "Austria abolished its net wealth tax in 1994. SPÖ leader and Vice-Chancellor Andreas Babler wants a tax on net wealth above €1m, with a €1.5m allowance for the family home. The party says it would raise about €5bn a year. In February 2026 parliament rejected a Greens motion for inheritance and gift taxes on large estates. In April 2026 the ÖVP-SPÖ-NEOS coalition agreed a 2027–28 double budget with no wealth or inheritance tax.",
    "rate": "",
    "threshold": "",
    "revenue": "",
@@ -38,52 +38,52 @@
    "iso3": "BEL",
    "name": "Belgium",
    "status": "partial",
-   "headline": "Belgium doubled its securities-account tax to 0.30% and brought in a 10% capital-gains tax in 2026",
-   "summary": "Belgium has no net wealth tax. It levies an annual tax on securities accounts with an average value above €1m. A programme law of 30 May 2026 doubled the rate from 0.15% to 0.30% for periods ending on or after 1 June 2026. A 10% tax on realised capital gains on financial assets also took effect on 1 January 2026.",
+   "headline": "Belgium doubled its securities-account tax and taxes capital gains, and wealth taxes now split its coalition",
+   "summary": "Belgium has no net wealth tax. It levies an annual tax on securities accounts with an average value above €1m. A programme law published on 1 June 2026 doubled the rate from 0.15% to 0.30% for reference periods ending on or after that date. A 10% tax on realised capital gains on financial assets applies to gains from 1 January 2026, under a law of 6 April 2026. In October 2026 talks on the next federal budget stalled, with Vooruit and Les Engagés pressing for wealthy people to contribute more.",
    "rate": "0.30% (securities accounts)",
    "threshold": "€1m per account",
    "revenue": "~€415m expected in 2026 (budget estimate)",
-   "updated": "2026-06-01"
+   "updated": "2026-10-12"
   },
   {
    "iso3": "BOL",
    "name": "Bolivia",
    "status": "in_force",
    "headline": "Large-fortunes tax survives after a legislative committee rejected Paz's repeal bill",
-   "summary": "Bolivia's Impuesto a las Grandes Fortunas, created in 2020, remains in force. In November 2025 President Rodrigo Paz announced plans to repeal it along with other taxes. In February 2026 a Chamber of Deputies committee rejected the bill to abolish it. The tax authority set a 29 May 2026 deadline for 2025 returns.",
-   "rate": "",
-   "threshold": "",
-   "revenue": "",
+   "summary": "Bolivia's Impuesto a las Grandes Fortunas, created in 2020, remains in force. It taxes individuals with net wealth above Bs 30m at 1.4%–2.4%. In November 2025 President Rodrigo Paz announced plans to repeal it along with three other taxes, saying it drove capital abroad. In February 2026 a Chamber of Deputies committee rejected the repeal bill, and the government said it would send a new one. The tax authority set 30 April 2026 for residents' 2025 returns and 29 May 2026 for non-residents.",
+   "rate": "1.4%–2.4%",
+   "threshold": "Bs 30m",
+   "revenue": "Bs 795m in total from 2020 to the end of 2024",
    "updated": "2026-02-11"
   },
   {
    "iso3": "BRA",
    "name": "Brazil",
    "status": "debate",
-   "headline": "Brazil's minimum 10% tax on top incomes took effect in 2026, but a wealth tax is still not regulated",
-   "summary": "Brazil's constitution allows a tax on large fortunes, but it has never been regulated. Law 15,270, signed on 26 November 2025 and in force since 1 January 2026, created a minimum effective income tax rising to 10% on incomes above R$1.2m a year. Brazil co-leads the international push to tax the super-rich with Spain. An April 2026 International Tax Observatory study estimated that a 2% minimum tax could raise about R$30bn a year.",
+   "headline": "Brazil's minimum 10% tax on top incomes is in force, while a large-fortunes tax bill waits in Congress",
+   "summary": "Brazil's constitution allows a tax on large fortunes, but it has never been regulated. In November 2025 the Supreme Federal Court (STF) ruled 8-1 that Congress has failed to act, but set no deadline. In February 2026 a Workers' Party (PT) deputy filed a bill for 1%–3% on net wealth above R$10m. Law 15,270, in force since 1 January 2026, created a minimum income tax rising to 10% on incomes above R$1.2m a year and a 10% withholding on large dividends. An April 2026 International Tax Observatory study estimated that a 2% minimum tax on the very richest could raise about R$30bn a year.",
    "rate": "",
    "threshold": "",
    "revenue": "",
-   "updated": "2026-04-18"
+   "updated": "2026-04-15"
   },
   {
    "iso3": "CAN",
    "name": "Canada",
    "status": "debate",
-   "headline": "New NDP leader Avi Lewis campaigns on a 1–3% wealth tax, but the Carney government is not supportive",
-   "summary": "Canada has no wealth tax. Avi Lewis, elected leader of the federal New Democratic Party (NDP) on 29 March 2026, proposes 1% on net wealth above C$10m, 2% above C$50m and 3% above C$100m, which he estimates would raise about C$40bn a year. Commentators note that Prime Minister Carney's government shows no sign of backing higher taxes on the rich.",
+   "headline": "NDP leader Avi Lewis pushes a 1–3% wealth tax, and BC Greens pitch one before the 24 October provincial vote",
+   "summary": "Canada has no wealth tax. Avi Lewis, elected leader of the federal New Democratic Party (NDP) on 29 March 2026, proposes 1% on net wealth above C$10m, 2% above C$50m and 3% above C$100m, which he says would raise about C$40bn a year. Prime Minister Carney's government shows no sign of backing it. Finance Minister Champagne has promised Budget 2026 this fall, most likely in November, but no date is set. In British Columbia, the Green Party proposes a one-time tax of 5%–20% on fortunes above C$50m, then an annual 2%–5% tax, ahead of the 24 October 2026 provincial election.",
    "rate": "",
    "threshold": "",
    "revenue": "",
-   "updated": "2026-03-29"
+   "updated": "2026-10-05"
   },
   {
    "iso3": "CHL",
    "name": "Chile",
-   "status": "debate",
+   "status": "none",
    "headline": "Chile has no wealth tax, and the Kast government's 2026 plan cuts corporate and inheritance taxes",
-   "summary": "Chile has no net wealth tax, and earlier proposals for a tax on the super-rich did not pass. President Kast's April 2026 economic reconstruction bill goes in the opposite direction. It cuts corporate income tax from 27% to 23% and lowers inheritance tax.",
+   "summary": "Chile has no net wealth tax, and earlier proposals for a tax on the super-rich did not pass. President Kast's April 2026 economic reconstruction bill goes in the opposite direction. It cuts corporate income tax from 27% to 23% and lowers inheritance tax. There is no live wealth-tax proposal from the government or a major party.",
    "rate": "",
    "threshold": "",
    "revenue": "",
@@ -93,30 +93,30 @@
    "iso3": "COL",
    "name": "Colombia",
    "status": "in_force",
-   "headline": "Colombia's permanent wealth tax stands after a court struck down the 2026 emergency decree that widened it",
-   "summary": "Since Law 2277 of 2022, Colombia has had a permanent wealth tax on net worth of 72,000 tax value units (UVT) or more, at 0.5%–1.5%. After Congress rejected the government's 2026 financing bill in December 2025, an emergency decree lowered the threshold to 40,000 UVT and raised rates. The Constitutional Court suspended the emergency in January 2026 and struck it down in April 2026.",
+   "headline": "Colombia's wealth tax still applies, but new President De la Espriella has pledged to abolish it",
+   "summary": "Since Law 2277 of 2022, Colombia has had a permanent wealth tax on individuals with net worth of 72,000 tax value units (UVT) or more, at 0.5%–1.5%. The Constitutional Court struck down Petro's December 2025 emergency, which had widened the tax, in April 2026. A separate February 2026 emergency created a one-year wealth tax on companies worth 200,000 UVT or more. The court partly suspended it in April. In July 2026 the outgoing Petro government filed a bill to cut the threshold to 40,000 UVT, but the new government wants it shelved. President Abelardo de la Espriella, sworn in on 7 August 2026, promised to scrap the wealth tax through a tax reform that still needs Congress.",
    "rate": "0.5%–1.5%",
    "threshold": "72,000 UVT",
-   "revenue": "",
-   "updated": "2026-04-09"
+   "revenue": "About COP 776bn in the first half of 2026, 56% of the annual target (individuals)",
+   "updated": "2026-08-07"
   },
   {
    "iso3": "DNK",
    "name": "Denmark",
    "status": "debate",
-   "headline": "Prime Minister Frederiksen proposed bringing back a wealth tax before the March 2026 election, then dropped it",
-   "summary": "Denmark abolished its net wealth tax in 1997. On 26 February 2026 Prime Minister Mette Frederiksen proposed bringing one back, aimed at fewer than 60,000 people, and called a snap election. On 1 May 2026 she dropped the plan during coalition talks, citing the lack of a parliamentary majority. Enhedslisten still proposes 1% on fortunes above DKK 35m.",
+   "headline": "Denmark's PM dropped her wealth-tax plan to form a government, and the new coalition is cutting taxes",
+   "summary": "Denmark abolished its net wealth tax in 1997. On 26 February 2026 Prime Minister Mette Frederiksen proposed bringing one back for fewer than 60,000 people, to raise about DKK 6bn a year, and called an election for 24 March. On 1 May she dropped the plan, saying there was no majority for it. Her new four-party coalition, which published its programme on 2 June 2026, plans to cut corporate tax from 22% to 19% and scrap the highest income-tax bracket. The Red-Green Alliance (Enhedslisten), which supports the government, still proposes 1% a year on fortunes above DKK 35m.",
    "rate": "",
    "threshold": "",
    "revenue": "",
-   "updated": "2026-05-01"
+   "updated": "2026-06-02"
   },
   {
    "iso3": "ECU",
    "name": "Ecuador",
-   "status": "repealed",
-   "headline": "Ecuador's one-off 2022 wealth contribution from the pandemic era has expired",
-   "summary": "Ecuador imposed a temporary contribution on individuals with net wealth of at least US$1m (US$2m for couples) under its 2021 post-pandemic fiscal law, payable for 2022. It was a one-off and has not been renewed.",
+   "status": "none",
+   "headline": "Ecuador has no wealth tax since its one-off 2022 pandemic-era contribution expired",
+   "summary": "Ecuador imposed a temporary contribution on individuals with net wealth of at least US$1m (US$2m for couples) under its 2021 post-pandemic fiscal law, payable for 2022. It was a one-off and has not been renewed. There is no live proposal to bring it back.",
    "rate": "",
    "threshold": "US$1m (2022 one-off)",
    "revenue": "",
@@ -125,53 +125,53 @@
   {
    "iso3": "FIN",
    "name": "Finland",
-   "status": "repealed",
-   "headline": "Finland abolished its wealth tax in 2006, and the Left Alliance proposes a 1% millionaires' tax",
-   "summary": "Finland abolished its net wealth tax in 2006. The opposition Left Alliance proposes a 1% tax on net assets above €1m, excluding the home, and cites polling that three in four Finns back an extra levy on the richest. The Orpo government has instead cut taxes for top earners.",
+   "status": "debate",
+   "headline": "Finland's Left Alliance puts a 1% millionaires' tax in its €9bn tax plan for after the April 2027 election",
+   "summary": "Finland abolished its net wealth tax in 2006. The opposition Left Alliance proposes a 1% yearly tax on net assets above €1m, not counting the owner's home. In August 2026 it put the tax into a €9bn package of tax rises for the next government, and puts its yield at about €1bn a year. A poll commissioned by the party found 75% support. Prime Minister Petteri Orpo's governing parties want the next round of budget repair to come mainly from spending cuts. The next general election is on 18 April 2027.",
    "rate": "",
    "threshold": "",
    "revenue": "",
-   "updated": "2026-01-01"
+   "updated": "2026-08-01"
   },
   {
    "iso3": "FRA",
    "name": "France",
    "status": "partial",
-   "headline": "France adds a holding-company levy to its real-estate wealth tax, and Socialists revive the rejected Zucman tax",
-   "summary": "France replaced its net wealth tax in 2018 with a real-estate wealth tax (IFI), which taxes property only. The National Assembly rejected the Zucman 2% minimum tax on fortunes above €100m on 31 October 2025. The 2026 finance law, adopted in February 2026, created a tax on luxury non-business assets held in family holding companies. In September 2026 the Socialists' counter-budget for 2027 brought back the Zucman tax.",
+   "headline": "France's 2027 budget has no wealth tax, but MPs back a holding-company levy and the left revives Zucman",
+   "summary": "France replaced its net wealth tax in 2018 with a real-estate wealth tax (IFI), which taxes property only. The National Assembly rejected the Zucman 2% minimum tax on fortunes above €100m on 31 October 2025. The 2026 finance law, adopted in February 2026, created a tax on luxury non-business assets held in family holding companies. In September 2026 the Socialists' counter-budget brought back the Zucman tax, and the Court of Audit floated a 0.5% tax on non-business wealth above €5m. The government's 2027 budget bill, presented on 1 October, contains no new wealth tax. On 8 October the Assembly's finance committee backed a 2% annual tax on investment securities held in family holdings, but the floor debate restarts from the government's text.",
    "rate": "IFI 0.5%–1.5%",
    "threshold": "IFI €1.3m (real estate)",
    "revenue": "",
-   "updated": "2026-09-16"
+   "updated": "2026-10-08"
   },
   {
    "iso3": "DEU",
    "name": "Germany",
    "status": "debate",
-   "headline": "Germany's wealth tax is suspended, but a Left motion is in committee and the Greens propose a billionaire tax",
-   "summary": "Germany has not levied its wealth tax since 1997. The Left's motion to reinstate it, at 1% above €1m rising to 12% above €1bn, was referred to the Bundestag finance committee in March 2026. In September 2026 the Greens proposed a billionaire tax starting at 2% above €500m. The SPD's January 2026 'FairErben' paper targets inheritance tax instead. The AfD has moved to abolish the dormant wealth tax law.",
+   "headline": "Germany's wealth tax is suspended, the Greens propose a billionaire tax, and inheritance tax goes to court",
+   "summary": "Germany has not levied its wealth tax since 1997. The Left's motion to reinstate it, at 1% above €1m rising to 12% above €1bn, was referred to the Bundestag finance committee in March 2026. In September 2026 the Greens proposed a billionaire tax starting at 2% above €500m. The AfD has moved to abolish the dormant wealth tax law. Reviving the wealth tax is not a project of the CDU/CSU-SPD coalition. On 12 October 2026 the Federal Constitutional Court began hearing challenges to inheritance tax. A second day on 13 October covers relief for business assets. Finance Minister Lars Klingbeil (SPD) says the party will push its 'FairErben' inheritance reform once the court rules.",
    "rate": "",
    "threshold": "",
    "revenue": "",
-   "updated": "2026-09-29"
+   "updated": "2026-10-12"
   },
   {
    "iso3": "ISL",
    "name": "Iceland",
    "status": "repealed",
    "headline": "Iceland abolished its wealth tax in 2006, and a temporary crisis-era version lapsed after 2014",
-   "summary": "Iceland abolished its net wealth tax in 2006 and reintroduced it as a temporary emergency measure after the 2008 financial crisis. That version lapsed after 2014, and there is no current proposal.",
+   "summary": "Iceland abolished its net wealth tax in 2006. After the 2008 financial crisis it brought in a temporary wealth tax of 1.25% on net assets above ISK 90m for individuals, which ran from 2010 to 2014. The Social Democratic Alliance, which now leads the government, campaigned in 2021 for a 1.5% tax above ISK 200m. Neither the 2026 nor the 2027 budget proposal includes a wealth tax.",
    "rate": "",
    "threshold": "",
    "revenue": "",
-   "updated": "2015-01-01"
+   "updated": "2026-09-07"
   },
   {
    "iso3": "IND",
    "name": "India",
    "status": "repealed",
-   "headline": "India abolished its wealth tax in 2015, and campaigners urge a 2–6% levy on the ultra-rich",
-   "summary": "India abolished its wealth tax in the 2015 budget and replaced it with a higher income-tax surcharge on incomes above ₹1 crore. In 2026 civil-society groups (CFA and Tax the Top) called for a 2%–6% wealth tax on about 1,688 individuals worth more than ₹1,000 crore. No government proposal exists.",
+   "headline": "India abolished its wealth tax in 2015, and campaigners now urge a 2–6% levy on the ultra-rich",
+   "summary": "India abolished its wealth tax in the 2015 budget, with effect from 2016, and replaced it with a higher income-tax surcharge on top earners. The February 2026 budget left income-tax rates unchanged, and the government has rejected calls to revive a wealth tax or add an inheritance tax. In April 2026 the Centre for Financial Accountability (CFA) and the Tax the Top campaign called for a 2%–6% wealth tax on about 1,688 people worth more than ₹1,000 crore. No government or major-party proposal exists.",
    "rate": "",
    "threshold": "",
    "revenue": "",
@@ -186,14 +186,14 @@
    "rate": "",
    "threshold": "",
    "revenue": "",
-   "updated": "2026-10-02"
+   "updated": "2026-10-01"
   },
   {
    "iso3": "ITA",
    "name": "Italy",
    "status": "partial",
    "headline": "Italy taxes foreign assets, while a citizens' bill and the AVS push wealth taxes above €2m and €5.4m",
-   "summary": "Italy taxes foreign financial assets (IVAFE) and foreign property (IVIE) but has no general net wealth tax. In May 2026 a committee filed '1% Equo', a popular-initiative bill for a progressive tax on wealth above €2m. It needs 50,000 signatures by 15 November 2026. In October 2026 the Greens-Left Alliance (AVS) proposed a tax on net wealth above €5.4m for the 2027 election.",
+   "summary": "Italy taxes foreign financial assets (IVAFE) and foreign property (IVIE) but has no general net wealth tax. In May 2026 a committee filed '1% Equo', a popular-initiative bill for a tax of 1% to 3.5% on net wealth above €2m, excluding the main home. Collection runs until 15 November 2026, and promoters say they have passed the 50,000 signatures needed to send it to Parliament. In October 2026 the Greens-Left Alliance (AVS) proposed a tax on net wealth above €5.4m for the 2027 election. Prime Minister Meloni's government rejects any wealth tax.",
    "rate": "IVAFE 0.2%",
    "threshold": "",
    "revenue": "",
@@ -203,19 +203,19 @@
    "iso3": "JPN",
    "name": "Japan",
    "status": "repealed",
-   "headline": "Japan's short-lived post-war net wealth tax, introduced in 1950, was repealed in the early 1950s",
-   "summary": "Japan introduced a net wealth tax in 1950 as part of the Shoup mission's tax reforms. It was repealed after about three years because of low revenue and enforcement problems. There is no current proposal.",
+   "headline": "Japan dropped its post-war wealth tax in the 1950s, and its 2026 reform targets top incomes instead",
+   "summary": "Japan introduced a net wealth tax in 1950 under the Shoup mission's tax reforms. It was dropped after about three years because it raised little and was hard to enforce. There is no current wealth-tax proposal. Instead, the 2026 tax reform, passed by the Diet on 31 March 2026, tightens a minimum tax on very high incomes from 2027. It halves the special deduction from ¥330m to ¥165m and raises the rate from 22.5% to 30%.",
    "rate": "",
    "threshold": "",
    "revenue": "",
-   "updated": "1953-01-01"
+   "updated": "2026-03-31"
   },
   {
    "iso3": "KEN",
    "name": "Kenya",
-   "status": "debate",
-   "headline": "Calls grow to tax Kenya's ultra-rich, but Finance Bill 2026 has no wealth tax",
-   "summary": "Kenya has no net wealth tax. A November 2025 Oxfam report found the richest 1% hold 78% of financial wealth, and Oxfam estimates a wealth tax could raise over $1bn a year. In September 2026 experts urged the Ruto government to build asset-tracking systems first. The Finance Bill 2026 focuses on capital gains and corporate measures instead.",
+   "status": "none",
+   "headline": "Kenya has no wealth tax, and its Finance Act 2026 added none despite civil-society calls",
+   "summary": "Kenya has never had a net wealth tax, and no government or party has proposed one. Treasury Cabinet Secretary John Mbadi has said in principle that Kenya should tax wealth more and income less. But the Finance Act 2026, signed on 23 June 2026, added no new taxes. Civil-society groups keep pushing. The Institute of Public Finance (IPF), in work with Oxfam, estimates a wealth tax on net assets above Sh129m could raise up to Sh129.5bn (about $1bn) a year. Oxfam's November 2025 report found the richest 1% hold 78% of Kenya's financial wealth. In September 2026 experts urged the state to build systems to track wealth first.",
    "rate": "",
    "threshold": "",
    "revenue": "",
@@ -247,30 +247,41 @@
    "iso3": "NLD",
    "name": "Netherlands",
    "status": "partial",
-   "headline": "Dutch law to tax actual investment returns passed the lower house but is stuck in the Senate",
-   "summary": "Under transitional rules that run until 2027, the Netherlands taxes savings and investments (Box 3) on an assumed return, with a refund if the actual return was lower. On 12 February 2026 the lower house passed the Box 3 Actual Return Act, which would tax actual returns, including some unrealised gains, from 2028. The Senate postponed its vote after a debate on 30 June 2026, and amendments are expected.",
+   "headline": "Dutch cabinet now wants a capital gains tax for most Box 3 investments from 2028, as the Senate waits",
+   "summary": "Under transitional rules, the Netherlands taxes savings and investments (Box 3) on an assumed return, with a refund if the actual return was lower. The lower house passed the Box 3 Actual Return Act on 12 February 2026, but the Senate postponed its vote on 30 June 2026. On 29 September 2026 the cabinet proposed amending the bill so that about 90% of Box 3 wealth that changes in value is taxed on realised capital gains from 2028, with other assets to follow in 2030. To pay for it, the cabinet would cut the tax-free allowance to €30,846 in 2027, which drew criticism in the lower house. The government aims to send the amendment by 2 November, and the Senate wants to decide before Christmas.",
    "rate": "36% on deemed/actual return",
+   "threshold": "€59,357 tax-free allowance per person (2026)",
+   "revenue": "",
+   "updated": "2026-09-29"
+  },
+  {
+   "iso3": "NZL",
+   "name": "New Zealand",
+   "status": "debate",
+   "headline": "Greens and Te Pāti Māori campaign on wealth taxes before the November 2026 election, but Labour says no",
+   "summary": "New Zealand has no wealth tax and no general capital gains tax. Ahead of the 7 November 2026 election, the Greens propose a 2.5% annual tax on net assets above NZ$10m per person (NZ$20m for a couple), excluding the family home. They say it would hit about the richest 0.3%. Te Pāti Māori proposes rates of 1.5% to 2.5% on net wealth above NZ$2m. Labour leader Chris Hipkins says Labour will not adopt the Greens' tax policies and is campaigning on a 28% capital gains tax on investment and commercial property instead. National, ACT and NZ First oppose new taxes of this kind.",
+   "rate": "",
    "threshold": "",
    "revenue": "",
-   "updated": "2026-06-30"
+   "updated": "2026-08-26"
   },
   {
    "iso3": "NOR",
    "name": "Norway",
    "status": "in_force",
-   "headline": "Norway keeps its net wealth tax, and the 2027 budget raises the allowance to NOK 1.99m with rates unchanged",
-   "summary": "Norway levies a combined municipal and state net wealth tax of 1.0%, rising to 1.1% above NOK 21.5m. The 2026 budget lifted the basic allowance to NOK 1.9m and made a deferred-payment scheme permanent. The 2027 budget proposal of 7 October 2026 raises the allowance to NOK 1.99m and puts off larger changes until the Tax Commission reports.",
+   "headline": "Norway's 2027 budget lifts the wealth-tax allowance to NOK 1.99m, while a commission urges a lower rate",
+   "summary": "Norway levies a combined municipal and state net wealth tax of 1.0% on net wealth above NOK 1.9m in 2026, rising to 1.1% above NOK 21.5m. The 2026 budget raised the allowance from NOK 1.76m and made a deferred-payment scheme permanent. In June 2026 the Tax Commission (NOU 2026:9) proposed a single rate of 0.25% to 0.75%, a NOK 2m allowance and an end to valuation discounts on shares and homes. The 2027 budget proposal of 7 October 2026 raises the allowance to NOK 1.99m and keeps the rates. The government plans a white paper on wider tax reform in 2027.",
    "rate": "1.0%–1.1%",
    "threshold": "NOK 1.9m (2026); NOK 1.99m proposed for 2027",
-   "revenue": "",
+   "revenue": "About NOK 34bn expected in 2025 (Ministry of Finance estimate)",
    "updated": "2026-10-07"
   },
   {
    "iso3": "PER",
    "name": "Peru",
-   "status": "debate",
-   "headline": "Peru has no wealth tax, but a left-wing candidate pitched a large-fortunes tax in the 2026 race",
-   "summary": "Peru has no general personal wealth tax, though several bills since 2020 have proposed one. In the 30 March 2026 presidential debate, candidate Ronald Atencio proposed a tax on large fortunes to fund education.",
+   "status": "none",
+   "headline": "Peru has no wealth tax, and a fringe candidate's 2026 campaign pitch has not become a live proposal",
+   "summary": "Peru has no general personal wealth tax, though several bills since 2020 have proposed one. In the 30 March 2026 presidential debate, candidate Ronald Atencio proposed a tax on large fortunes to fund education. No government or parliamentary proposal has followed.",
    "rate": "",
    "threshold": "",
    "revenue": "",
@@ -280,45 +291,56 @@
    "iso3": "PRT",
    "name": "Portugal",
    "status": "partial",
-   "headline": "Portugal levies AIMI, a surcharge on high-value residential property above €600k",
-   "summary": "Portugal has no net wealth tax. Its Adicional ao IMI (AIMI) is an annual surcharge on the combined taxable value of residential property, above €600,000 per individual (€1.2m for couples filing jointly). Rates run from 0.7% to 1.5%.",
+   "headline": "Portugal levies AIMI on high-value homes, and Livre wants a Zucman-style tax in the 2027 budget",
+   "summary": "Portugal has no net wealth tax. Its Adicional ao IMI (AIMI) is an annual surcharge on the combined taxable value of residential property, above €600,000 per individual (€1.2m for couples filing jointly). Rates run from 0.7% to 1.5%. The government delivered its 2027 budget bill on 8 October 2026 without a wealth tax. The left-wing party Livre says it will propose a surtax on fortunes above €100m during the budget debate. The final vote is due on 24 November.",
    "rate": "0.7%–1.5%",
    "threshold": "€600,000",
    "revenue": "",
-   "updated": "2026-09-30"
+   "updated": "2026-10-08"
   },
   {
    "iso3": "ZAF",
    "name": "South Africa",
    "status": "debate",
-   "headline": "South Africa's finance minister keeps rejecting a wealth tax despite budget office and opposition pressure",
-   "summary": "South Africa has no net wealth tax. Cabinet reportedly considered one during the 2025 budget impasse, and the Parliamentary Budget Office suggested it could raise about R38bn. Finance Minister Godongwana has repeatedly ruled it out, citing a small, mobile tax base. South Africa hosted the 2025 G20 and co-launched the Seville coalition on taxing the super-rich.",
+   "headline": "South Africa's Treasury keeps rejecting a wealth tax despite opposition and budget-office calls",
+   "summary": "South Africa has no net wealth tax. It taxes wealth through estate duty, donations tax, securities transfer tax and transfer duty, which together raised R21.3bn in 2024/25, about 1.15% of tax revenue. Cabinet reportedly discussed a wealth tax during the 2025 budget impasse, and the Parliamentary Budget Office said one could raise about R38bn. In March 2026 Treasury told Parliament a wealth tax would add complexity and raise too little. In a July 2026 written reply to an Economic Freedom Fighters (EFF) MP, Finance Minister Enoch Godongwana said the government is not considering one. Opposition parties, including the EFF and the MK Party, keep pressing for it.",
    "rate": "",
    "threshold": "",
    "revenue": "",
    "updated": "2026-07-02"
   },
   {
+   "iso3": "KOR",
+   "name": "South Korea",
+   "status": "partial",
+   "headline": "South Korea plans to base its property holding tax on home values, raising the burden on investors",
+   "summary": "South Korea has no net wealth tax, but its comprehensive real estate holding tax is an annual levy on the combined value of a person's property above a threshold. An August 2026 government reform plan would base the tax more on home values and owner occupancy. It raises the deduction for single-home owners who live in their home to 1.4bn won and lifts the share of value that is taxed from 60% to 70%. The government expects about 2.18tn won (about $1.5bn) of extra revenue over five years. In September the ruling party and government settled the deduction for owners who do not live in their single home.",
+   "rate": "",
+   "threshold": "",
+   "revenue": "",
+   "updated": "2026-09-21"
+  },
+  {
    "iso3": "ESP",
    "name": "Spain",
    "status": "in_force",
-   "headline": "Spain has a regional wealth tax and an indefinite 'solidarity' tax above €3m, and Sumar seeks a new levy",
-   "summary": "Spain has a regional net wealth tax. It also has a national Solidarity Tax on Large Fortunes (ISGF) on net wealth above €3m, at 1.7%–3.5%, which has been extended indefinitely. Revenue from the ISGF fell sharply after regions such as Madrid reinstated their own wealth tax. In September 2026 Sumar registered a bill in Congress for an extra levy on fortunes above €50m.",
+   "headline": "Spain has a regional wealth tax and a permanent 'solidarity' tax above €3m, and Sumar seeks 3% above €50m",
+   "summary": "Spain has a regional net wealth tax. It also has a national Solidarity Tax on Large Fortunes (ISGF) on net wealth above €3m, at 1.7%–3.5%, which has been extended indefinitely. Revenue from the ISGF fell sharply after regions such as Madrid and Andalusia reinstated their own wealth tax, because regional tax paid is credited against it. Provisional Finance Ministry figures show about €2.5bn due on 2025 wealth tax returns. In September 2026 Sumar, the junior coalition partner, registered a bill in Congress for a 3% levy on fortunes above €50m to fund a universal child-rearing benefit.",
    "rate": "ISGF 1.7%–3.5%",
    "threshold": "€3m (ISGF); €700k regional exemption",
-   "revenue": "",
+   "revenue": "~€2.51bn due on 2025 wealth tax returns (provisional, Finance Ministry, July 2026)",
    "updated": "2026-09-17"
   },
   {
    "iso3": "SWE",
    "name": "Sweden",
    "status": "debate",
-   "headline": "Sweden's left bloc won in Sept 2026, but Social Democrat leaders reject the wealth tax their allies want",
-   "summary": "Sweden abolished its wealth tax in 2007. The Left Party and the Greens want to bring it back, and Social Democrat youth and member groups push for a billionaire tax. But party leader Magdalena Andersson has said a wealth tax is not party policy. The left-leaning opposition won a narrow majority on 13 September 2026, and government talks are under way.",
+   "headline": "Sweden's left bloc won in September 2026, but its biggest party rejects the wealth tax its allies want",
+   "summary": "Sweden abolished its wealth tax in 2007. The Left Party wants an inquiry into a tax on fortunes above SEK 1bn, which it says would cover about 540 people. The Greens want a billionaire tax based on Gabriel Zucman's plan. Social Democrat leader Magdalena Andersson rejects a wealth tax and called the claimed SEK 50bn in revenue a fantasy figure. The four opposition parties won 176 of 349 seats on 13 September 2026. Andersson handed back her first mandate to form a government on 28 September, after the Left Party backed the Moderate candidate for Speaker. The Speaker gave her a second mandate from 5 October.",
    "rate": "",
    "threshold": "",
    "revenue": "",
-   "updated": "2026-09-18"
+   "updated": "2026-09-28"
   },
   {
    "iso3": "CHE",
@@ -335,22 +357,22 @@
    "iso3": "GBR",
    "name": "United Kingdom",
    "status": "debate",
-   "headline": "UK has no wealth tax, but the Nov 2025 budget added a 'mansion' surcharge and the Greens push a 1–2% levy",
-   "summary": "The UK has no annual wealth tax. The November 2025 budget introduced a High Value Council Tax surcharge on homes worth £2m or more from April 2028. The Green Party under Zack Polanski proposes 1% a year on assets above £10m and 2% above £1bn, which it says would raise about £15bn a year.",
+   "headline": "UK has no wealth tax, but Labour MPs and Greens press new Chancellor Healey before his 28 Oct budget",
+   "summary": "The UK has no annual wealth tax. The November 2025 budget introduced a High Value Council Tax surcharge on homes worth £2m or more in England from April 2028. Andy Burnham replaced Keir Starmer as Prime Minister in July 2026 and on 20 July named John Healey as Chancellor, replacing Rachel Reeves. Healey's first budget is due on 28 October 2026. A number of Labour MPs and campaigners back a 2% annual levy on assets above £10m, but analysts doubt the budget will include one. The Green Party under Zack Polanski proposes 1% a year on assets above £10m and 2% above £1bn.",
    "rate": "",
    "threshold": "",
    "revenue": "",
-   "updated": "2025-11-26"
+   "updated": "2026-07-20"
   },
   {
    "iso3": "USA",
    "name": "United States",
    "status": "debate",
-   "headline": "California votes Nov 3 on a one-time 5% billionaire tax, and Warren's bill is reintroduced",
-   "summary": "There is no federal wealth tax. In March 2026 Sen. Warren and Reps. Jayapal and Boyle reintroduced the Ultra-Millionaire Tax Act. It would tax 2% a year above $50m, plus a billionaire surcharge. California's Proposition 40, a one-time 5% tax on billionaires' net worth, is on the 3 November 2026 ballot, with Gov. Newsom backing a rival measure to cancel it. Washington state enacted a 9.9% millionaires' income tax, but its wealth tax bills stalled. Oregon unions filed a wealth-tax initiative for 2028.",
-   "rate": "",
-   "threshold": "",
-   "revenue": "",
+   "headline": "California votes on 3 November on a one-time 5% billionaire tax, with rival measures that could cancel it",
+   "summary": "There is no federal wealth tax. Bills from Sen. Warren (2% a year above $50m), Sen. Sanders and Rep. Khanna (5% a year on billionaires) and Sen. Wyden (annual tax on billionaires' gains) sit in committee with no chance of passing this Congress. California's Proposition 40, a one-time 5% tax on billionaires' net worth, is on the 3 November 2026 ballot. September polls show it narrowly ahead (45%–52% yes), but rival Propositions 41 and 42 also poll above 50%. If either gets more votes than Prop 40, the billionaire tax dies. Opponents have raised about $187m against roughly $31m for supporters. Washington enacted a 9.9% tax on income above $1m, and repeal Initiative 645 is on the same ballot. Oregon unions filed a wealth-tax initiative for 2028.",
+   "rate": "California Prop 40: one-time 5% of net worth (proposed)",
+   "threshold": "California Prop 40: net worth of $1bn or more, residents on 1 January 2026",
+   "revenue": "California Prop 40: tens of billions of dollars spread over several years from 2027 (Legislative Analyst's Office estimate)",
    "updated": "2026-10-08"
   },
   {
@@ -367,15 +389,64 @@
  ],
  "items": [
   {
+   "id": "de-bverfg-inheritance-hearing",
+   "iso3": "DEU",
+   "date": "2026-10-12",
+   "kind": "court",
+   "stage": "",
+   "level": "national",
+   "title": "German Constitutional Court hears challenges to inheritance tax rules",
+   "summary": "Bavaria argues the federal rules on valuation, allowances and rates are unconstitutional. A second hearing on 13 October covers tax breaks for business assets. A ruling is expected within months.",
+   "source": "beck-aktuell",
+   "url": "https://www.beck-aktuell.de/heute-im-recht/rechtsgeschehen/erbschaftsteuer-bverfg-bayern-klage-verhandlung-bund-laender-2026-10-12"
+  },
+  {
+   "id": "be-budget-talks-wealthy",
+   "iso3": "BEL",
+   "date": "2026-10-12",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "Belgian budget talks stall as Vooruit and Les Engagés push for the wealthy to pay more",
+   "summary": "Prime Minister Bart De Wever cancelled his 13 October State of the Union speech. Extra taxes on wealthy people are among the sticking points in finding at least €10bn.",
+   "source": "VRT NWS",
+   "url": "https://www.vrt.be/vrtnws/nl/2026/10/12/begroting-deja-vu-herhaling-vorig-jaar-analyse/"
+  },
+  {
+   "id": "de-klingbeil-inheritance",
+   "iso3": "DEU",
+   "date": "2026-10-11",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "Finance Minister Klingbeil says inheritance tax needs reform once the court rules",
+   "summary": "He criticised that large fortunes are often passed on almost tax-free. The CDU/CSU opposes a higher inheritance tax.",
+   "source": "onvista (dpa-AFX)",
+   "url": "https://www.onvista.de/news/2026/10-11-klingbeil-erbschaftsteuer-reformbeduerftig-0-10-26562773"
+  },
+  {
    "id": "or-wealth-tax-2028",
    "iso3": "USA",
    "date": "2026-10-08",
    "kind": "proposal",
    "stage": "introduced",
+   "level": "subnational",
    "title": "Oregon unions file 'Financial Assets Tax on Multimillionaires' initiative for 2028 ballot",
    "summary": "A coalition including teachers' and public-sector unions filed a state wealth-tax initiative to offset federal benefit cuts and cut taxes for low earners.",
    "source": "OPB",
    "url": "https://www.opb.org/article/2026/10/08/oregon-wealth-tax-2028-ballot/"
+  },
+  {
+   "id": "fr-holding-2pct-committee",
+   "iso3": "FRA",
+   "date": "2026-10-08",
+   "kind": "legislation",
+   "stage": "introduced",
+   "level": "national",
+   "title": "French finance committee backs 2% annual tax on investment securities held in family holdings",
+   "summary": "The amendment by Charles de Courson (LIOT group) passed in committee. The committee then rejected the whole revenue section on 9 October, so the floor debate restarts from the government's text.",
+   "source": "LCP",
+   "url": "https://lcp.fr/actualites/budget-en-commission-les-deputes-durcissent-la-fiscalite-des-holdings-familiales-et-des"
   },
   {
    "id": "no-budget-2027",
@@ -386,25 +457,52 @@
    "title": "Norway's 2027 budget proposal lifts wealth-tax allowance to NOK 1.99m, keeps rates",
    "summary": "Rates and the NOK 21.5m upper-bracket threshold are unchanged. Bigger reforms will wait for the Tax Commission's report, NOU 2026:9.",
    "source": "Revisorforeningen",
-   "url": "https://www.revisorforeningen.no/fag/nyheter/skatteendringer-i-statsbudsjettet-for-2027/"
+   "url": "https://www.revisorforeningen.no/fag/nyheter/skatteendringer-i-statsbudsjettet-for-2027/",
+   "level": "national"
   },
   {
    "id": "ca-newsom-prop42",
    "iso3": "USA",
    "date": "2026-10-05",
    "kind": "news",
-   "stage": "ballot",
+   "stage": "",
+   "level": "subnational",
    "title": "Newsom backs Prop 42 to cancel California billionaire tax and bar future wealth taxes",
    "summary": "Gov. Newsom endorsed a rival measure, funded by Sergey Brin, that would cancel Prop 40 and ban new taxes on personal property. This puts him at odds with parts of his party and labor.",
    "source": "CalMatters",
    "url": "https://calmatters.org/politics/2026/10/newsom-tax-propositions-november-election/"
   },
   {
+   "id": "ca-bc-greens-fair-share",
+   "iso3": "CAN",
+   "date": "2026-10-05",
+   "kind": "proposal",
+   "stage": "",
+   "level": "subnational",
+   "title": "BC Greens propose one-time 5%–20% tax on fortunes over C$50m ahead of provincial election",
+   "summary": "Leader Emily Lowan's Fair Share Act would follow with an annual 2%–5% wealth tax. The party says it would raise C$22.2bn in year one and C$5.4bn a year after.",
+   "source": "Daily Hive",
+   "url": "https://dailyhive.com/vancouver/bc-greens-wealth-tax-fair-share-act"
+  },
+  {
+   "id": "ca-sanders-rally",
+   "iso3": "USA",
+   "date": "2026-10-03",
+   "kind": "news",
+   "stage": "",
+   "level": "subnational",
+   "title": "Bernie Sanders rallies for California's Prop 40 in San Francisco and Los Angeles",
+   "summary": "Sanders called the billionaire tax the most important ballot measure in the country. Rep. Ro Khanna also spoke.",
+   "source": "ABC7 San Francisco",
+   "url": "https://abc7news.com/post/prop-40-vermont-senator-bernie-sanders-holds-rally-supporting-california-billionaire-tax-proposal-san-francisco/19907891/"
+  },
+  {
    "id": "ca-five-tax-measures",
    "iso3": "USA",
    "date": "2026-10-03",
    "kind": "news",
-   "stage": "ballot",
+   "stage": "",
+   "level": "subnational",
    "title": "Five tax measures on California ballot, including billionaire tax Prop 40 and rivals 41 and 42",
    "summary": "An explainer on the competing measures. If more than one passes, the one with the most votes wins. Opponents are spending hundreds of millions.",
    "source": "CalMatters",
@@ -419,7 +517,8 @@
    "title": "Italy's Greens-Left Alliance proposes wealth tax on super-rich and tax cuts for 98%",
    "summary": "The Greens-Left Alliance (AVS) election plan would tax net wealth above €5.4m. AVS also challenges Schlein and Conte to back it.",
    "source": "Il Fatto Quotidiano",
-   "url": "https://www.ilfattoquotidiano.it/2026/10/02/meno-tasse-al-98-degli-italiani-e-patrimoniale-ai-super-ricchi-la-proposta-di-avs-che-sfida-conte-e-schlein-coraggio/8525437/"
+   "url": "https://www.fanpage.it/politica/patrimoniale-sui-super-ricchi-e-abbassare-le-tasse-a-tutti-gli-altri-la-proposta-di-avs-per-le-elezioni/",
+   "level": "national"
   },
   {
    "id": "ie-alt-budgets",
@@ -430,7 +529,32 @@
    "title": "Irish opposition alternative budgets propose wealth and windfall taxes for 2027",
    "summary": "Sinn Féin and other parties set out levies on high earners, banks and wealth ahead of Budget 2027.",
    "source": "The Irish Times",
-   "url": "https://www.irishtimes.com/politics/2026/10/01/oppositions-alternative-budgets-propose-wealth-taxes-windfall-levies-and-energy-credits/"
+   "url": "https://www.irishtimes.com/politics/2026/10/01/oppositions-alternative-budgets-propose-wealth-taxes-windfall-levies-and-energy-credits/",
+   "level": "national"
+  },
+  {
+   "id": "fr-plf-2027",
+   "iso3": "FRA",
+   "date": "2026-10-01",
+   "kind": "legislation",
+   "stage": "introduced",
+   "level": "national",
+   "title": "French government presents 2027 budget bill with no new wealth tax",
+   "summary": "The bill extends the 'differential contribution', a minimum 20% tax on very high incomes first levied in 2025. It does not include the Zucman tax.",
+   "source": "franceinfo",
+   "url": "https://www.franceinfo.fr/economie/budget/gel-du-point-d-indice-des-fonctionnaires-et-des-apl-inscription-en-bts-payante-ce-que-contient-le-projet-de-loi-de-finances-2027-presente-par-le-gouvernement_8217046.html"
+  },
+  {
+   "id": "ca-prop40-nbc-poll",
+   "iso3": "USA",
+   "date": "2026-09-30",
+   "kind": "news",
+   "stage": "",
+   "level": "subnational",
+   "title": "NBC News poll puts California's billionaire tax at 48% yes, 38% no, short of a majority",
+   "summary": "Another 14% of voters were undecided, leaving the outcome open five weeks before the vote.",
+   "source": "NBC News",
+   "url": "https://www.nbcnews.com/politics/2026-election/california-poll-voters-back-billionaire-tax-proposal-falls-short-major-rcna600354"
   },
   {
    "id": "uy-wealth-concentration",
@@ -441,7 +565,20 @@
    "title": "New data put Uruguay's top 1% at about 40% of wealth, reviving the tax-the-rich debate",
    "summary": "A wealth-distribution indicator reignited calls for the PIT-CNT union federation's surcharge. The government has ruled out short-term tax changes.",
    "source": "Prensa Latina",
-   "url": "https://www.prensa-latina.cu/2026/09/29/uruguay-con-la-proporcion-mas-desigual-en-distribucion-de-la-riqueza/"
+   "url": "https://www.prensa-latina.cu/2026/09/29/uruguay-con-la-proporcion-mas-desigual-en-distribucion-de-la-riqueza/",
+   "level": "national"
+  },
+  {
+   "id": "nl-box3-capital-gains-plan",
+   "iso3": "NLD",
+   "date": "2026-09-29",
+   "kind": "proposal",
+   "stage": "",
+   "level": "national",
+   "title": "Dutch cabinet proposes capital gains tax for most Box 3 investments from 2028",
+   "summary": "A letter to parliament says about 90% of Box 3 wealth that changes in value would be taxed on gains from 2028, with the rest from 2030. The tax-free allowance would fall to €30,846 in 2027.",
+   "source": "Taxence",
+   "url": "https://www.taxence.nl/nieuws/kabinet-kiest-in-box-3-grotendeels-voor-vermogenswinstbelasting/"
   },
   {
    "id": "de-greens-billionaire-tax",
@@ -452,7 +589,20 @@
    "title": "German Greens propose tax on fortunes above €500m starting at 2%",
    "summary": "The party says the levy would hit a few hundred people and raise about €20bn a year.",
    "source": "Berliner Zeitung",
-   "url": "https://www.berliner-zeitung.de/article/vermoegensteuer-gruene-wollen-deutsche-milliardaere-staerker-zur-kasse-bitten-10442664"
+   "url": "https://www.berliner-zeitung.de/article/vermoegensteuer-gruene-wollen-deutsche-milliardaere-staerker-zur-kasse-bitten-10442664",
+   "level": "national"
+  },
+  {
+   "id": "se-andersson-returns-mandate",
+   "iso3": "SWE",
+   "date": "2026-09-28",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "Andersson hands back her mandate to form a Swedish government after the Left Party backs the Moderate Speaker",
+   "summary": "The Speaker later gave her a second mandate starting on 5 October, with a report due around 12 October.",
+   "source": "Fokus",
+   "url": "https://www.fokus.se/nyheter/andersson-ger-upp-forsok-att-bilda-regering/"
   },
   {
    "id": "ch-vaud-tax-cut",
@@ -463,18 +613,32 @@
    "title": "Vaud voters approve 12% cut in cantonal income and wealth tax",
    "summary": "Just over 53% backed the business-led initiative. The canton estimates it will lose about CHF 272m in revenue a year from 2027.",
    "source": "SWI swissinfo.ch",
-   "url": "https://www.swissinfo.ch/eng/swiss-democracy/voters-in-canton-vaud-says-yes-to-a-significant-tax-cut/92127140"
+   "url": "https://www.swissinfo.ch/eng/swiss-democracy/voters-in-canton-vaud-says-yes-to-a-significant-tax-cut/92127140",
+   "level": "national"
   },
   {
-   "id": "es-sumar-50m",
-   "iso3": "ESP",
-   "date": "2026-09-17",
-   "kind": "legislation",
-   "stage": "introduced",
-   "title": "Sumar registers bill for new tax on fortunes above €50m in Spanish Congress",
-   "summary": "The proposal targets only the very largest estates and would change the tax treatment of business assets used to cut wealth-tax bills.",
-   "source": "Mundiario",
-   "url": "https://www.mundiario.com/articulo/economia/nuevo-impuesto-que-propone-sumar-patrimonios-mas-50-millones/20260917144618441664.html"
+   "id": "kr-deduction-deal",
+   "iso3": "KOR",
+   "date": "2026-09-21",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "Korea settles property holding tax deduction and delays capital gains overhaul to November",
+   "summary": "Officials agreed the deduction for single-home owners who do not live in their home. Capital gains changes move to a November tax subcommittee.",
+   "source": "Seoul Economic Daily",
+   "url": "https://en.sedaily.com/finance/2026/09/21/korea-fixes-split-property-tax-deduction-delays-capital"
+  },
+  {
+   "id": "fr-cour-comptes-wealth-note",
+   "iso3": "FRA",
+   "date": "2026-09-21",
+   "kind": "report",
+   "stage": "",
+   "level": "national",
+   "title": "France's Court of Audit floats a 0.5% tax on non-business wealth above €5m",
+   "summary": "A note on household wealth taxation proposed a 'differential tax on personal wealth', with real-estate wealth tax paid credited against it. The free-market iFRAP foundation, which opposes it, reports an estimated yield of €1.4bn.",
+   "source": "Fondation iFRAP",
+   "url": "https://www.ifrap.org/budget-et-fiscalite/la-cour-propose-le-retour-de-lisf-sans-le-nommer"
   },
   {
    "id": "se-election-left-wins",
@@ -485,7 +649,20 @@
    "title": "Sweden's left bloc wins narrow majority, with wealth-tax supporters among its parties",
    "summary": "The Left Party and the Greens back a wealth tax, while Social Democrat leader Andersson has rejected one.",
    "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/9/17/sweden-prime-minister-to-resign-as-left-wing-bloc-seals-narrow-election-win"
+   "url": "https://www.aljazeera.com/news/2026/9/17/sweden-prime-minister-to-resign-as-left-wing-bloc-seals-narrow-election-win",
+   "level": "national"
+  },
+  {
+   "id": "es-sumar-50m",
+   "iso3": "ESP",
+   "date": "2026-09-17",
+   "kind": "legislation",
+   "stage": "introduced",
+   "level": "national",
+   "title": "Sumar registers bill for a 3% tax on fortunes above €50m in Spanish Congress",
+   "summary": "The bill would also end the family-business exemption and the joint income and wealth tax cap for these fortunes. Revenue would fund a universal child-rearing benefit.",
+   "source": "Mundiario",
+   "url": "https://www.mundiario.com/articulo/economia/nuevo-impuesto-que-propone-sumar-patrimonios-mas-50-millones/20260917144618441664.html"
   },
   {
    "id": "fr-ps-counterbudget-2027",
@@ -496,7 +673,20 @@
    "title": "French Socialists' 2027 counter-budget revives Zucman 2% minimum tax on fortunes over €100m",
    "summary": "The Socialist (PS) plan sets out €39.5bn of new revenue, with the Zucman tax as its centrepiece at an estimated €15bn. The plan is non-binding.",
    "source": "Selectra",
-   "url": "https://selectra.info/finance/actualites/marche/csg-progressive-2027-salaire-net-smic"
+   "url": "https://selectra.info/finance/actualites/marche/csg-progressive-2027-salaire-net-smic",
+   "level": "national"
+  },
+  {
+   "id": "ca-prop40-polls-sept",
+   "iso3": "USA",
+   "date": "2026-09-15",
+   "kind": "news",
+   "stage": "",
+   "level": "subnational",
+   "title": "PPIC poll: 52% back California's billionaire tax, but rival Props 41 and 42 also win majorities",
+   "summary": "The Public Policy Institute of California found 52% yes and 46% no on Prop 40 among likely voters. Prop 41 had 51% and Prop 42 had 54%. A Politico and UC Berkeley poll taken days later put Prop 40 at 45% yes and 43% no.",
+   "source": "Public Policy Institute of California",
+   "url": "https://www.ppic.org/press-release/likely-voters-send-mixed-signals-on-billionaire-wealth-tax-becerra-maintains-wide-lead-over-hilton/"
   },
   {
    "id": "ke-calls-grow",
@@ -504,10 +694,60 @@
    "date": "2026-09-10",
    "kind": "news",
    "stage": "",
+   "level": "national",
    "title": "Calls grow for Kenya to tax wealth of the ultra-rich",
    "summary": "Experts urge building asset-tracking systems before adopting a net wealth tax.",
    "source": "The Star (Kenya)",
    "url": "https://www.the-star.co.ke/business/kenya/2026-09-10-calls-grow-for-kenya-to-tax-wealth-of-the-ultra-rich"
+  },
+  {
+   "id": "se-lorentzon-wealth-tax",
+   "iso3": "SWE",
+   "date": "2026-09-06",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "Spotify co-founder Martin Lorentzon says he would leave Sweden at once if a wealth tax is brought in",
+   "summary": "He said he backs progressive taxes but opposes a yearly levy on wealth, which could force founders to sell shares to pay it.",
+   "source": "The Japan Times (Bloomberg)",
+   "url": "https://www.japantimes.co.jp/business/2026/09/06/spotify-lorentzon-sweden-wealth-tax/"
+  },
+  {
+   "id": "se-andersson-rejects-billionaire-tax",
+   "iso3": "SWE",
+   "date": "2026-09-01",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "Social Democrat leader Andersson rejects the Left Party and Greens' billionaire-tax plans",
+   "summary": "In an SVT interview she called the claimed SEK 50bn in revenue a fantasy figure and said her party has no billionaire-tax plan of its own.",
+   "source": "TV4 (TT)",
+   "url": "https://www.tv4.se/artikel/tt-260901-svtandersson1-89ba0f34/s-ledaren-avvisar-forslag-om-miljardarsskatt"
+  },
+  {
+   "id": "ca-prop40-spending",
+   "iso3": "USA",
+   "date": "2026-09-01",
+   "kind": "news",
+   "stage": "",
+   "level": "subnational",
+   "title": "Billionaire-funded group raises $187m to defeat California's billionaire tax through Props 41 and 42",
+   "summary": "Sergey Brin and other billionaires fund the opposition. Supporters, mainly the SEIU-UHW health workers' union, have raised about $31m. The measure with the most votes wins.",
+   "source": "CalMatters",
+   "url": "https://calmatters.org/health/2026/09/california-wealth-tax-prop-40-41-42/",
+   "date_approx": true
+  },
+  {
+   "id": "nz-tpm-kiwi-tax-plan",
+   "iso3": "NZL",
+   "date": "2026-08-26",
+   "kind": "proposal",
+   "stage": "introduced",
+   "level": "national",
+   "title": "Te Pāti Māori proposes a wealth tax of 1.5% to 2.5% on net wealth above NZ$2m",
+   "summary": "Its 'Kiwi Tax Plan' also adds a 5% stamp duty on home sales and makes the first NZ$30,000 of income tax-free.",
+   "source": "RNZ",
+   "url": "https://www.rnz.co.nz/news/politics_election-2026/1133037/te-pati-maori-unveils-kiwi-tax-plan-with-new-5-percent-stamp-duty"
   },
   {
    "id": "un-inc5",
@@ -515,10 +755,96 @@
    "date": "2026-08-13",
    "kind": "news",
    "stage": "",
-   "title": "UN tax convention talks close fifth session with focus on high-net-worth individuals",
-   "summary": "New York negotiations advanced the framework convention and early protocols. The next session is in Nairobi in Nov-Dec 2026.",
-   "source": "EY Tax News",
-   "url": "https://taxnews.ey.com/news/2026-1864-un-intergovernmental-negotiating-committee-advances-negotiations-on-framework-convention-and-early-protocols-during-fifth-substantive-session"
+   "level": "national",
+   "title": "UN tax convention talks close their fifth session in New York, with draft texts for all three instruments",
+   "summary": "Negotiators worked on the framework convention and two early protocols, on cross-border services and on tax disputes. The sixth session is in Nairobi from 30 November to 10 December 2026.",
+   "source": "UN Department of Economic and Social Affairs",
+   "url": "https://financing.desa.un.org/inc/fifthsession"
+  },
+  {
+   "id": "co-delaespriella-abolish",
+   "iso3": "COL",
+   "date": "2026-08-07",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "New Colombian President De la Espriella pledges to abolish the wealth tax in his inaugural speech",
+   "summary": "He said the country must stop punishing those who invest. Repeal needs a tax reform passed by Congress, which the finance minister said would come in the autumn.",
+   "source": "La República",
+   "url": "https://www.larepublica.co/economia/abelardo-de-la-espriella-se-posiciono-como-presidente-de-colombia-4453713"
+  },
+  {
+   "id": "kr-holding-tax-plan",
+   "iso3": "KOR",
+   "date": "2026-08-03",
+   "kind": "proposal",
+   "stage": "introduced",
+   "level": "national",
+   "title": "South Korea plans to base its property holding tax on home values and owner occupancy",
+   "summary": "The plan raises rates on expensive and rented homes and is expected to bring in about 2.18tn won more over five years.",
+   "source": "UPI",
+   "url": "https://www.upi.com/Top_News/World-News/2026/08/03/property-holding-tax-real-estate-policy-tax-reform/3791785809783/"
+  },
+  {
+   "id": "fi-left-alliance-9bn",
+   "iso3": "FIN",
+   "date": "2026-08-01",
+   "kind": "proposal",
+   "stage": "",
+   "level": "national",
+   "title": "Finland's Left Alliance includes a millionaires' tax in a €9bn tax package for the next government",
+   "summary": "The package also removes dividend tax relief for unlisted companies. The party says the millionaires' tax would raise about €1bn a year.",
+   "source": "Yle",
+   "url": "https://yle.fi/a/74-20243033",
+   "date_approx": true
+  },
+  {
+   "id": "co-petro-july-reform",
+   "iso3": "COL",
+   "date": "2026-07-21",
+   "kind": "legislation",
+   "stage": "introduced",
+   "level": "national",
+   "title": "Outgoing Petro government files tax bill to cut Colombia's wealth-tax threshold to 40,000 UVT",
+   "summary": "The bill aims to raise COP 21.9tn in 2027 and would roughly triple the number of wealth-tax payers. The incoming finance minister said it should be shelved.",
+   "source": "Infobae",
+   "url": "https://www.infobae.com/colombia/2026/07/21/gobierno-petro-radico-una-nueva-reforma-tributaria-para-recaudar-219-billones-en-2027-cuales-impuestos-incluye/"
+  },
+  {
+   "id": "uk-healey-chancellor",
+   "iso3": "GBR",
+   "date": "2026-07-20",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "New Prime Minister Andy Burnham names John Healey as Chancellor",
+   "summary": "Healey, a former defence secretary, replaced Rachel Reeves. His first budget is set for 28 October 2026.",
+   "source": "Bloomberg",
+   "url": "https://www.bloomberg.com/news/articles/2026-07-20/john-healey-named-chancellor-by-new-uk-pm-andy-burnham"
+  },
+  {
+   "id": "wa-i645-ballot",
+   "iso3": "USA",
+   "date": "2026-07-14",
+   "kind": "news",
+   "stage": "",
+   "level": "subnational",
+   "title": "Initiative 645 to repeal Washington's millionaires' tax qualifies for the November 2026 ballot",
+   "summary": "Let's Go Washington, led by hedge-fund founder Brian Heywood, filed about 511,000 signatures. The tax on income above $1m is due to start in 2028.",
+   "source": "Axios Seattle",
+   "url": "https://www.axios.com/local/seattle/2026/07/14/washington-millionaires-income-tax-repeal-ballot-initiative-i-645-november"
+  },
+  {
+   "id": "es-wealth-returns-2025",
+   "iso3": "ESP",
+   "date": "2026-07-03",
+   "kind": "report",
+   "stage": "",
+   "level": "national",
+   "title": "Spain's Finance Ministry reports about €2.5bn due on 2025 wealth tax returns",
+   "summary": "More than 227,800 wealth tax returns were filed in the 2026 campaign. The figures are provisional.",
+   "source": "Ministerio de Hacienda",
+   "url": "https://www.hacienda.gob.es/es-ES/Prensa/Noticias/Paginas/2026/20260703-NP-CIERRE-RENTA.aspx"
   },
   {
    "id": "za-godongwana-no",
@@ -526,10 +852,11 @@
    "date": "2026-07-02",
    "kind": "news",
    "stage": "",
-   "title": "South Africa's finance minister again rules out a wealth tax",
-   "summary": "Godongwana said income tax raises far more at lower administrative cost than a levy on the wealthiest.",
-   "source": "The Rio Times",
-   "url": "https://www.riotimesonline.com/south-africa-wealth-tax-rejected-2026/"
+   "level": "national",
+   "title": "Finance minister tells Parliament South Africa is not considering a wealth tax",
+   "summary": "Replying to EFF MP Carl Niehaus, Godongwana said existing wealth taxes raised R21.3bn in 2024/25 and that wealth taxes have failed in several countries.",
+   "source": "BusinessTech",
+   "url": "https://businesstech.co.za/news/wealth/865253/wealth-tax-on-the-rich-in-south-africa-shot-down/"
   },
   {
    "id": "nl-senate-box3",
@@ -540,7 +867,8 @@
    "title": "Dutch Senate delays vote on Box 3 actual-return tax",
    "summary": "After a full debate, the upper house paused the bill while the government considers measures to soften it.",
    "source": "Meijburg & Co",
-   "url": "https://www.meijburg.com/news/status-new-box-3-regime-after-plenary-debate-upper-house-dutch-parliament"
+   "url": "https://www.meijburg.com/news/status-new-box-3-regime-after-plenary-debate-upper-house-dutch-parliament",
+   "level": "national"
   },
   {
    "id": "newsom-national-billionaire-tax",
@@ -548,10 +876,59 @@
    "date": "2026-06-26",
    "kind": "proposal",
    "stage": "",
+   "level": "national",
    "title": "Newsom proposes national billionaires' minimum tax while opposing California's one-time levy",
-   "summary": "The California governor called for a federal minimum tax on people worth over $100m and curbs on tax-free borrowing against stock.",
-   "source": "CNN",
-   "url": "https://www.cnn.com/2026/06/26/politics/gavin-newsom-billionaire-tax-california"
+   "summary": "The California governor called for a federal minimum tax on people worth over $100m, arguing the fight belongs at the federal level.",
+   "source": "AP via ABC7",
+   "url": "https://abc7.com/post/newsom-urges-national-billionaires-tax-fighting-california/19387745/"
+  },
+  {
+   "id": "no-tax-commission-2026",
+   "iso3": "NOR",
+   "date": "2026-06-24",
+   "kind": "report",
+   "stage": "",
+   "level": "national",
+   "title": "Norway's Tax Commission proposes one lower wealth-tax rate of 0.25%–0.75% and an end to valuation discounts",
+   "summary": "The report, NOU 2026:9, would raise the allowance to NOK 2m and add a separate allowance for the main home. Members did not agree on one rate. Public consultation closed on 24 September 2026.",
+   "source": "Government of Norway",
+   "url": "https://www.regjeringen.no/no/dokumenter/nou-2026-9/id3167167/?ch=7"
+  },
+  {
+   "id": "nz-hipkins-greens-tax",
+   "iso3": "NZL",
+   "date": "2026-06-23",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "Labour's Hipkins says he will not adopt the Greens' tax plans to form a government",
+   "summary": "Hipkins said Labour disagrees with most of the Greens' package and will stick to its own capital gains tax on property.",
+   "source": "1News",
+   "url": "https://www.1news.co.nz/2026/06/23/hipkins-confident-he-can-form-coalition-with-greens-without-budging-on-tax/"
+  },
+  {
+   "id": "ke-finance-act-2026",
+   "iso3": "KEN",
+   "date": "2026-06-23",
+   "kind": "legislation",
+   "stage": "passed",
+   "level": "national",
+   "title": "Ruto signs Finance Act 2026, which adds no new taxes and no wealth tax",
+   "summary": "The law funds the Sh4.8 trillion 2026/27 budget and focuses on compliance and closing loopholes rather than new taxes.",
+   "source": "The Star (Kenya)",
+   "url": "https://www.the-star.co.ke/news/2026-06-23-ruto-signs-finance-bill-into-law-says-no-new-taxes"
+  },
+  {
+   "id": "nz-greens-super-rich-tax",
+   "iso3": "NZL",
+   "date": "2026-06-21",
+   "kind": "proposal",
+   "stage": "introduced",
+   "level": "national",
+   "title": "New Zealand Greens propose a 2.5% annual tax on net wealth above NZ$10m",
+   "summary": "The scaled-back 'super-rich tax' replaces a NZ$2m threshold and comes with an inheritance and gifts tax and higher corporate rates.",
+   "source": "RNZ",
+   "url": "https://www.rnz.co.nz/news/politics/609649/greens-propose-wealth-corporate-and-inheritance-taxes-to-fund-income-tax-changes"
   },
   {
    "id": "ca-prop40-qualifies",
@@ -559,10 +936,23 @@
    "date": "2026-06-18",
    "kind": "legislation",
    "stage": "ballot",
+   "level": "subnational",
    "title": "California one-time 5% billionaire tax qualifies for the November 2026 ballot",
    "summary": "The Secretary of State confirmed enough valid signatures. The measure taxes the net worth of billionaires living in the state on 1 January 2026, payable over five years.",
    "source": "Ballotpedia News",
    "url": "https://news.ballotpedia.org/2026/06/18/california-billionaires-tax-qualifies-for-the-november-ballot-competing-measures-pending-signature-verification/"
+  },
+  {
+   "id": "dk-coalition-tax-cuts",
+   "iso3": "DNK",
+   "date": "2026-06-02",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "Denmark's new Frederiksen-led coalition plans corporate and income-tax cuts, with no wealth tax",
+   "summary": "The programme cuts corporate tax from 22% to 19% over three years and scraps the highest income-tax bracket.",
+   "source": "Bloomberg",
+   "url": "https://www.bloomberg.com/news/articles/2026-06-02/denmark-s-new-government-plans-to-cut-corporate-income-taxes"
   },
   {
    "id": "be-tsa-doubled",
@@ -573,29 +963,56 @@
    "title": "Belgium doubles securities-account tax to 0.30% on accounts above €1m",
    "summary": "The programme law applies the higher rate to reference periods ending from 1 June 2026.",
    "source": "Degand & Partners",
-   "url": "https://blog.degandpartners.com/fr/article/avant-le-31-decembre-2026-le-calendrier-des-mesures-fiscales-deja-votees-pour-linvestisseur-et-le-dirigeant/32559"
+   "url": "https://www.degroofpetercam.com/fr-be/blog/vote-loi-programme-deux-mesures-fiscales",
+   "level": "national"
+  },
+  {
+   "id": "ke-ipf-finance-bill",
+   "iso3": "KEN",
+   "date": "2026-05-28",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "Activists urge Kenyan MPs to rework the Finance Bill to tax the rich, citing up to Sh129.5bn a year",
+   "summary": "The Institute of Public Finance proposed a wealth tax on net assets above Sh129m. Treasury said the bill raises no tax rates.",
+   "source": "The Star (Kenya)",
+   "url": "https://www.the-star.co.ke/business/2026-05-28-activists-ask-state-to-mobilise-sh129-billion-from-rich-kenyans"
   },
   {
    "id": "it-1-equo",
    "iso3": "ITA",
-   "date": "2026-05-07",
+   "date": "2026-05-13",
    "kind": "proposal",
    "stage": "introduced",
+   "level": "national",
    "title": "Popular-initiative bill for Italian wealth tax above €2m launches signature drive",
-   "summary": "The '1% Equo' committee also seeks higher inheritance tax. It needs 50,000 signatures by 15 November 2026.",
+   "summary": "The '1% Equo' bill would tax net wealth above €2m at 1% to 3.5%, excluding the main home, and raise inheritance tax. It needs 50,000 signatures by 15 November 2026.",
    "source": "Sky TG24",
    "url": "https://tg24.sky.it/economia/2026/06/06/patrimoniale-successione-tassa-super-ricchi"
   },
   {
-   "id": "at-babler-millionaires-tax",
-   "iso3": "AUT",
-   "date": "2026-05-01",
+   "id": "au-budget-2026-cgt",
+   "iso3": "AUS",
+   "date": "2026-05-12",
    "kind": "news",
    "stage": "",
-   "title": "With Austria's budget in deficit, the SPÖ and unions renew their call for a millionaires' tax",
-   "summary": "Vice-Chancellor Babler's model would tax net wealth above €1m. Coalition partners oppose it.",
-   "source": "Börse Express",
-   "url": "https://www.boerse-express.com/news/articles/1-mai-2026-steuerdebatte-spaltet-oesterreich-900715"
+   "level": "national",
+   "title": "Australia's 2026 budget breaks an election promise to curb capital gains and negative gearing breaks",
+   "summary": "The 50% capital gains discount would give way to indexation and a 30% minimum tax from July 2027. Negative gearing is limited to new homes.",
+   "source": "ABC News",
+   "url": "https://www.abc.net.au/news/2026-05-12/budget-2026-government-breaks-promise-negative-gearing-cgt/106669860"
+  },
+  {
+   "id": "wa-referendum-blocked",
+   "iso3": "USA",
+   "date": "2026-05-04",
+   "kind": "court",
+   "stage": "",
+   "level": "subnational",
+   "title": "Washington Supreme Court blocks referendum on the new 9.9% millionaires' income tax",
+   "summary": "The court ruled unanimously that the law supports state government and so is exempt from a referendum. It did not rule on whether the tax is constitutional.",
+   "source": "Washington State Standard",
+   "url": "https://washingtonstatestandard.com/2026/05/04/wa-supreme-court-bats-down-referendum-attempt-targeting-income-tax/"
   },
   {
    "id": "dk-drops-wealth-tax",
@@ -606,7 +1023,44 @@
    "title": "Danish PM Frederiksen drops wealth tax to ease government talks",
    "summary": "She said there was no parliamentary majority for the levy proposed before the March election.",
    "source": "Bloomberg",
-   "url": "https://www.bloomberg.com/news/articles/2026-05-01/danish-pm-drops-wealth-tax-to-remove-hurdle-in-government-talks-momtmmv5"
+   "url": "https://www.bloomberg.com/news/articles/2026-05-01/danish-pm-drops-wealth-tax-to-remove-hurdle-in-government-talks-momtmmv5",
+   "level": "national"
+  },
+  {
+   "id": "at-babler-millionaires-tax",
+   "iso3": "AUT",
+   "date": "2026-05-01",
+   "kind": "news",
+   "stage": "",
+   "title": "With Austria's budget in deficit, the SPÖ and unions renew their call for a millionaires' tax",
+   "summary": "Vice-Chancellor Babler's model would tax net wealth above €1m. Coalition partners oppose it.",
+   "source": "Börse Express",
+   "url": "https://www.boerse-express.com/news/articles/1-mai-2026-steuerdebatte-spaltet-oesterreich-900715",
+   "level": "national"
+  },
+  {
+   "id": "co-court-suspends-second-instalment",
+   "iso3": "COL",
+   "date": "2026-04-29",
+   "kind": "court",
+   "stage": "",
+   "level": "national",
+   "title": "Colombian court suspends second instalment of the corporate wealth tax for non-profits",
+   "summary": "The 6-3 ruling covers non-profit bodies and companies in liquidation until the court decides on the decree in full.",
+   "source": "Infobae",
+   "url": "https://www.infobae.com/colombia/2026/04/29/corte-constitucional-suspendio-provisionalmente-el-segundo-pago-del-impuesto-al-patrimonio-estos-son-los-detalles/"
+  },
+  {
+   "id": "at-double-budget-no-wealth-tax",
+   "iso3": "AUT",
+   "date": "2026-04-28",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "Austria's coalition agrees 2027–28 budget with no wealth or inheritance tax",
+   "summary": "Chancellor Stocker said there would be no wealth or inheritance tax and no property tax rise. The plan instead extends the bank levy and raises some corporate and property-gains taxes.",
+   "source": "Bundeskanzleramt",
+   "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/04/bundeskanzler-stocker-doppelbudget-2027-28-wird-oesterreich-aus-defizitverfahren-herausfuehren.html"
   },
   {
    "id": "de-afd-abolish",
@@ -617,7 +1071,8 @@
    "title": "Bundestag debates AfD motion to repeal dormant wealth tax law",
    "summary": "The motion to abolish the Wealth Tax Act (Vermögensteuergesetz) was sent to committees.",
    "source": "Deutscher Bundestag",
-   "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw17-de-vermoegensteuer-1145270"
+   "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw17-de-vermoegensteuer-1145270",
+   "level": "national"
   },
   {
    "id": "cl-kast-plan",
@@ -628,7 +1083,8 @@
    "title": "Chile's Kast sends tax package cutting corporate and inheritance taxes",
    "summary": "The reconstruction bill lowers the corporate rate from 27% to 23% and eases inheritance tax. Critics say it favours the richest.",
    "source": "T13",
-   "url": "https://www.t13.cl/amp/noticia/ex-ante/politica/los-10-cambios-tributarios-del-plan-kast-cambia-quien-beneficia-costo-fiscal-de-22-4-2026"
+   "url": "https://www.t13.cl/amp/noticia/ex-ante/politica/los-10-cambios-tributarios-del-plan-kast-cambia-quien-beneficia-costo-fiscal-de-22-4-2026",
+   "level": "national"
   },
   {
    "id": "es-br-mou",
@@ -636,8 +1092,9 @@
    "date": "2026-04-18",
    "kind": "news",
    "stage": "",
-   "title": "Spain and Brazil agree a memorandum to coordinate taxing the super-rich at Barcelona meeting",
-   "summary": "Finance ministers met during the democracy summit in Barcelona, where Gabriel Zucman presented his minimum-tax proposal.",
+   "level": "national",
+   "title": "Spain and Brazil agree to sign a memorandum on taxing the super-rich at their Barcelona meeting",
+   "summary": "Finance ministers Arcadi España and Dario Durigan met during the democracy summit in Barcelona. Gabriel Zucman presented his plan for a minimum tax of at least 2% a year on the very rich.",
    "source": "Spanish Ministry of Finance",
    "url": "https://www.hacienda.gob.es/en-gb/prensa/noticias/paginas/2026/20260418-np-reunion-espana-brasil.aspx"
   },
@@ -650,7 +1107,8 @@
    "title": "Sánchez and Lula rally progressive leaders in Barcelona, with taxing the super-rich on the agenda",
    "summary": "The 'In Defense of Democracy' gathering followed the first Spain-Brazil summit.",
    "source": "France 24",
-   "url": "https://www.france24.com/en/europe/20260418-sanchez-lula-rally-left-wing-leaders-in-spain-amid-far-right-surge"
+   "url": "https://www.thelocal.es/20260418/leftist-leaders-gather-in-spain-to-rally-against-rise-of-far-right",
+   "level": "national"
   },
   {
    "id": "br-ito-study",
@@ -661,7 +1119,8 @@
    "title": "Study estimates a 2% minimum tax on large Brazilian fortunes could raise R$30bn a year",
    "summary": "The International Tax Observatory study, with a preface by the Finance Ministry, targets about 1,430 people worth over R$500m.",
    "source": "InfoMoney",
-   "url": "https://www.infomoney.com.br/economia/brasil-arrecadaria-r-30-bi-por-ano-com-imposto-sobre-fortunas-diz-estudo/"
+   "url": "https://www.infomoney.com.br/economia/brasil-arrecadaria-r-30-bi-por-ano-com-imposto-sobre-fortunas-diz-estudo/",
+   "level": "national"
   },
   {
    "id": "mx-sheinbaum-debate",
@@ -672,7 +1131,20 @@
    "title": "Sheinbaum says a tax on large fortunes should be analysed, but no reform is planned",
    "summary": "The Mexican president defended the progressive income tax and opened the door to future study.",
    "source": "Infobae",
-   "url": "https://www.infobae.com/mexico/2026/04/14/millonarios-en-mexico-podrian-pagar-mas-impuestos-esto-dice-sheinbaum-sobre-implementar-cobro-adicional/"
+   "url": "https://www.infobae.com/mexico/2026/04/14/millonarios-en-mexico-podrian-pagar-mas-impuestos-esto-dice-sheinbaum-sobre-implementar-cobro-adicional/",
+   "level": "national"
+  },
+  {
+   "id": "glb-oxfam-imf-advice",
+   "iso3": "GLB",
+   "date": "2026-04-13",
+   "kind": "report",
+   "stage": "",
+   "level": "national",
+   "title": "Oxfam finds only 3% of IMF tax advice to governments targets wealth or income from wealth",
+   "summary": "Of 1,049 tax recommendations to 125 countries in 2022–2024, just 30 dealt with net wealth taxes or taxing income from wealth. Released before the IMF Spring Meetings.",
+   "source": "Oxfam International",
+   "url": "https://www.oxfam.org/en/press-releases/wealth-largely-absent-imf-tax-guidance-benefiting-rich"
   },
   {
    "id": "co-court-strikes-emergency",
@@ -683,7 +1155,8 @@
    "title": "Colombia's Constitutional Court strikes down Petro's economic emergency",
    "summary": "The ruling struck down the emergency under which the wealth-tax threshold had been cut and rates raised by decree.",
    "source": "Infobae",
-   "url": "https://www.infobae.com/colombia/2026/04/09/la-corte-constitucional-tumbo-la-emergencia-economica-decretada-por-el-gobierno-petro/"
+   "url": "https://www.infobae.com/colombia/2026/04/09/la-corte-constitucional-tumbo-la-emergencia-economica-decretada-por-el-gobierno-petro/",
+   "level": "national"
   },
   {
    "id": "in-wealth-tracker",
@@ -691,10 +1164,23 @@
    "date": "2026-04-01",
    "kind": "report",
    "stage": "",
+   "level": "national",
    "title": "Indian report urges 2%–6% wealth tax on 1,688 ultra-rich individuals",
-   "summary": "The Wealth Tracker India 2026 by CFA and Tax the Top says the tax could raise ₹10 lakh crore a year.",
+   "summary": "The Wealth Tracker India 2026 by CFA and Tax the Top says this tax, plus an inheritance tax, could fund about ₹10.6 lakh crore a year of welfare.",
    "source": "Madhyamam",
    "url": "https://madhyamamonline.com/india/indias-top-1688-ultra-rich-hold-half-of-gdp-wealth-report-pushes-for-2-6-tax-1508460"
+  },
+  {
+   "id": "jp-minimum-tax-2027",
+   "iso3": "JPN",
+   "date": "2026-03-31",
+   "kind": "legislation",
+   "stage": "passed",
+   "level": "national",
+   "title": "Japan's Diet passes 2026 tax reform, tightening a minimum tax on ultra-high incomes from 2027",
+   "summary": "The reform lowers the deduction under the high-income minimum tax from ¥330m to ¥165m and raises its rate from 22.5% to 30%. It is not a wealth tax.",
+   "source": "KPMG",
+   "url": "https://kpmg.com/us/en/taxnewsflash/news/2026/03/japan-2026-tax-reform-bills.html"
   },
   {
    "id": "wa-millionaires-tax-signed",
@@ -702,6 +1188,7 @@
    "date": "2026-03-30",
    "kind": "legislation",
    "stage": "passed",
+   "level": "subnational",
    "title": "Washington enacts 9.9% 'millionaires' tax' on income over $1m, but wealth tax bills stall",
    "summary": "SB 6346 takes effect in 2028. Separate bills for a tax on financial intangible assets stayed in committee when the 2026 session ended.",
    "source": "ITEP",
@@ -716,7 +1203,8 @@
    "title": "Peruvian presidential candidate proposes tax on large fortunes in debate",
    "summary": "Ronald Atencio pitched a wealth tax with other measures to fund education.",
    "source": "RPP",
-   "url": "https://rpp.pe/politica/elecciones/ronald-atencio-propone-impuestos-a-las-grandes-fortunas-para-financiar-la-educacion-noticia-1682339"
+   "url": "https://rpp.pe/politica/elecciones/ronald-atencio-propone-impuestos-a-las-grandes-fortunas-para-financiar-la-educacion-noticia-1682339",
+   "level": "national"
   },
   {
    "id": "ca-lewis-ndp",
@@ -727,7 +1215,8 @@
    "title": "Avi Lewis wins NDP leadership on platform including wealth tax on richest 1%",
    "summary": "Lewis estimates his wealth tax would raise about C$40bn a year.",
    "source": "CP24",
-   "url": "https://www.cp24.com/news/canada/2026/03/29/avi-lewis-is-the-next-leader-of-the-ndp"
+   "url": "https://www.cp24.com/news/canada/2026/03/29/avi-lewis-is-the-next-leader-of-the-ndp",
+   "level": "national"
   },
   {
    "id": "us-ultra-millionaire-tax-2026",
@@ -738,7 +1227,32 @@
    "title": "Warren, Jayapal and Boyle reintroduce Ultra-Millionaire Tax Act with 45+ lawmakers",
    "summary": "The bill would levy 2% a year on net worth over $50m plus a surcharge on billionaires. Saez and Zucman estimate it would raise about $6.2tn over ten years.",
    "source": "Office of Rep. Pramila Jayapal",
-   "url": "https://jayapal.house.gov/2026/03/26/jayapal-warren-boyle-45-lawmakers-renew-push-for-wealth-tax-on-ultra-millionaires-and-billionaires/"
+   "url": "https://jayapal.house.gov/2026/03/26/jayapal-warren-boyle-45-lawmakers-renew-push-for-wealth-tax-on-ultra-millionaires-and-billionaires/",
+   "level": "national"
+  },
+  {
+   "id": "za-treasury-hearings-2026",
+   "iso3": "ZAF",
+   "date": "2026-03-15",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "Treasury rejects renewed wealth-tax calls at Parliament's 2026 budget hearings",
+   "summary": "Treasury's Chris Axelson said a dedicated wealth tax would add administrative complexity and might not raise enough to justify its costs.",
+   "source": "Business Report",
+   "url": "https://businessreport.co.za/economy/2026-03-15-treasury-rejects-wealth-tax-calls-defends-south-africas-high-personal-income-tax-burden/"
+  },
+  {
+   "id": "au-div296-passed",
+   "iso3": "AUS",
+   "date": "2026-03-10",
+   "kind": "legislation",
+   "stage": "passed",
+   "level": "national",
+   "title": "Parliament passes higher tax on earnings from super balances above A$3m, from July 2026",
+   "summary": "The total rate rises to 30% on earnings linked to balances above A$3m and 40% above A$10m. Unrealised gains are excluded.",
+   "source": "Grant Thornton",
+   "url": "https://www.grantthornton.com.au/insights/client-alerts/division-296-tax-has-passed-parliament-and-will-take-effect-from-1-july-2026/"
   },
   {
    "id": "ar-bienes-personales-2026",
@@ -749,7 +1263,8 @@
    "title": "Argentina's personal assets tax has higher minimums and lower rates for 2026 filings",
    "summary": "Thresholds were indexed about 31% for inflation and the top 1.25% bracket disappears as rates step down toward 2027.",
    "source": "Canal26",
-   "url": "https://www.canal26.com/economia/2026/03/10/ganancias-y-bienes-personales-2026-los-cambios-clave-que-deberias-conocer-antes-de-pagar/"
+   "url": "https://www.canal26.com/economia/2026/03/10/ganancias-y-bienes-personales-2026-los-cambios-clave-que-deberias-conocer-antes-de-pagar/",
+   "level": "national"
   },
   {
    "id": "de-linke-motion",
@@ -760,7 +1275,8 @@
    "title": "Left Party motion to reinstate German wealth tax sent to finance committee",
    "summary": "The motion proposes 1% above €1m rising to 5% at €50m and 12% above €1bn.",
    "source": "Deutscher Bundestag",
-   "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-vermoegensteuer-1150522"
+   "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-vermoegensteuer-1150522",
+   "level": "national"
   },
   {
    "id": "mx-pt-initiative",
@@ -771,7 +1287,20 @@
    "title": "Mexican PT deputy proposes 1.5%–3.5% wealth tax on fortunes above MXN 100m",
    "summary": "The initiative aims to raise MXN 40–60bn a year to reduce poverty.",
    "source": "Expansión Política",
-   "url": "https://politica.expansion.mx/congreso/2026/03/05/proponen-impuesto-mexico-reducir-pobreza"
+   "url": "https://politica.expansion.mx/congreso/2026/03/05/proponen-impuesto-mexico-reducir-pobreza",
+   "level": "national"
+  },
+  {
+   "id": "us-sanders-khanna-5pct",
+   "iso3": "USA",
+   "date": "2026-03-02",
+   "kind": "legislation",
+   "stage": "introduced",
+   "level": "national",
+   "title": "Sanders and Khanna introduce a 5% annual wealth tax on America's 938 billionaires",
+   "summary": "The Make Billionaires Pay Their Fair Share Act would raise an estimated $4.4tn. It was referred to the Senate Finance Committee.",
+   "source": "Office of Sen. Bernie Sanders",
+   "url": "https://www.sanders.senate.gov/press-releases/news-sanders-and-khanna-introduce-legislation-to-tax-billionaire-wealth-and-invest-in-working-families/"
   },
   {
    "id": "dk-proposes-wealth-tax",
@@ -782,7 +1311,20 @@
    "title": "Danish PM proposes reinstating wealth tax as she calls snap election",
    "summary": "Frederiksen's plan, expected to raise about $1bn, would hit fewer than 60,000 people.",
    "source": "The Spokesman-Review (Bloomberg)",
-   "url": "https://www.spokesman.com/stories/2026/feb/27/danish-premier-bets-on-1-billion-wealth-tax-to-kee/"
+   "url": "https://www.spokesman.com/stories/2026/feb/27/danish-premier-bets-on-1-billion-wealth-tax-to-kee/",
+   "level": "national"
+  },
+  {
+   "id": "at-greens-inheritance-rejected",
+   "iso3": "AUT",
+   "date": "2026-02-25",
+   "kind": "legislation",
+   "stage": "rejected",
+   "level": "national",
+   "title": "Austrian parliament rejects Greens' motion for inheritance and gift taxes on large estates",
+   "summary": "No other group backed it. ÖVP and NEOS said such taxes would make business handovers and saving harder.",
+   "source": "Parlament Österreich",
+   "url": "https://www.parlament.gv.at/aktuelles/pk/jahr_2026/pk0135"
   },
   {
    "id": "fr-holding-tax-lf2026",
@@ -793,7 +1335,8 @@
    "title": "France's 2026 finance law creates tax on luxury assets held in family holding companies",
    "summary": "The law was adopted on 2 February using Article 49.3, and the Constitutional Council largely upheld it. The levy targets non-business assets in holdings worth over €5m.",
    "source": "Scala Patrimoine",
-   "url": "https://scala-patrimoine.fr/2026/02/24/nouvelle-taxe-sur-les-holdings-patrimoniales-ce-que-change-avec-la-loi-de-finances-2026/"
+   "url": "https://scala-patrimoine.fr/2026/02/24/nouvelle-taxe-sur-les-holdings-patrimoniales-ce-que-change-avec-la-loi-de-finances-2026/",
+   "level": "national"
   },
   {
    "id": "nl-house-box3",
@@ -804,7 +1347,8 @@
    "title": "Dutch lower house passes Box 3 reform taxing actual investment returns from 2028",
    "summary": "The bill replaces deemed returns on savings and investments with taxation of real returns.",
    "source": "NL Times",
-   "url": "https://nltimes.nl/2026/02/13/dutch-parliament-greenlights-new-box-3-tax-set-take-effect-2028"
+   "url": "https://nltimes.nl/2026/02/13/dutch-parliament-greenlights-new-box-3-tax-set-take-effect-2028",
+   "level": "national"
   },
   {
    "id": "bo-committee-rejects-repeal",
@@ -812,10 +1356,36 @@
    "date": "2026-02-11",
    "kind": "legislation",
    "stage": "rejected",
+   "level": "national",
    "title": "Bolivian deputies' committee rejects bill to abolish large-fortunes tax",
-   "summary": "The planning committee kept the wealth tax while approving repeal of the financial transactions tax.",
+   "summary": "The planning committee kept the wealth tax while approving repeal of the financial transactions tax. The committee chair said the government must send a new bill.",
    "source": "La Razón",
    "url": "https://larazon.bo/economia-y-empresa/2026/02/11/comision-rechaza-abrogar-el-impuesto-a-las-grandes-fortunas/"
+  },
+  {
+   "id": "br-plp-5-2026",
+   "iso3": "BRA",
+   "date": "2026-02-02",
+   "kind": "legislation",
+   "stage": "introduced",
+   "level": "national",
+   "title": "PT deputy files bill for a 1%–3% tax on Brazilian fortunes above R$10m",
+   "summary": "Bill PLP 5/2026 by Pedro Uczai would send all revenue to the anti-poverty fund. It has not advanced.",
+   "source": "Mattos Filho",
+   "url": "https://www.mattosfilho.com.br/unico/plp-imposto-grandes-fortunas/"
+  },
+  {
+   "id": "co-corporate-wealth-tax-2026",
+   "iso3": "COL",
+   "date": "2026-02-01",
+   "kind": "legislation",
+   "stage": "in force",
+   "level": "national",
+   "title": "Colombia's second emergency creates a one-year wealth tax on companies worth 200,000 UVT or more",
+   "summary": "Decree 173, issued under the February 2026 emergency for climate disasters, applies to companies for 2026. The first instalment was due on 1 April.",
+   "source": "Holland & Knight",
+   "url": "https://www.hklaw.com/en/insights/publications/2026/02/nuevo-impuesto-al-patrimonio-para-personas-juridicas-en-colombia",
+   "date_approx": true
   },
   {
    "id": "co-court-suspends",
@@ -826,7 +1396,8 @@
    "title": "Colombian court provisionally suspends emergency decree and its new taxes",
    "summary": "The court voted 6-2 to suspend the emergency, including the decree widening the wealth tax to holdings above 40,000 tax value units (UVT).",
    "source": "Infobae",
-   "url": "https://www.infobae.com/colombia/2026/01/30/tras-el-freno-de-la-corte-se-abre-el-debate-sobre-que-pasara-con-el-dinero-de-los-impuestos-cobrados-bajo-la-emergencia-economica/"
+   "url": "https://www.infobae.com/colombia/2026/01/30/tras-el-freno-de-la-corte-se-abre-el-debate-sobre-que-pasara-con-el-dinero-de-los-impuestos-cobrados-bajo-la-emergencia-economica/",
+   "level": "national"
   },
   {
    "id": "oxfam-davos-2026",
@@ -837,7 +1408,8 @@
    "title": "Oxfam says billionaire wealth hit a record $18.3tn in 2025 and calls for taxes on extreme wealth",
    "summary": "Released as Davos opened, the 'Resisting the Rule of the Rich' report urges higher taxes on the richest.",
    "source": "The Peninsula",
-   "url": "https://thepeninsulaqatar.com/article/19/01/2026/surging-billionaire-wealth-a-political-threat-oxfam-warns-as-davos-opens"
+   "url": "https://thepeninsulaqatar.com/article/19/01/2026/surging-billionaire-wealth-a-political-threat-oxfam-warns-as-davos-opens",
+   "level": "national"
   },
   {
    "id": "de-spd-fairerben",
@@ -848,7 +1420,8 @@
    "title": "SPD unveils 'FairErben' inheritance tax concept with €1m lifetime allowance",
    "summary": "The paper would sharply limit business-asset exemptions. It is a discussion paper, not a bill.",
    "source": "Rödl & Partner",
-   "url": "https://www.roedl.com/insights/spd-veroeffentlicht-reformideen-fuer-erbschaftsteuer/"
+   "url": "https://www.roedl.com/insights/spd-veroeffentlicht-reformideen-fuer-erbschaftsteuer/",
+   "level": "national"
   },
   {
    "id": "be-cgt",
@@ -856,10 +1429,23 @@
    "date": "2026-01-01",
    "kind": "legislation",
    "stage": "in force",
+   "level": "national",
    "title": "Belgium introduces 10% tax on capital gains from financial assets",
-   "summary": "Gains from 1 January 2026 are taxed at 10% above an indexed €10,000 annual exemption.",
-   "source": "KPMG Belgium",
-   "url": "https://kpmg.com/be/en/home/insights/2025/12/ctx-belgium-new-capital-gains-tax-on-financial-assets.html"
+   "summary": "The law of 6 April 2026 taxes gains realised from 1 January 2026 at 10% above an indexed €10,000 annual exemption. Gains built up before 2026 are exempt.",
+   "source": "BDO Belgium",
+   "url": "https://www.bdo.be/en-gb/insights/news-alerts/2026/capital-gains-tax-on-financial-assets-in-2026-complete-guide"
+  },
+  {
+   "id": "glb-taxobs-five-lessons",
+   "iso3": "GLB",
+   "date": "2025-12-11",
+   "kind": "report",
+   "stage": "",
+   "level": "national",
+   "title": "EU Tax Observatory study says past European wealth taxes failed through narrow bases, not mainly flight",
+   "summary": "The study for the Friedrich-Ebert-Stiftung urges broad bases, high thresholds, minimum-tax top-ups and anti-exile rules. It was presented in Brussels on 11 December 2025.",
+   "source": "Friedrich-Ebert-Stiftung / EU Tax Observatory",
+   "url": "https://brussels.fes.de/e/impulse-wealth-taxes-and-high-net-worth-individuals-in-europe-five-lessons-for-the-twenty-first-century.html"
   },
   {
    "id": "co-reform-sunk",
@@ -870,7 +1456,8 @@
    "title": "Colombian Congress sinks Petro's 2026 financing tax reform",
    "summary": "Economic committees voted 9-4 against the bill, and the government then turned to emergency decrees.",
    "source": "Publimetro",
-   "url": "https://www.publimetro.co/noticias/2025/12/09/urgente-hundieron-la-reforma-tributaria-del-gobierno-petro-en-el-congreso/"
+   "url": "https://www.publimetro.co/noticias/2025/12/09/urgente-hundieron-la-reforma-tributaria-del-gobierno-petro-en-el-congreso/",
+   "level": "national"
   },
   {
    "id": "no-budget-2026",
@@ -881,18 +1468,46 @@
    "title": "Norway's 2026 budget raises wealth-tax allowance and makes deferral scheme permanent",
    "summary": "The basic allowance rose from NOK 1.76m to NOK 1.9m and the low-valuation limit for homes rose to NOK 14m.",
    "source": "Government of Norway",
-   "url": "https://www.regjeringen.no/en/documents/prop.-1-ls-20252026/id3125412/?ch=1"
+   "url": "https://www.regjeringen.no/en/documents/prop.-1-ls-20252026/id3125412/?ch=1",
+   "level": "national"
   },
   {
    "id": "za-off-table",
    "iso3": "ZAF",
-   "date": "2025-12-01",
+   "date": "2025-12-04",
    "kind": "news",
    "stage": "",
-   "title": "Wealth tax off the table for South Africa, says Treasury",
-   "summary": "The finance minister reiterated that the current system raises and redistributes revenue more effectively.",
-   "source": "IFC Review",
-   "url": "https://www.ifcreview.com/news/2025/december/south-africa-new-wealth-tax-for-south-africa-off-the-table/"
+   "level": "national",
+   "title": "Godongwana doubles down that a wealth tax is not viable for South Africa",
+   "summary": "The finance minister said South Africa already taxes the wealthy as heavily as many rich countries. Treasury warned emigration could cost up to R49bn a year.",
+   "source": "BusinessTech",
+   "url": "https://businesstech.co.za/news/finance/845488/good-news-for-the-top-1-in-south-africa/"
+  },
+  {
+   "id": "ke-ipf-report",
+   "iso3": "KEN",
+   "date": "2025-12-01",
+   "kind": "report",
+   "stage": "",
+   "level": "national",
+   "title": "Institute of Public Finance and Oxfam ask whether Kenya can get wealth taxation right",
+   "summary": "The report finds Kenya lacks an enforceable framework for taxing the wealthy and sets out what must be fixed for a wealth tax to work.",
+   "source": "Institute of Public Finance",
+   "url": "https://ipfglobal.or.ke/resources/tax-the-rich-can-kenya-get-wealth-taxation-right/",
+   "date_approx": true
+  },
+  {
+   "id": "glb-world-inequality-report-2026",
+   "iso3": "GLB",
+   "date": "2025-12-01",
+   "kind": "report",
+   "stage": "",
+   "level": "national",
+   "title": "World Inequality Report 2026 backs a global minimum tax on billionaires and centimillionaires",
+   "summary": "The World Inequality Lab finds fewer than 60,000 people, the top 0.001%, own three times the wealth of the poorest half of humanity.",
+   "source": "World Inequality Lab",
+   "url": "https://wir2026.wid.world/insight/multi-millionaires-taxation/",
+   "date_approx": true
   },
   {
    "id": "ch-juso-rejected",
@@ -903,18 +1518,8 @@
    "title": "Swiss voters reject JUSO initiative for 50% tax on inheritances over CHF 50m",
    "summary": "About 78% voted no and no canton approved it. The proceeds would have funded climate measures.",
    "source": "blue News",
-   "url": "https://www.bluewin.ch/en/news/switzerland/juso-inheritance-tax-initiative-rejected-with-783-percent-no-vote-2987118.html"
-  },
-  {
-   "id": "ke-oxfam-report",
-   "iso3": "KEN",
-   "date": "2025-11-27",
-   "kind": "report",
-   "stage": "",
-   "title": "Oxfam says the richest 1% hold 78% of Kenya's financial wealth",
-   "summary": "The report urges progressive taxation of wealth and ring-fenced spending on health and education.",
-   "source": "Pulse Kenya",
-   "url": "https://www.pulse.co.ke/story/oxfam-kenya-wealth-report-2025-reveals-stark-inequalities-in-kenyas-wealth-distribution-2025112709203205529"
+   "url": "https://www.bluewin.ch/en/news/switzerland/juso-inheritance-tax-initiative-rejected-with-783-percent-no-vote-2987118.html",
+   "level": "national"
   },
   {
    "id": "uk-budget-2025-mansion",
@@ -925,7 +1530,20 @@
    "title": "UK budget adds surcharge on homes worth £2m+ instead of a wealth tax",
    "summary": "The High Value Council Tax charge starts in April 2028, alongside higher tax rates on dividends and property income.",
    "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2025/11/26/five-key-takeaways-from-the-uks-tax-and-spending-budget"
+   "url": "https://www.aljazeera.com/news/2025/11/26/five-key-takeaways-from-the-uks-tax-and-spending-budget",
+   "level": "national"
+  },
+  {
+   "id": "ke-oxfam-report",
+   "iso3": "KEN",
+   "date": "2025-11-26",
+   "kind": "report",
+   "stage": "",
+   "level": "national",
+   "title": "Oxfam says Kenya's 125 richest people hold more wealth than 42.6 million citizens",
+   "summary": "The report also found the richest 1% hold 78% of financial wealth and called Kenya's tax system regressive.",
+   "source": "Citizen Digital",
+   "url": "https://www.citizen.digital/news/125-richest-kenyans-hold-more-wealth-than-426-million-people-oxfam-n373610"
   },
   {
    "id": "br-lei-15270",
@@ -936,7 +1554,8 @@
    "title": "Lula signs law creating minimum 10% tax on Brazil's top incomes",
    "summary": "Law 15,270 exempts earnings up to R$5,000 a month and imposes a minimum rate on incomes above R$600k, reaching 10% above R$1.2m, from 2026.",
    "source": "Reforma Tributária",
-   "url": "https://www.reformatributaria.com/governo/leia-na-integra-a-lei-do-novo-ir-e-do-imposto-minimo/"
+   "url": "https://www.reformatributaria.com/governo/leia-na-integra-a-lei-do-novo-ir-e-do-imposto-minimo/",
+   "level": "national"
   },
   {
    "id": "bo-paz-announces-repeal",
@@ -947,7 +1566,8 @@
    "title": "Bolivian President Paz moves to scrap large-fortunes tax to attract investment",
    "summary": "Paz announced repeal of four taxes, arguing the 2020 wealth tax drove investment abroad.",
    "source": "Local10 / AP",
-   "url": "https://www.local10.com/espanol/2025/11/25/bolivia-paz-deroga-impuestos-para-atraer-inversiones-y-recorta-el-gasto-publico/"
+   "url": "https://www.local10.com/espanol/2025/11/25/bolivia-paz-deroga-impuestos-para-atraer-inversiones-y-recorta-el-gasto-publico/",
+   "level": "national"
   },
   {
    "id": "g20-johannesburg",
@@ -958,7 +1578,8 @@
    "title": "G20 Johannesburg summit ends without progress on taxing the super-rich, says Greenpeace",
    "summary": "Advocates praised South Africa's leadership but said no new commitments followed the 2024 Rio pledge.",
    "source": "Greenpeace International",
-   "url": "https://www.greenpeace.org/international/press-release/79950/g20-misses-chance-wealth-tax-fairer-global-tax-rules/"
+   "url": "https://www.greenpeace.org/international/press-release/79950/g20-misses-chance-wealth-tax-fairer-global-tax-rules/",
+   "level": "national"
   },
   {
    "id": "un-inc3-nairobi",
@@ -969,7 +1590,20 @@
    "title": "UN tax convention talks resume in Nairobi with focus on high-net-worth individuals",
    "summary": "The third negotiating session debated an article on taxing wealthy individuals alongside allocation of taxing rights.",
    "source": "IBFD",
-   "url": "https://www.ibfd.org/news/un-tax-convention-talks-resume-nairobi-focus-fair-allocation-taxing-rights-high-net-worth"
+   "url": "https://www.ibfd.org/news/un-tax-convention-talks-resume-nairobi-focus-fair-allocation-taxing-rights-high-net-worth",
+   "level": "national"
+  },
+  {
+   "id": "br-stf-ado55",
+   "iso3": "BRA",
+   "date": "2025-11-06",
+   "kind": "court",
+   "stage": "",
+   "level": "national",
+   "title": "Brazil's Supreme Court rules Congress has failed to create the constitutional tax on large fortunes",
+   "summary": "The court ruled 8-1 in a case brought by the PSOL party in 2019, but set no deadline for Congress to act.",
+   "source": "Poder360",
+   "url": "https://www.poder360.com.br/poder-justica/entenda-a-decisao-do-stf-sobre-o-imposto-sobre-grandes-fortunas/"
   },
   {
    "id": "uy-pitcnt-proposal",
@@ -980,7 +1614,8 @@
    "title": "Uruguayan unions propose 1% surcharge on wealth of the richest 1%",
    "summary": "The PIT-CNT plan would hit about 25,000 people with over US$1m and fund households with children.",
    "source": "El Observador",
-   "url": "https://www.elobservador.com.uy/nacional/asi-es-la-propuesta-del-pit-cnt-cobrar-un-impuesto-al-1-mas-rico-alcanzara-25-mil-personas-n6025827"
+   "url": "https://www.elobservador.com.uy/nacional/asi-es-la-propuesta-del-pit-cnt-cobrar-un-impuesto-al-1-mas-rico-alcanzara-25-mil-personas-n6025827",
+   "level": "national"
   },
   {
    "id": "fr-zucman-rejected",
@@ -991,7 +1626,20 @@
    "title": "French National Assembly rejects Zucman tax and Socialist alternative in 2026 budget debate",
    "summary": "Lawmakers voted down the 2% levy on wealth above €100m and a 3% levy above €10m. The government offered a holding-company tax instead.",
    "source": "France 24",
-   "url": "https://www.france24.com/en/france/20251031-french-parliament-debates-duelling-proposals-tax-on-wealthy-zucman-socialist-party"
+   "url": "https://www.france24.com/en/france/20251031-french-parliament-debates-duelling-proposals-tax-on-wealthy-zucman-socialist-party",
+   "level": "national"
+  },
+  {
+   "id": "il-mark-to-market-2025",
+   "iso3": "USA",
+   "date": "2025-10-28",
+   "kind": "proposal",
+   "stage": "introduced",
+   "level": "subnational",
+   "title": "Illinois House Democrats float 4.95% tax on billionaires' unrealized gains to fund transit",
+   "summary": "The plan was dropped from the final transit bill two days later after Gov. Pritzker opposed new revenue of this kind.",
+   "source": "Capitol News Illinois",
+   "url": "https://capitolnewsillinois.com/news/house-dems-eye-taxes-on-entertainment-billionaires-investments-to-fund-transit/"
   },
   {
    "id": "ca-billionaire-tax-filed",
@@ -999,10 +1647,35 @@
    "date": "2025-10-27",
    "kind": "proposal",
    "stage": "introduced",
+   "level": "subnational",
    "title": "Union-backed one-time billionaire tax initiative filed in California",
    "summary": "SEIU-UHW's proposal would impose a one-time 5% tax on billionaires' wealth to fund health care after federal cuts.",
    "source": "Axios",
    "url": "https://www.axios.com/local/san-francisco/2025/10/27/california-billionaires-tax-ballot-initiative"
+  },
+  {
+   "id": "us-wyden-billionaires-income-tax",
+   "iso3": "USA",
+   "date": "2025-09-17",
+   "kind": "legislation",
+   "stage": "introduced",
+   "level": "national",
+   "title": "Wyden reintroduces Billionaires Income Tax Act to tax billionaires' gains every year",
+   "summary": "The bill (S.2845) would end deferral strategies such as 'buy, borrow, die'. It sits in the Senate Finance Committee.",
+   "source": "Congress.gov",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2845/all-info"
+  },
+  {
+   "id": "no-election-2025",
+   "iso3": "NOR",
+   "date": "2025-09-08",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "Norway's Labour Party wins re-election after a campaign where the wealth tax was a central issue",
+   "summary": "Labour defended the tax, the Conservatives wanted it cut and the Progress Party wanted it scrapped. Labour put the cost of abolishing it at NOK 34bn a year.",
+   "source": "Euronews",
+   "url": "https://www.euronews.com/2025/09/09/norways-labor-party-claims-victory-in-general-election"
   },
   {
    "id": "ffd4-seville-coalition",
@@ -1010,10 +1683,36 @@
    "date": "2025-07-01",
    "kind": "news",
    "stage": "",
-   "title": "Spain, Brazil and South Africa launch coalition to tax the super-rich at FfD4 in Seville",
-   "summary": "The Sevilla Platform for Action initiative invites more countries to join. Oxfam and Greenpeace welcomed it.",
+   "level": "national",
+   "title": "Spain and Brazil launch a push to tax the super-rich at FfD4 in Seville, with South Africa joining",
+   "summary": "The initiative sits under the Sevilla Platform for Action and invites more countries to join. Spain's release names Spain and Brazil. Oxfam said South Africa had joined.",
    "source": "La Moncloa",
    "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/hacienda/Paginas/2025/010725-hacienda-brasil-superricos.aspx"
+  },
+  {
+   "id": "au-pbo-greens-2025",
+   "iso3": "AUS",
+   "date": "2025-05-01",
+   "kind": "report",
+   "stage": "",
+   "level": "national",
+   "title": "Budget office costs Greens' tax of 5% on wealth over A$100m and 10% over A$1bn",
+   "summary": "The Parliamentary Budget Office said the behavioural response of the very rich to the tax is highly uncertain.",
+   "source": "Parliamentary Budget Office",
+   "url": "https://www.pbo.gov.au/sites/default/files/2025-05/PBO-ECR-2025-3463-Tax%20billionaires%20and%20future%20billionaires%20and%20make%20them%20pay%20their%20fair%20share.pdf",
+   "date_approx": true
+  },
+  {
+   "id": "au-greens-billionaire-tax",
+   "iso3": "AUS",
+   "date": "2025-02-11",
+   "kind": "proposal",
+   "stage": "introduced",
+   "level": "national",
+   "title": "Greens announce a 10% annual tax on the net wealth of Australia's roughly 150 billionaires",
+   "summary": "The party said the tax would raise A$23bn over four years and fund dental care in Medicare and free GP visits. Labor did not back it.",
+   "source": "Australian Greens",
+   "url": "https://greens.org.au/news/greens-will-tax-150-billionaires-part-revenue-plan-fund-dental-medicare-gp-free-and-other-cost"
   }
  ]
 }
