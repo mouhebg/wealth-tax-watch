@@ -16,10 +16,11 @@ TEMPLATE = ROOT / "templates" / "issue.html"
 STAGES = [
     ("research", "Research & talks", "Research"),
     ("proposal", "Proposal", "Proposal"),
-    ("official", "Official recommendation", "Official"),
-    ("vote", "On a ballot or in a bill", "Ballot"),
-    ("law", "Enacted", "Law"),
+    ("process", "Legislative or ballot process", "In process"),
+    ("law", "Adopted", "Adopted"),
 ]
+# Where an item comes from, kept separate from how far it has got.
+ORIGINS = {"official": "Official", "outside": "Outside government"}
 JURISDICTIONS = {
     "us": "United States", "fr": "France", "uk": "United Kingdom",
     "ca": "Canada", "eu": "Europe & OECD", "un": "Multilateral",
@@ -57,6 +58,10 @@ def sec_head(eyebrow, title, intro, title_id, intro_class=""):
             % (e(eyebrow), title_id, e(title), cls, e(intro)))
 
 
+def src_link(url, label="Source", cls="src-out"):
+    return '<a class="%s" href="%s" target="_blank" rel="noopener">%s ↗</a>' % (cls, e(url), label) if url else ""
+
+
 def render_tracker(t):
     items = t["items"]
     total = len(items)
@@ -67,33 +72,31 @@ def render_tracker(t):
                '<button class="chip-f" type="button" data-j="all" aria-pressed="true">All</button>'
                + "".join('<button class="chip-f" type="button" data-j="%s" aria-pressed="false">%s%s</button>'
                          % (j, flag(j), e(JURISDICTIONS[j])) for j in used) + "</div>")
-    # Phones: a five-step bar shows one stage at a time (no sideways scrolling).
-    out.append('<div class="stepper" role="group" aria-label="Choose a stage">' + "".join(
-        '<button class="step-btn" type="button" data-stage="%s" aria-pressed="%s" aria-controls="stage-%s" aria-label="Stage %d, %s: %d item%s">'
-        '<b>%d</b><span>%s</span></button>'
-        % (sid, "true" if n == 1 else "false", sid, n, e(name), cnt, "" if cnt == 1 else "s", cnt, e(short))
-        for n, (sid, name, short) in enumerate(STAGES, 1)
-        for cnt in [sum(1 for i in items if i["stage"] == sid)]) + "</div>")
+    out.append('<div class="filters origins" role="group" aria-label="Filter by where it comes from" id="origins">'
+               '<span class="f-label">Comes from</span>'
+               '<button class="chip-f" type="button" data-o="all" aria-pressed="true">Anywhere</button>'
+               + "".join('<button class="chip-f" type="button" data-o="%s" aria-pressed="false"><i class="org %s" aria-hidden="true"></i>%s</button>'
+                         % (o, o, e(name)) for o, name in ORIGINS.items()) + "</div>")
     out.append('<div class="pipe reveal" id="pipe">')
     for n, (sid, name, _short) in enumerate(STAGES, 1):
         its = [(k, i) for k, i in enumerate(items) if i["stage"] == sid]
-        on = " on" if n == 1 else ""
         if sid == "law" and not its:
-            out.append('<div class="stage enacted%s" id="stage-%s"><span class="step">Stage %d</span><h3>%s</h3><p>%s</p>'
-                       '<div class="zero">0</div></div>' % (on, sid, n, name, e(t["enacted_note"])))
+            out.append('<div class="stage enacted" id="stage-%s"><span class="step">Stage %d</span><h3>%s</h3><p>%s</p>'
+                       '<div class="zero">0</div></div>' % (sid, n, name, e(t["enacted_note"])))
             continue
-        out.append('<div class="stage%s" id="stage-%s"><span class="step">Stage %d · %d of %d</span><h3>%s</h3>'
+        out.append('<div class="stage" id="stage-%s"><span class="step">Stage %d · <b class="cnt">%d</b> of <b class="tot">%d</b></span><h3>%s</h3>'
                    '<div class="meter" aria-hidden="true"><i style="width:%.1f%%"></i></div>'
-                   % (on, sid, n, len(its), total, e(name), len(its) / total * 100))
+                   '<p class="none" hidden>Nothing at this stage for this filter.</p>'
+                   % (sid, n, len(its), total, e(name), len(its) / total * 100))
         for k, i in its:
-            out.append('<div class="card" data-j="%s"><div class="card-in">'
+            out.append('<div class="card" data-j="%s" data-o="%s"><div class="card-in">'
                        '<button class="item" type="button" aria-expanded="false" aria-controls="back-%d">%s'
-                       '<span><b>%s</b><small>%s</small></span><span class="turn" aria-hidden="true">↻</span></button>'
+                       '<span><b>%s</b><small>%s</small><i class="org %s">%s</i></span><span class="turn" aria-hidden="true">↻</span></button>'
                        '<div class="back" id="back-%d" aria-hidden="true" inert><span class="stamp">%s · %s</span><p>%s</p>'
-                       '<div class="back-row"><a href="#d-%s">Full story ↓</a><button type="button" aria-label="Flip back: %s">↺ Back</button></div></div>'
+                       '<div class="back-row"><span class="back-links"><a href="#d-%s">Full story ↓</a>%s</span><button type="button" aria-label="Flip back: %s">↺ Back</button></div></div>'
                        '</div></div>'
-                       % (i["j"], k, flag(i["j"]), e(i["title"]), e(i["meta"]), k, e(i["kind"]), e(JURISDICTIONS[i["j"]]),
-                          e(i["summary"]), i["story"], e(i["title"])))
+                       % (i["j"], i["origin"], k, flag(i["j"]), e(i["title"]), e(i["meta"]), i["origin"], e(ORIGINS[i["origin"]]),
+                          k, e(i["kind"]), e(JURISDICTIONS[i["j"]]), e(i["summary"]), i["story"], src_link(i.get("url")), e(i["title"])))
         out.append("</div>")
     out.append('</div><div class="pipe-arrow" aria-hidden="true">Closer to law</div></div></section>')
     return "\n".join(out)
@@ -146,16 +149,16 @@ def render_numbers(nb):
            sec_head(nb["eyebrow"], nb["title"], nb["intro"], "num-title"), '<div class="wall reveal">']
     for n in nb["items"]:
         out.append('<div class="stat"><div class="v" data-count="%s" data-prefix="%s" data-suffix="%s" data-dec="%d">%s</div>'
-                   '<span class="k">%s</span><p>%s</p></div>'
+                   '<span class="k">%s</span><p>%s</p>%s</div>'
                    % (n["value"], e(n.get("prefix", "")), e(n.get("suffix", "")), n.get("decimals", 0),
-                      e(fmt_number(n)), e(n["kind"]), e(n["text"])))
+                      e(fmt_number(n)), e(n["kind"]), e(n["text"]), src_link(n.get("url"))))
     out.append('</div><p class="wall-note">%s</p></div></section>' % e(nb["note"]))
     return "\n".join(out)
 
 
 def render_calendar(cal):
     # The list is the calendar on phones and for screen readers; wide screens draw the to-scale version.
-    items = "".join('<li><time datetime="%s">%s%s</time><p>%s</p></li>' % (e(ev["date"]), flag(ev["j"]), e(ev["label"]), e(ev["text"]))
+    items = "".join('<li><time datetime="%s">%s%s</time><p>%s %s</p></li>' % (e(ev["date"]), flag(ev["j"]), e(ev["label"]), e(ev["text"]), src_link(ev.get("url")))
                     for ev in cal["events"])
     if cal.get("later"):
         items += '<li><time>%s</time><p>%s</p></li>' % (e(cal["later"]["label"]), e(cal["later"]["text"]))
@@ -209,6 +212,8 @@ def render(issue_dir, site_url):
             raise SystemExit("tracker item %r points to unknown story %r" % (i["title"], i["story"]))
         if i["stage"] not in [s[0] for s in STAGES]:
             raise SystemExit("tracker item %r has unknown stage %r" % (i["title"], i["stage"]))
+        if i.get("origin") not in ORIGINS:
+            raise SystemExit("tracker item %r needs origin: one of %s" % (i["title"], ", ".join(ORIGINS)))
 
     slug = issue_dir.name
     url = "%s/issues/%s/" % (site_url, slug)
@@ -235,7 +240,8 @@ def render(issue_dir, site_url):
     if lead:
         nav.append('<a href="#lead">%s</a>' % e(lead["nav"]))
     nav += ['<a href="#numbers">Numbers</a>', '<a href="#calendar">Calendar</a>',
-            '<a href="#dispatches">Dispatches</a>', '<a href="#sources">Sources</a>']
+            '<a href="#dispatches">Dispatches</a>', '<a href="#sources">Sources</a>',
+            '<a href="../../map/" class="keep">Map</a>']
     countdowns = "".join('<div class="cd" data-date="%s"><div class="n" aria-hidden="true">–</div><div><div class="l">%s</div><div class="d">%s</div></div></div>'
                          % (c["date"], e(c["label"]), e(c["when"])) for c in d["countdowns"])
     overview_html = ""

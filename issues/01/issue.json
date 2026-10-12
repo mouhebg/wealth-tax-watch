@@ -31,8 +31,8 @@
   "tracker": {
     "eyebrow": "The tracker · idea to law",
     "title": "Everything we follow, and how far it has got",
-    "intro": "Every development in this issue, placed on the road from research to enacted law. Tap a card to flip it for the short version. Filter by jurisdiction.",
-    "enacted_note": "Nothing tracked in this issue has become law. The only machinery actually adopted is for cooperation, not taxation.",
+    "intro": "Every development in this issue, placed on the road from research to adopted law. Tags show whether it came from government or from outside it. Tap a card for the short version and its source.",
+    "enacted_note": "Nothing tracked in this issue has been adopted. The only machinery agreed so far is for tax cooperation, not taxation.",
     "items": [
       {
         "j": "eu",
@@ -41,7 +41,9 @@
         "meta": "Sept 8 · 92 jurisdictions",
         "kind": "Research",
         "summary": "Covers 2025 reforms in 92 jurisdictions. Property taxes leaned towards raising revenue; changes to net wealth taxes stayed limited.",
-        "story": "europe"
+        "story": "europe",
+        "origin": "official",
+        "url": "https://www.oecd.org/en/publications/tax-policy-reforms-2026_43d18a55-en.html"
       },
       {
         "j": "eu",
@@ -50,7 +52,9 @@
         "meta": "April 15 · two volumes",
         "kind": "Research",
         "summary": "Wealth taxes examined were not major revenue sources, largely because of reliefs, exemptions and weak compliance. No policy recommendation.",
-        "story": "europe"
+        "story": "europe",
+        "origin": "official",
+        "url": "https://taxation-customs.ec.europa.eu/news/publication-study-wealth-taxation-including-net-wealth-capital-and-exit-taxes-2026-04-15_en"
       },
       {
         "j": "eu",
@@ -59,7 +63,9 @@
         "meta": "Sept 23 · US$673bn a year",
         "kind": "Modelled estimate",
         "summary": "About US$673 billion crosses European borders each year for tax abuse; about US$100 billion a year in tax is lost. A tax-abuse estimate, not wealth-tax revenue.",
-        "story": "europe"
+        "story": "europe",
+        "origin": "outside",
+        "url": "https://taxjustice.net/press/europe-on-europe-tax-pillaging-revealed-by-new-tracker/"
       },
       {
         "j": "un",
@@ -68,7 +74,9 @@
         "meta": "Sept 23 · proposed body",
         "kind": "Diplomacy",
         "summary": "Launched at UNGA by South Africa, Brazil, Norway and Spain. An evidence and coordination body modelled on the IPCC, not a tax instrument.",
-        "story": "multilateral"
+        "story": "multilateral",
+        "origin": "official",
+        "url": "https://webtv.un.org/en/asset/k1h/k1hm0rn4g0"
       },
       {
         "j": "un",
@@ -77,7 +85,8 @@
         "meta": "Sept 12 · New Delhi Declaration",
         "kind": "Diplomacy",
         "summary": "Two new working groups on international taxation and transfer pricing, and on revenue statistics. Cooperation machinery, with no shared wealth tax.",
-        "story": "multilateral"
+        "story": "multilateral",
+        "origin": "official"
       },
       {
         "j": "un",
@@ -86,7 +95,9 @@
         "meta": "Aug 3-13 · finalisation 2027",
         "kind": "Diplomacy",
         "summary": "Line-by-line negotiation of the framework convention and two early protocols began in New York. The protocols do not address wealth taxation.",
-        "story": "multilateral"
+        "story": "multilateral",
+        "origin": "official",
+        "url": "https://financing.desa.un.org/unfcitc"
       },
       {
         "j": "ca",
@@ -95,7 +106,9 @@
         "meta": "Sept 16 · above C$10 million",
         "kind": "Advocacy costing",
         "summary": "A progressive tax on net worth above C$10 million, estimated at more than C$39 billion in its first year. Not federal policy.",
-        "story": "canada"
+        "story": "canada",
+        "origin": "outside",
+        "url": "https://www.policyalternatives.ca/news-research/alternative-federal-budget-2026-27-taxation/"
       },
       {
         "j": "ca",
@@ -104,7 +117,9 @@
         "meta": "50% above C$2.5 million",
         "kind": "Advocacy costing",
         "summary": "A 50% tax on lifetime inheritances above C$2.5 million, about C$1.1 billion a year, alongside a 37% bracket above C$1 million.",
-        "story": "canada"
+        "story": "canada",
+        "origin": "outside",
+        "url": "https://www.policyalternatives.ca/news-research/alternative-federal-budget-2026-27-taxation/"
       },
       {
         "j": "uk",
@@ -113,7 +128,8 @@
         "meta": "Tax Justice UK via Compass",
         "kind": "Advocacy",
         "summary": "Up to £24 billion a year, per Tax Justice UK. Collected in Compass’s 70-option menu; backed by a petition and a “Proud to Pay” letter.",
-        "story": "uk"
+        "story": "uk",
+        "origin": "outside"
       },
       {
         "j": "uk",
@@ -122,7 +138,9 @@
         "meta": "Tippet & Zucman · July",
         "kind": "Research estimate",
         "summary": "Households worth over £100 million pay at least 2% of wealth in total personal taxes. About £10.4 billion in 2026 from fewer than 1,000 households; ten-year exit rule.",
-        "story": "uk"
+        "story": "uk",
+        "origin": "outside",
+        "url": "https://taxobservatory.world/publication/taxing-extreme-wealth-in-the-united-kingdom-revenue-estimates-for-a-2-minimum-tax-on-ultra-high-net-worth-households/"
       },
       {
         "j": "uk",
@@ -131,7 +149,9 @@
         "meta": "Resolution Foundation",
         "kind": "Research",
         "summary": "Replace Council Tax and Stamp Duty on primary homes with a revenue-neutral 0.7% annual tax on current value. A property tax reform, not a net wealth tax.",
-        "story": "uk"
+        "story": "uk",
+        "origin": "outside",
+        "url": "https://www.resolutionfoundation.org/publications/home-economics/"
       },
       {
         "j": "fr",
@@ -140,34 +160,42 @@
         "meta": "Sept 16 · Socialist Party budget",
         "kind": "Opposition proposal",
         "summary": "A 2% minimum tax on fortunes above €100 million, rejected by the Assemblée 228 to 172 in October 2025, now back in the Socialists’ alternative budget.",
-        "story": "france"
+        "story": "france",
+        "origin": "outside",
+        "url": "https://selectra.info/finance/actualites/marche/csg-progressive-2027-salaire-net-smic"
       },
       {
         "j": "fr",
-        "stage": "official",
+        "stage": "proposal",
         "title": "Cour des comptes package",
         "meta": "Sept 21 · €1.83bn net",
         "kind": "Public audit",
         "summary": "A differential charge on non-business wealth, a stronger holding-company tax and narrower Pacte Dutreil relief, offset by cuts in transfer duties and inheritance tax.",
-        "story": "france"
+        "story": "france",
+        "origin": "official",
+        "url": "https://www.boursorama.com/actualite-economique/actualites/la-cour-des-comptes-suggere-une-taxation-moderee-mais-progressive-des-gros-patrimoines-77f9551e8a8063ba789cc642bbbe1fc4"
       },
       {
         "j": "us",
-        "stage": "vote",
+        "stage": "process",
         "title": "Proposition 40",
         "meta": "Nov 3 · one-time 5% on billionaires",
         "kind": "Ballot measure",
         "summary": "A one-time 5% tax on billionaires resident on January 1, 2026, mostly for health care. Polls range from 45% to 52% yes.",
-        "story": "california"
+        "story": "california",
+        "origin": "outside",
+        "url": "https://news.ballotpedia.org/2026/06/18/california-billionaires-tax-qualifies-for-the-november-ballot-competing-measures-pending-signature-verification/"
       },
       {
         "j": "us",
-        "stage": "vote",
+        "stage": "process",
         "title": "Propositions 41 and 42",
         "meta": "Nov 3 · could void Prop 40",
         "kind": "Ballot measure",
         "summary": "Rival measures backed by a Brin-funded group. If either passes with more yes votes than Proposition 40, the billionaire tax could be voided.",
-        "story": "california"
+        "story": "california",
+        "origin": "outside",
+        "url": "https://calmatters.org/politics/2026/10/newsom-tax-propositions-november-election/"
       }
     ]
   },
@@ -279,7 +307,8 @@
         "value": 52,
         "suffix": "%",
         "kind": "Poll",
-        "text": "PPIC likely voters backing California’s Proposition 40 (46% against)."
+        "text": "PPIC likely voters backing California’s Proposition 40 (46% against).",
+        "url": "https://www.ppic.org/publication/ppic-statewide-survey-californians-and-their-government-september-2026/"
       },
       {
         "value": 1.83,
@@ -287,14 +316,16 @@
         "prefix": "€",
         "suffix": "bn",
         "kind": "Official audit",
-        "text": "Net revenue of the Cour des comptes package, after its tax cuts."
+        "text": "Net revenue of the Cour des comptes package, after its tax cuts.",
+        "url": "https://www.boursorama.com/actualite-economique/actualites/la-cour-des-comptes-suggere-une-taxation-moderee-mais-progressive-des-gros-patrimoines-77f9551e8a8063ba789cc642bbbe1fc4"
       },
       {
         "value": 39,
         "prefix": "C$",
         "suffix": "bn+",
         "kind": "Advocacy costing",
-        "text": "CCPA first-year estimate for a wealth tax above C$10 million."
+        "text": "CCPA first-year estimate for a wealth tax above C$10 million.",
+        "url": "https://www.policyalternatives.ca/news-research/alternative-federal-budget-2026-27-taxation/"
       },
       {
         "value": 10.4,
@@ -302,19 +333,22 @@
         "prefix": "£",
         "suffix": "bn",
         "kind": "Research estimate",
-        "text": "A UK 2% minimum tax on fewer than 1,000 households worth over £100 million, in 2026."
+        "text": "A UK 2% minimum tax on fewer than 1,000 households worth over £100 million, in 2026.",
+        "url": "https://taxobservatory.world/publication/taxing-extreme-wealth-in-the-united-kingdom-revenue-estimates-for-a-2-minimum-tax-on-ultra-high-net-worth-households/"
       },
       {
         "value": 92,
         "kind": "Research",
-        "text": "Jurisdictions in the OECD’s Tax Policy Reforms 2026 review."
+        "text": "Jurisdictions in the OECD’s Tax Policy Reforms 2026 review.",
+        "url": "https://www.oecd.org/en/publications/tax-policy-reforms-2026_43d18a55-en.html"
       },
       {
         "value": 100,
         "prefix": "US$",
         "suffix": "bn",
         "kind": "Modelled estimate",
-        "text": "Tax Justice Network estimate of annual European losses to tax abuse. Not wealth-tax revenue."
+        "text": "Tax Justice Network estimate of annual European losses to tax abuse. Not wealth-tax revenue.",
+        "url": "https://taxjustice.net/press/europe-on-europe-tax-pillaging-revealed-by-new-tracker/"
       }
     ],
     "note": "Different currencies, tax bases and methods. Do not add or compare them."
@@ -331,7 +365,8 @@
         "label": "Sept 30",
         "j": "fr",
         "text": "France presents its 2027 budget to cabinet. “No new tax”; watch the Pacte Dutreil and pacte Papin.",
-        "side": "up"
+        "side": "up",
+        "url": "https://www.legifiscal.fr/actualites-fiscales/4639-projet-loi-finances-2027-annonces-sebastien-lecornu.html"
       },
       {
         "date": "2026-10-05",
@@ -359,7 +394,8 @@
         "label": "Nov 3",
         "j": "us",
         "text": "California votes on Propositions 40, 41 and 42.",
-        "side": "up"
+        "side": "up",
+        "url": "https://calmatters.org/politics/2026/10/newsom-tax-propositions-november-election/"
       },
       {
         "date": "2026-11-20",

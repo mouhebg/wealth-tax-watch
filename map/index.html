@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<!-- Hand-written page. Country and news data live in map/data.json; edit that file to update the map. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Wealth Tax Map · Wealth Tax Watch</title>
+<meta name="description" content="Where net wealth taxes are in force, partial, under debate or repealed, with a profile for every tracked country and the latest legislation and news.">
+<meta property="og:title" content="The Wealth Tax Map">
+<meta property="og:description" content="Where wealth taxes apply, where they are being debated, and the latest legislation and news.">
+<meta property="og:image" content="https://wealth-tax-watch.vercel.app/assets/og-image.png">
+<link rel="canonical" href="https://wealth-tax-watch.vercel.app/map/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* Layout: Freedom House-style atlas. Dark hero with the status split, map + country card, sortable country table, dispatch feed; a country opens as its own profile view. */
+:root{
+  --bg:#F1EEE6; --paper:#FDFCF8; --ink:#141A2B; --ink-2:#3A4152; --muted:#5E6474; --hair:#D6D1C4;
+  --blue:#2B46EE; --pink:#FF4F6B; --pink-text:#C8203F; --lime:#E5F553;
+  --night:#141A2B; --night-ink:#F1EEE6; --night-muted:#A3A8B6; --night-hair:#2C3345;
+  --s-force:#2B46EE; --s-partial:#9AABFA; --s-debate:#FF4F6B; --s-repealed:#8C8576; --s-none:#E3DED3;
+  --on-force:#FFFFFF; --on-partial:#141A2B; --on-debate:#141A2B; --on-repealed:#FFFFFF;
+  --a1:#D9E0FD; --a2:#8FA2F7; --a3:#2B46EE;
+  --edge:#FDFCF8;
+  --font:'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --display:'Anton', Impact, 'Arial Narrow', sans-serif;
+  --serif:'PT Serif', Georgia, serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#10131C; --paper:#181D2A; --ink:#EEEAE0; --ink-2:#C9C6BD; --muted:#A3A8B6; --hair:#2C3345;
+    --blue:#8C9CFF; --pink-text:#FF4F6B; --night:#0A0C12; --night-hair:#262C3B;
+    --s-force:#6A7FF7; --s-partial:#34428F; --s-debate:#E0445F; --s-repealed:#6B6556; --s-none:#262C3B;
+    --on-force:#0A0C12; --on-partial:#EEEAE0; --on-debate:#0A0C12; --on-repealed:#EEEAE0;
+    --a1:#2A3366; --a2:#4A5BC0; --a3:#8C9CFF; --edge:#10131C;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10131C; --paper:#181D2A; --ink:#EEEAE0; --ink-2:#C9C6BD; --muted:#A3A8B6; --hair:#2C3345;
+  --blue:#8C9CFF; --pink-text:#FF4F6B; --night:#0A0C12; --night-hair:#262C3B;
+  --s-force:#6A7FF7; --s-partial:#34428F; --s-debate:#E0445F; --s-repealed:#6B6556; --s-none:#262C3B;
+  --on-force:#0A0C12; --on-partial:#EEEAE0; --on-debate:#0A0C12; --on-repealed:#EEEAE0;
+  --a1:#2A3366; --a2:#4A5BC0; --a3:#8C9CFF; --edge:#10131C;
+  color-scheme:dark;
+}
+*,*::before,*::after{ box-sizing:border-box; }
+body{ margin:0; background:var(--bg); color:var(--ink); font-family:var(--font); font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased; }
+a{ color:inherit; }
+button{ font:inherit; color:inherit; }
+:focus-visible{ outline:3px solid var(--blue); outline-offset:3px; border-radius:4px; }
+.wrap{ max-width:1200px; margin:0 auto; padding-inline:24px; }
+@media (max-width:520px){ .wrap{ padding-inline:16px; } }
+.eyebrow{ font-weight:700; font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--blue); margin:0 0 10px; }
+.h2{ font-family:var(--display); font-weight:400; font-size:clamp(32px,4.4vw,48px); line-height:1; margin:0; letter-spacing:.005em; text-wrap:balance; }
+.num{ font-variant-numeric:tabular-nums; }
+
+/* top bar */
+.bar-top{ position:sticky; top:env(safe-area-inset-top,0px); z-index:30; background:var(--bg); border-bottom:1px solid var(--hair); }
+.bar-top .wrap{ display:flex; align-items:center; justify-content:space-between; gap:14px; height:62px; }
+.brand{ display:flex; align-items:center; gap:10px; text-decoration:none; font-family:var(--display); font-size:21px; letter-spacing:.02em; white-space:nowrap; }
+.brand em{ color:var(--pink-text); font-style:normal; }
+.brand svg{ width:34px; height:34px; flex:none; }
+.top-nav{ display:flex; gap:4px; align-items:center; }
+.top-nav a{ text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:8px 10px; border-radius:8px; }
+.top-nav a:hover{ background:var(--paper); }
+.top-nav a[aria-current="page"]{ box-shadow:inset 0 -3px 0 var(--pink); border-radius:0; }
+.theme-btn{ border:1.5px solid var(--ink); background:transparent; border-radius:999px; width:38px; height:38px; display:grid; place-items:center; cursor:pointer; flex:none; }
+.theme-btn svg{ width:18px; height:18px; }
+@media (max-width:560px){ .top-nav a.opt{ display:none; } .brand span{ font-size:18px; } }
+
+/* hero */
+.hero{ background:var(--night); color:var(--night-ink); }
+.hero .wrap{ padding-block:44px 40px; display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:48px; align-items:end; }
+@media (max-width:860px){ .hero .wrap{ grid-template-columns:minmax(0,1fr); gap:28px; } }
+.kicker{ display:flex; align-items:center; gap:12px; font-weight:700; font-size:13px; letter-spacing:.16em; margin:0 0 18px; text-transform:uppercase; color:var(--night-muted); }
+.kicker::before{ content:""; width:34px; height:8px; border-radius:6px; background:var(--pink); }
+.hero h1{ font-family:var(--display); font-weight:400; font-size:clamp(52px,8.5vw,112px); line-height:.9; margin:0; }
+.hero h1 span{ display:block; }
+.hero h1 .l2{ color:var(--lime); }
+.hero p.lede{ font-family:var(--serif); font-size:19px; line-height:1.45; margin:0 0 22px; max-width:46ch; }
+.split{ display:flex; height:16px; border-radius:3px; overflow:hidden; gap:2px; }
+.split i{ display:block; height:100%; }
+.split-key{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-top:14px; }
+@media (max-width:520px){ .split-key{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+.split-key button{ text-align:left; border:0; background:none; padding:0; cursor:pointer; color:var(--night-ink); }
+.split-key b{ display:block; font-family:var(--display); font-weight:400; font-size:40px; line-height:1; }
+.split-key small{ display:flex; align-items:center; gap:6px; font-size:12.5px; font-weight:700; letter-spacing:.04em; color:var(--night-muted); text-transform:uppercase; }
+.split-key button[aria-pressed="true"] small{ color:var(--night-ink); text-decoration:underline; text-underline-offset:4px; }
+.sw{ width:10px; height:10px; border-radius:2px; flex:none; display:inline-block; }
+.sw.in_force{ background:var(--s-force); } .sw.partial{ background:var(--s-partial); } .sw.debate{ background:var(--s-debate); } .sw.repealed{ background:var(--s-repealed); } .sw.none{ background:var(--s-none); border:1px solid var(--hair); }
+.hero .sw.partial{ background:#9AABFA; }
+
+/* atlas */
+.atlas{ padding-block:36px 0; }
+.atlas-head{ display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:16px; margin-bottom:16px; }
+.tabs{ display:inline-flex; border:1.5px solid var(--ink); border-radius:999px; padding:3px; gap:2px; }
+.tabs button{ border:0; background:none; padding:7px 14px; border-radius:999px; font-size:13px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; cursor:pointer; }
+.tabs button[aria-selected="true"]{ background:var(--ink); color:var(--bg); }
+.atlas-grid{ display:grid; grid-template-columns:minmax(0,1fr) 340px; background:var(--paper); border:1px solid var(--hair); border-radius:6px; overflow:hidden; }
+@media (max-width:980px){ .atlas-grid{ grid-template-columns:minmax(0,1fr); } }
+.mapcol{ position:relative; min-width:0; border-right:1px solid var(--hair); }
+@media (max-width:980px){ .mapcol{ border-right:0; border-bottom:1px solid var(--hair); } }
+#map{ display:block; width:100%; height:auto; aspect-ratio:1.95/1; max-width:100%; touch-action:none; cursor:grab; }
+#map .c{ fill:var(--s-none); stroke:var(--edge); stroke-width:.6; vector-effect:non-scaling-stroke; }
+#map .c.t{ cursor:pointer; }
+#map .c.in_force{ fill:var(--s-force); } #map .c.partial{ fill:var(--s-partial); } #map .c.debate{ fill:var(--s-debate); } #map .c.repealed{ fill:var(--s-repealed); }
+#map .c.a1{ fill:var(--a1); } #map .c.a2{ fill:var(--a2); } #map .c.a3{ fill:var(--a3); }
+#map .c.dim{ opacity:.18; }
+#map .c.t:hover, #map .c.sel{ stroke:var(--ink); stroke-width:1.6; }
+#map .dotc{ stroke:var(--edge); stroke-width:1.2; vector-effect:non-scaling-stroke; cursor:pointer; }
+.mapbar{ position:absolute; left:12px; right:12px; bottom:10px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:8px; pointer-events:none; }
+.mapbar > *{ pointer-events:auto; }
+.legend{ display:flex; flex-wrap:wrap; gap:4px 14px; font-size:12px; font-weight:700; letter-spacing:.03em; color:var(--ink-2); background:var(--paper); padding:6px 10px; border-radius:4px; border:1px solid var(--hair); }
+.legend span{ display:inline-flex; align-items:center; gap:6px; }
+.zoom{ display:flex; gap:4px; }
+.zoom button{ min-width:32px; height:32px; border:1px solid var(--hair); background:var(--paper); border-radius:4px; cursor:pointer; font-size:12px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; padding:0 8px; }
+@media (max-width:640px){ .mapbar{ position:static; padding:10px 12px; } }
+.tip{ position:absolute; pointer-events:none; z-index:5; background:var(--night); color:var(--night-ink); padding:7px 10px; border-radius:4px; font-size:13px; font-weight:700; white-space:nowrap; }
+.tip small{ display:block; font-weight:400; color:var(--night-muted); }
+
+/* country card */
+.card{ padding:22px 22px 24px; display:flex; flex-direction:column; gap:14px; min-width:0; }
+.card h3{ font-family:var(--display); font-weight:400; font-size:38px; line-height:1; margin:0; }
+.badge{ display:inline-flex; align-items:center; gap:6px; align-self:flex-start; padding:4px 10px; border-radius:3px; font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+.badge.in_force{ background:var(--s-force); color:var(--on-force); } .badge.partial{ background:var(--s-partial); color:var(--on-partial); }
+.badge.debate{ background:var(--s-debate); color:var(--on-debate); } .badge.repealed{ background:var(--s-repealed); color:var(--on-repealed); }
+.badge.none{ background:var(--s-none); color:var(--ink); }
+.card .hl{ font-family:var(--serif); font-size:18px; line-height:1.4; margin:0; }
+.kv{ display:grid; grid-template-columns:auto minmax(0,1fr); gap:6px 14px; margin:0; font-size:14px; }
+.kv dt{ color:var(--muted); font-weight:700; font-size:12px; letter-spacing:.06em; text-transform:uppercase; padding-top:2px; }
+.kv dd{ margin:0; overflow-wrap:anywhere; }
+.cta{ display:inline-flex; align-items:center; justify-content:center; gap:8px; background:var(--ink); color:var(--bg); text-decoration:none; font-weight:700; font-size:14px; letter-spacing:.04em; text-transform:uppercase; padding:12px 16px; border-radius:999px; border:0; cursor:pointer; }
+.cta:hover{ background:var(--blue); color:#fff; }
+.mini-list{ list-style:none; margin:0; padding:0; display:grid; gap:12px; }
+.mini-list li{ display:grid; gap:2px; padding-bottom:12px; border-bottom:1px solid var(--hair); }
+.mini-list li:last-child{ border-bottom:0; padding-bottom:0; }
+.mini-list time{ font-size:12px; font-weight:700; color:var(--muted); letter-spacing:.04em; }
+.mini-list a, .mini-list button{ font-weight:700; text-decoration:none; font-size:14.5px; line-height:1.35; text-align:left; background:none; border:0; padding:0; cursor:pointer; }
+.mini-list a:hover, .mini-list button:hover{ text-decoration:underline; }
+.muted{ color:var(--muted); font-size:14px; margin:0; }
+
+/* table */
+.block{ padding-block:64px 0; }
+.tools{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:18px 0 14px; }
+.tools input{ flex:1 1 220px; max-width:320px; padding:10px 14px; border:1.5px solid var(--ink); border-radius:999px; background:var(--paper); color:var(--ink); font:inherit; font-size:15px; }
+.chips{ display:flex; flex-wrap:wrap; gap:6px; }
+.chips button{ display:inline-flex; align-items:center; gap:6px; border:1px solid var(--hair); background:var(--paper); border-radius:999px; padding:6px 12px; font-size:13px; font-weight:700; cursor:pointer; }
+.chips button[aria-pressed="true"]{ background:var(--ink); color:var(--bg); border-color:var(--ink); }
+.tbl-wrap{ overflow-x:auto; background:var(--paper); border:1px solid var(--hair); border-radius:6px; }
+table{ width:100%; border-collapse:collapse; min-width:720px; font-size:14.5px; }
+th{ text-align:left; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); padding:0; border-bottom:2px solid var(--ink); white-space:nowrap; }
+th button{ border:0; background:none; padding:12px 14px; font:inherit; font-weight:700; letter-spacing:inherit; text-transform:inherit; color:inherit; cursor:pointer; display:inline-flex; gap:6px; align-items:center; }
+th button[aria-sort]::after{ content:"↕"; opacity:.4; }
+th[aria-sort="ascending"] button::after{ content:"↑"; opacity:1; }
+th[aria-sort="descending"] button::after{ content:"↓"; opacity:1; }
+td{ padding:12px 14px; border-bottom:1px solid var(--hair); vertical-align:top; }
+tbody tr{ cursor:pointer; }
+tbody tr:hover{ background:var(--bg); }
+td.cn{ font-weight:700; white-space:nowrap; }
+td.cn a{ text-decoration:none; }
+td.cn a:hover{ text-decoration:underline; }
+td .badge{ font-size:11px; padding:3px 8px; white-space:nowrap; }
+td.dt{ white-space:nowrap; color:var(--muted); }
+td.dt a, .kv dd a, .facts dd a{ color:inherit; text-decoration-color:var(--pink); text-underline-offset:3px; }
+td.hl{ color:var(--ink-2); min-width:260px; }
+
+/* feed */
+.feed{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 32px; }
+@media (max-width:820px){ .feed{ grid-template-columns:minmax(0,1fr); } }
+.feed li{ padding:18px 0; border-top:1px solid var(--hair); display:grid; gap:6px; min-width:0; }
+.meta{ display:flex; flex-wrap:wrap; align-items:center; gap:6px 12px; font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); }
+.kind{ color:var(--blue); }
+.kind.proposal{ color:var(--pink-text); }
+.ctry{ border:0; background:none; padding:0; cursor:pointer; font:inherit; letter-spacing:inherit; text-transform:inherit; color:var(--ink); display:inline-flex; align-items:center; gap:6px; }
+.ctry:hover{ text-decoration:underline; }
+.feed h3{ margin:0; font-family:var(--serif); font-weight:700; font-size:19px; line-height:1.3; text-wrap:balance; }
+.feed h3 a{ text-decoration:none; }
+.feed h3 a:hover{ text-decoration:underline; text-decoration-color:var(--pink); }
+.feed p{ margin:0; color:var(--ink-2); font-size:15px; }
+.src{ font-size:13px; color:var(--muted); }
+.more{ margin-top:20px; border:1.5px solid var(--ink); background:transparent; border-radius:999px; padding:10px 18px; font-weight:700; font-size:13px; letter-spacing:.06em; text-transform:uppercase; cursor:pointer; }
+
+/* profile */
+.crumb{ padding-top:24px; font-size:13px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); display:flex; gap:8px; align-items:center; }
+.crumb button{ border:0; background:none; padding:0; cursor:pointer; color:var(--blue); font:inherit; letter-spacing:inherit; text-transform:inherit; }
+.p-head{ display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:40px; align-items:end; padding-block:16px 28px; border-bottom:2px solid var(--ink); }
+@media (max-width:860px){ .p-head{ grid-template-columns:minmax(0,1fr); gap:20px; } }
+.p-head h1{ font-family:var(--display); font-weight:400; font-size:clamp(56px,10vw,120px); line-height:.9; margin:10px 0 0; }
+.p-head .hl{ font-family:var(--serif); font-size:21px; line-height:1.4; margin:18px 0 0; max-width:40ch; }
+#pmini{ width:100%; height:auto; max-width:100%; display:block; }
+#pmini .c{ fill:var(--s-none); stroke:var(--edge); stroke-width:.5; }
+#pmini .c.me{ fill:var(--pink); }
+#pmini circle{ fill:var(--pink); stroke:var(--edge); }
+.facts{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-bottom:1px solid var(--hair); }
+@media (max-width:720px){ .facts{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+.facts div{ padding:18px 16px 18px 0; min-width:0; }
+.facts dt{ font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+.facts dd{ margin:6px 0 0; font-family:var(--display); font-size:26px; line-height:1.1; overflow-wrap:anywhere; }
+.facts dd.sm{ font-family:var(--font); font-weight:700; font-size:16px; line-height:1.35; }
+.p-body{ display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:48px; padding-top:32px; }
+@media (max-width:860px){ .p-body{ grid-template-columns:minmax(0,1fr); gap:32px; } }
+.p-body .sum{ font-family:var(--serif); font-size:18px; line-height:1.6; margin:0; max-width:64ch; }
+.p-body h2{ font-family:var(--display); font-weight:400; font-size:30px; margin:40px 0 4px; }
+.tl{ list-style:none; margin:0; padding:0; }
+.tl li{ display:grid; grid-template-columns:110px minmax(0,1fr); gap:18px; padding:16px 0; border-top:1px solid var(--hair); }
+@media (max-width:520px){ .tl li{ grid-template-columns:minmax(0,1fr); gap:4px; } }
+.tl time{ font-weight:700; font-size:13px; color:var(--muted); padding-top:3px; }
+.tl .stage{ font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--blue); }
+.tl .stage.rejected{ color:var(--pink-text); }
+.tl h3{ margin:4px 0; font-family:var(--serif); font-size:18px; line-height:1.35; }
+.tl h3 a{ text-decoration:none; } .tl h3 a:hover{ text-decoration:underline; }
+.tl p{ margin:0; color:var(--ink-2); font-size:15px; }
+.aside{ display:grid; gap:20px; align-content:start; }
+.aside section{ background:var(--paper); border:1px solid var(--hair); border-radius:6px; padding:16px 18px; }
+.aside h4{ margin:0 0 10px; font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); }
+.peers{ list-style:none; margin:0; padding:0; display:grid; gap:6px; }
+.peers button{ border:0; background:none; padding:0; cursor:pointer; display:inline-flex; gap:8px; align-items:center; font-weight:700; font-size:14.5px; }
+.peers button:hover{ text-decoration:underline; }
+
+footer{ margin-top:96px; background:var(--night); color:var(--night-muted); padding-block:36px 52px; font-size:14px; }
+footer .wrap{ display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+footer a{ color:var(--night-ink); }
+@media (prefers-reduced-motion: reduce){ *{ transition:none !important; } }
+</style>
+</head>
+<body>
+<header class="bar-top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Wealth Tax Watch home">
+      <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="58" fill="#141A2B"/><circle cx="60" cy="60" r="44" fill="none" stroke="#E5F553" stroke-width="3"/><rect x="47.9" y="45.7" width="24.2" height="7.2" fill="#FF4F6B"/><rect x="56.4" y="45.7" width="7.2" height="28.6" fill="#FF4F6B"/><polyline points="22.2,41.3 29.8,74.3 35.8,55.6 41.9,74.3 49.4,41.3" fill="none" stroke="#E5F553" stroke-width="7.2"/><polyline points="70.6,41.3 78.2,74.3 84.2,55.6 90.3,74.3 97.8,41.3" fill="none" stroke="#E5F553" stroke-width="7.2"/></svg>
+      <span>WEALTH TAX <em>WATCH</em></span>
+    </a>
+    <nav class="top-nav" aria-label="Site">
+      <a href="/" class="opt">Latest issue</a>
+      <a href="/map/" aria-current="page">Map</a>
+      <a href="/archive.html" class="opt">Archive</a>
+      <button class="theme-btn" type="button" id="themeBtn" aria-label="Switch to dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="kicker" id="kicker">The Wealth Tax Map</p>
+        <h1 id="hero-title"><span>Who taxes</span><span class="l2">great</span><span>wealth?</span></h1>
+      </div>
+      <div>
+        <p class="lede">A country-by-country record of net wealth taxes: where they apply, where a narrower levy exists, where one is being fought over, and where it was abolished.</p>
+        <div class="split" id="split" aria-hidden="true"></div>
+        <div class="split-key" id="splitKey" role="group" aria-label="Show one status on the map"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="atlas" aria-labelledby="atlas-title">
+    <div class="wrap">
+      <div class="atlas-head">
+        <div><p class="eyebrow">Countries and territories</p><h2 class="h2" id="atlas-title">The map</h2></div>
+        <div class="tabs" role="tablist" aria-label="Map view">
+          <button role="tab" id="tab-status" aria-selected="true" type="button">Status</button>
+          <button role="tab" id="tab-activity" aria-selected="false" type="button">Activity, past 12 months</button>
+        </div>
+      </div>
+      <div class="atlas-grid">
+        <div class="mapcol">
+          <svg id="map" viewBox="0 0 960 492" role="img" aria-label="World map coloured by wealth tax status. Select a country for details."></svg>
+          <div class="tip" id="tip" hidden></div>
+          <div class="mapbar">
+            <div class="legend" id="legend"></div>
+            <div class="zoom">
+              <button type="button" data-region="eu">Europe</button>
+              <button type="button" data-region="am">Americas</button>
+              <button type="button" data-region="world">World</button>
+              <button type="button" id="zin" aria-label="Zoom in">+</button>
+              <button type="button" id="zout" aria-label="Zoom out">−</button>
+            </div>
+          </div>
+        </div>
+        <aside class="card" id="card" aria-live="polite"></aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="tbl-title">
+    <div class="wrap">
+      <p class="eyebrow">Sort and search</p>
+      <h2 class="h2" id="tbl-title">All tracked countries</h2>
+      <div class="tools">
+        <input id="q" type="search" placeholder="Search countries" aria-label="Search countries" autocomplete="off">
+        <div class="chips" id="tblChips" role="group" aria-label="Filter by status"></div>
+      </div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr>
+            <th aria-sort="ascending" data-k="name"><button type="button">Country</button></th>
+            <th aria-sort="none" data-k="status"><button type="button">Status</button></th>
+            <th aria-sort="none" data-k="rate"><button type="button">Rate</button></th>
+            <th>Where things stand</th>
+            <th aria-sort="none" data-k="updated"><button type="button">Latest move</button></th>
+          </tr></thead>
+          <tbody id="tbody"><tr><td colspan="5" class="muted">Loading countries…</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="feed-title">
+    <div class="wrap">
+      <p class="eyebrow">Legislation, courts and news</p>
+      <h2 class="h2" id="feed-title">Latest dispatches</h2>
+      <div class="tools"><div class="chips" id="kindChips" role="group" aria-label="Filter by type"></div></div>
+      <ul class="feed" id="feed"></ul>
+      <button class="more" id="more" type="button" hidden>Show more</button>
+    </div>
+  </section>
+</main>
+
+<main id="profile" hidden></main>
+
+<footer>
+  <div class="wrap">
+    <span id="foot">Wealth Tax Watch · The Wealth Tax Map</span>
+    <span>“Partial” means a narrower levy on some assets, such as real estate or securities accounts. <a href="/">Latest issue</a> · <a href="/archive.html">All issues</a></span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script>
+(function(){
+  var root = document.documentElement;
+  /* Theme toggle, shared with the issue pages */
+  var btn = document.getElementById('themeBtn');
+  function isDark(){ var t = root.getAttribute('data-theme'); return t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches; }
+  function syncBtn(){ btn.setAttribute('aria-label', isDark() ? 'Switch to light mode' : 'Switch to dark mode'); }
+  try{ var saved = localStorage.getItem('wtw-theme'); if(saved) root.setAttribute('data-theme', saved); }catch(e){}
+  syncBtn();
+  btn.addEventListener('click', function(){ var next = isDark() ? 'light' : 'dark'; root.setAttribute('data-theme', next); try{ localStorage.setItem('wtw-theme', next); }catch(e){} syncBtn(); });
+
+  var STATUS = { in_force:'Wealth tax in force', partial:'Partial levy', debate:'Under debate', repealed:'Repealed' };
+  var SHORT = { in_force:'In force', partial:'Partial', debate:'Debate', repealed:'Repealed' };
+  var ORDER = { in_force:0, partial:1, debate:2, repealed:3 };
+  var KINDS = { all:'All', legislation:'Legislation', proposal:'Proposals', court:'Courts', news:'News', report:'Reports' };
+  var LEGAL = { legislation:1, proposal:1, court:1 };
+  /* ISO 3166 numeric -> alpha-3 for the map shapes */
+  var N2A = {"004":"AFG","008":"ALB","012":"DZA","024":"AGO","031":"AZE","032":"ARG","036":"AUS","040":"AUT","044":"BHS","050":"BGD","051":"ARM","056":"BEL","064":"BTN","068":"BOL","070":"BIH","072":"BWA","076":"BRA","084":"BLZ","090":"SLB","096":"BRN","100":"BGR","104":"MMR","108":"BDI","112":"BLR","116":"KHM","120":"CMR","124":"CAN","140":"CAF","144":"LKA","148":"TCD","152":"CHL","156":"CHN","158":"TWN","170":"COL","178":"COG","180":"COD","188":"CRI","191":"HRV","192":"CUB","196":"CYP","203":"CZE","204":"BEN","208":"DNK","214":"DOM","218":"ECU","222":"SLV","226":"GNQ","231":"ETH","232":"ERI","233":"EST","238":"FLK","242":"FJI","246":"FIN","250":"FRA","260":"ATF","262":"DJI","266":"GAB","268":"GEO","270":"GMB","275":"PSE","276":"DEU","288":"GHA","300":"GRC","304":"GRL","320":"GTM","324":"GIN","328":"GUY","332":"HTI","340":"HND","348":"HUN","352":"ISL","356":"IND","360":"IDN","364":"IRN","368":"IRQ","372":"IRL","376":"ISR","380":"ITA","384":"CIV","388":"JAM","392":"JPN","398":"KAZ","400":"JOR","404":"KEN","408":"PRK","410":"KOR","414":"KWT","417":"KGZ","418":"LAO","422":"LBN","426":"LSO","428":"LVA","430":"LBR","434":"LBY","440":"LTU","442":"LUX","450":"MDG","454":"MWI","458":"MYS","466":"MLI","478":"MRT","484":"MEX","496":"MNG","498":"MDA","499":"MNE","504":"MAR","508":"MOZ","512":"OMN","516":"NAM","524":"NPL","528":"NLD","540":"NCL","548":"VUT","554":"NZL","558":"NIC","562":"NER","566":"NGA","578":"NOR","586":"PAK","591":"PAN","598":"PNG","600":"PRY","604":"PER","608":"PHL","616":"POL","620":"PRT","624":"GNB","626":"TLS","630":"PRI","634":"QAT","642":"ROU","643":"RUS","646":"RWA","682":"SAU","686":"SEN","688":"SRB","694":"SLE","703":"SVK","704":"VNM","705":"SVN","706":"SOM","710":"ZAF","716":"ZWE","724":"ESP","728":"SSD","729":"SDN","732":"ESH","740":"SUR","748":"SWZ","752":"SWE","756":"CHE","760":"SYR","762":"TJK","764":"THA","768":"TGO","780":"TTO","784":"ARE","788":"TUN","792":"TUR","795":"TKM","800":"UGA","804":"UKR","807":"MKD","818":"EGY","826":"GBR","834":"TZA","840":"USA","854":"BFA","858":"URY","860":"UZB","862":"VEN","887":"YEM","894":"ZMB"};
+  /* Places too small for the 1:110m outlines, drawn as dots */
+  var SMALL = { LIE:[9.55,47.16], MCO:[7.42,43.74], AND:[1.52,42.51], SMR:[12.46,43.94], MLT:[14.44,35.9], SGP:[103.82,1.35], BHR:[50.56,26.07], MUS:[57.55,-20.35], BRB:[-59.54,13.19] };
+
+  var S = { countries:{}, list:[], items:[], geo:[], names:{}, view:'status', status:null, sel:null, kind:'all', shown:10, sortK:'name', sortDir:1, q:'', tblStatus:null };
+  var $ = function(s){ return document.querySelector(s); };
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  function safeUrl(u){ return /^https?:\/\//i.test(u || '') ? u : ''; }
+  function fmt(d){ if(!d) return ''; var t = new Date(d + 'T00:00:00Z'); return isNaN(t) ? d : t.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric', timeZone:'UTC' }); }
+  function nameOf(iso){ return iso === 'GLB' ? 'Global' : (S.countries[iso] && S.countries[iso].name) || S.names[iso] || iso; }
+  function link(it, cls){ var u = safeUrl(it.url); return u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener"' + (cls ? ' class="' + cls + '"' : '') + '>' + esc(it.title) + '</a>' : esc(it.title); }
+
+  /* activity in the 12 months before the data's update date */
+  function activity(iso){
+    var end = new Date((S.updated || new Date().toISOString().slice(0,10)) + 'T00:00:00Z'), start = new Date(end); start.setUTCFullYear(start.getUTCFullYear() - 1);
+    return S.items.filter(function(i){ if(i.iso3 !== iso) return false; var d = new Date(i.date + 'T00:00:00Z'); return d >= start && d <= end; }).length;
+  }
+  /* the newest item for a country, used to link 'latest move' to its source */
+  function latestItem(iso){ for(var k = 0; k < S.items.length; k++){ if(S.items[k].iso3 === iso && safeUrl(S.items[k].url)) return S.items[k]; } return null; }
+  function dateLink(iso, d){ var it = latestItem(iso); return it ? '<a href="' + esc(it.url) + '" target="_blank" rel="noopener" title="' + esc(it.source || 'Source') + '">' + esc(fmt(d)) + ' ↗</a>' : esc(fmt(d)); }
+  function aClass(n){ return n >= 4 ? 'a3' : n >= 2 ? 'a2' : n >= 1 ? 'a1' : ''; }
+
+  /* ---------- map ---------- */
+  var W = 960, H = 492;
+  var svg = d3.select('#map'), g = svg.append('g');
+  var proj = d3.geoEqualEarth(), path = d3.geoPath(proj);
+  var zoom = d3.zoom().scaleExtent([1, 14]).translateExtent([[0,0],[W,H]]).on('zoom', function(e){ g.attr('transform', e.transform); g.selectAll('.dotc').attr('r', 4.5 / e.transform.k); });
+  svg.call(zoom).on('dblclick.zoom', null);
+  var tip = $('#tip');
+  var REG = { eu:[[-12,71],[34,34]], am:[[-130,62],[-34,-56]] };
+  document.querySelectorAll('[data-region]').forEach(function(b){ b.onclick = function(){
+    var r = REG[b.dataset.region]; if(!r){ svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity); return; }
+    var a = proj(r[0]), c = proj(r[1]); var x0 = Math.min(a[0], c[0]), x1 = Math.max(a[0], c[0]), y0 = Math.min(a[1], c[1]), y1 = Math.max(a[1], c[1]);
+    var k = Math.min(14, .95 / Math.max((x1 - x0) / W, (y1 - y0) / H));
+    svg.transition().duration(650).call(zoom.transform, d3.zoomIdentity.translate(W/2, H/2).scale(k).translate(-(x0 + x1)/2, -(y0 + y1)/2));
+  }; });
+  $('#zin').onclick = function(){ svg.transition().duration(300).call(zoom.scaleBy, 1.6); };
+  $('#zout').onclick = function(){ svg.transition().duration(300).call(zoom.scaleBy, 1/1.6); };
+
+  function cls(iso){
+    var c = S.countries[iso], k = 'c';
+    if(S.view === 'status'){ if(c) k += ' t ' + c.status; if(S.status && (!c || c.status !== S.status)) k += ' dim'; }
+    else { var a = aClass(activity(iso)); if(c) k += ' t'; if(a) k += ' ' + a; }
+    if(iso && iso === S.sel) k += ' sel';
+    return k;
+  }
+  function paint(){
+    g.selectAll('path.c').attr('class', function(f){ return cls(f.iso); });
+    var dots = Object.keys(S.countries).filter(function(i){ return SMALL[i]; });
+    g.selectAll('circle.dotc').data(dots, function(d){ return d; }).join('circle')
+      .attr('class', function(i){ return 'dotc ' + cls(i); })
+      .attr('cx', function(i){ return proj(SMALL[i])[0]; }).attr('cy', function(i){ return proj(SMALL[i])[1]; })
+      .attr('r', 4.5 / d3.zoomTransform(svg.node()).k)
+      .attr('tabindex', 0).attr('role', 'button').attr('aria-label', function(i){ return nameOf(i); })
+      .on('mousemove', function(e, i){ showTip(e, i, nameOf(i)); }).on('mouseleave', hideTip)
+      .on('click', function(e, i){ select(i); }).on('keydown', function(e, i){ if(e.key === 'Enter'){ select(i); } });
+    g.selectAll('path.c').attr('tabindex', function(f){ return S.countries[f.iso] ? 0 : null; })
+      .attr('role', function(f){ return S.countries[f.iso] ? 'button' : null; })
+      .attr('aria-label', function(f){ var c = S.countries[f.iso]; return c ? c.name + ', ' + STATUS[c.status] : null; });
+    renderLegend();
+  }
+  function showTip(e, iso, fallback){
+    var c = S.countries[iso], box = document.querySelector('.mapcol').getBoundingClientRect();
+    var sub = S.view === 'status' ? (c ? STATUS[c.status] : 'Not tracked') : (activity(iso) + ' update' + (activity(iso) === 1 ? '' : 's') + ' in 12 months');
+    tip.innerHTML = esc(c ? c.name : fallback) + '<small>' + esc(sub) + '</small>';
+    tip.hidden = false;
+    var x = e.clientX - box.left + 14, w = tip.offsetWidth;
+    tip.style.left = Math.max(6, Math.min(x, box.width - w - 6)) + 'px';
+    tip.style.top = Math.max(6, e.clientY - box.top - 44) + 'px';
+  }
+  function hideTip(){ tip.hidden = true; }
+  function renderLegend(){
+    $('#legend').innerHTML = S.view === 'status'
+      ? Object.keys(STATUS).map(function(k){ return '<span><i class="sw ' + k + '"></i>' + SHORT[k] + '</span>'; }).join('') + '<span><i class="sw none"></i>Not tracked</span>'
+      : '<span>Updates:</span><span><i class="sw" style="background:var(--a1)"></i>1</span><span><i class="sw" style="background:var(--a2)"></i>2–3</span><span><i class="sw" style="background:var(--a3)"></i>4+</span><span><i class="sw none"></i>None</span>';
+  }
+  ['status','activity'].forEach(function(v){ $('#tab-' + v).onclick = function(){ S.view = v; $('#tab-status').setAttribute('aria-selected', v === 'status'); $('#tab-activity').setAttribute('aria-selected', v === 'activity'); paint(); }; });
+
+  /* ---------- hero split ---------- */
+  function renderSplit(){
+    var n = { in_force:0, partial:0, debate:0, repealed:0 };
+    S.list.forEach(function(c){ if(n[c.status] != null) n[c.status]++; });
+    var colors = { in_force:'#2B46EE', partial:'#9AABFA', debate:'#FF4F6B', repealed:'#8C8576' };
+    $('#split').innerHTML = Object.keys(n).filter(function(k){ return n[k]; }).map(function(k){ return '<i style="flex:' + n[k] + ';background:' + colors[k] + '"></i>'; }).join('');
+    $('#splitKey').innerHTML = Object.keys(n).map(function(k){ return '<button type="button" data-s="' + k + '" aria-pressed="' + (S.status === k) + '"><b class="num">' + n[k] + '</b><small><i class="sw ' + k + '"></i>' + SHORT[k] + '</small></button>'; }).join('');
+    $('#splitKey').querySelectorAll('button').forEach(function(b){ b.onclick = function(){
+      S.status = S.status === b.dataset.s ? null : b.dataset.s; S.view = 'status';
+      $('#tab-status').setAttribute('aria-selected', 'true'); $('#tab-activity').setAttribute('aria-selected', 'false');
+      renderSplit(); paint(); document.querySelector('.atlas').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    }; });
+  }
+
+  /* ---------- country card ---------- */
+  function renderCard(){
+    var el = $('#card'), c = S.sel && S.countries[S.sel];
+    if(!c){
+      el.innerHTML = '<p class="eyebrow">Select a country</p><p class="hl" style="font-family:var(--serif);font-size:18px;margin:0">Click a country on the map, or pick one from the table below, to see where its wealth tax stands.</p>'
+        + '<h4 class="eyebrow" style="color:var(--muted);margin:10px 0 0">Most recent moves</h4><ul class="mini-list">'
+        + S.items.slice(0, 4).map(function(i){ return '<li><time>' + esc(fmt(i.date)) + ' · ' + esc(nameOf(i.iso3)) + '</time>' + link(i) + '</li>'; }).join('') + '</ul>';
+      return;
+    }
+    var latest = S.items.filter(function(i){ return i.iso3 === c.iso3; }).slice(0, 2);
+    el.innerHTML = '<span class="badge ' + c.status + '">' + esc(STATUS[c.status]) + '</span><h3>' + esc(c.name) + '</h3>'
+      + '<p class="hl">' + esc(c.headline) + '</p>'
+      + '<dl class="kv">' + (c.rate ? '<dt>Rate</dt><dd>' + esc(c.rate) + '</dd>' : '') + (c.threshold ? '<dt>Threshold</dt><dd>' + esc(c.threshold) + '</dd>' : '') + '<dt>Latest</dt><dd>' + dateLink(c.iso3, c.updated) + '</dd></dl>'
+      + (latest.length ? '<ul class="mini-list">' + latest.map(function(i){ return '<li><time>' + esc(fmt(i.date)) + '</time>' + link(i) + '</li>'; }).join('') + '</ul>' : '')
+      + '<a class="cta" href="#' + c.iso3 + '">Open country profile →</a>';
+  }
+  function select(iso){ if(!S.countries[iso]) return; S.sel = iso; paint(); renderCard(); if(innerWidth <= 980) $('#card').scrollIntoView({ block:'nearest' }); }
+
+  /* ---------- table ---------- */
+  function renderTableChips(){
+    $('#tblChips').innerHTML = '<button type="button" data-s="" aria-pressed="' + !S.tblStatus + '">All</button>' + Object.keys(STATUS).map(function(k){ return '<button type="button" data-s="' + k + '" aria-pressed="' + (S.tblStatus === k) + '"><i class="sw ' + k + '"></i>' + SHORT[k] + '</button>'; }).join('');
+    $('#tblChips').querySelectorAll('button').forEach(function(b){ b.onclick = function(){ S.tblStatus = b.dataset.s || null; renderTableChips(); renderTable(); }; });
+  }
+  function renderTable(){
+    var q = S.q.toLowerCase();
+    var rows = S.list.filter(function(c){ return (!S.tblStatus || c.status === S.tblStatus) && (!q || c.name.toLowerCase().indexOf(q) > -1); });
+    rows.sort(function(a, b){
+      var k = S.sortK, x = a[k] || '', y = b[k] || '';
+      if(k === 'status'){ x = ORDER[a.status]; y = ORDER[b.status]; }
+      if(k === 'rate'){ x = parseFloat(String(a.rate).replace(',', '.')) || -1; y = parseFloat(String(b.rate).replace(',', '.')) || -1; }
+      return (x > y ? 1 : x < y ? -1 : a.name.localeCompare(b.name)) * S.sortDir;
+    });
+    $('#tbody').innerHTML = rows.length ? rows.map(function(c){
+      return '<tr data-iso="' + c.iso3 + '"><td class="cn"><a href="#' + c.iso3 + '">' + esc(c.name) + '</a></td><td><span class="badge ' + c.status + '">' + SHORT[c.status] + '</span></td><td class="num">' + esc(c.rate || '—') + '</td><td class="hl">' + esc(c.headline) + '</td><td class="dt num">' + dateLink(c.iso3, c.updated) + '</td></tr>';
+    }).join('') : '<tr><td colspan="5" class="muted">No country matches. Clear the search or pick another status.</td></tr>';
+  }
+  $('#tbody').addEventListener('click', function(e){ var tr = e.target.closest('tr[data-iso]'); if(tr && !e.target.closest('a')) location.hash = tr.dataset.iso; });
+  $('#q').addEventListener('input', function(){ S.q = this.value.trim(); renderTable(); });
+  document.querySelectorAll('th[data-k] button').forEach(function(b){ b.onclick = function(){
+    var th = b.parentNode, k = th.dataset.k;
+    S.sortDir = S.sortK === k ? -S.sortDir : (k === 'updated' ? -1 : 1); S.sortK = k;
+    document.querySelectorAll('th[data-k]').forEach(function(t){ t.setAttribute('aria-sort', t === th ? (S.sortDir > 0 ? 'ascending' : 'descending') : 'none'); });
+    renderTable();
+  }; });
+
+  /* ---------- feed ---------- */
+  $('#kindChips').innerHTML = Object.keys(KINDS).map(function(k){ return '<button type="button" data-k="' + k + '" aria-pressed="' + (k === 'all') + '">' + KINDS[k] + '</button>'; }).join('');
+  $('#kindChips').addEventListener('click', function(e){ var b = e.target.closest('button'); if(!b) return; S.kind = b.dataset.k; S.shown = 10; $('#kindChips').querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed', x === b); }); renderFeed(); });
+  function feedItem(i, withCountry){
+    return '<li><div class="meta"><time datetime="' + esc(i.date) + '">' + esc(fmt(i.date)) + '</time><span class="kind ' + esc(i.kind) + '">' + esc(i.kind) + (i.stage ? ' · ' + esc(i.stage) : '') + '</span>'
+      + (withCountry ? '<button type="button" class="ctry" data-go="' + esc(i.iso3) + '">' + (S.countries[i.iso3] ? '<i class="sw ' + S.countries[i.iso3].status + '"></i>' : '') + esc(nameOf(i.iso3)) + '</button>' : '') + '</div>'
+      + '<h3>' + link(i) + '</h3>' + (i.summary ? '<p>' + esc(i.summary) + '</p>' : '') + (i.source ? '<span class="src">' + esc(i.source) + '</span>' : '') + '</li>';
+  }
+  function renderFeed(){
+    var list = S.items.filter(function(i){ return S.kind === 'all' || i.kind === S.kind; });
+    $('#feed').innerHTML = list.length ? list.slice(0, S.shown).map(function(i){ return feedItem(i, true); }).join('') : '<li class="muted">Nothing of this type yet.</li>';
+    $('#more').hidden = list.length <= S.shown;
+  }
+  $('#more').onclick = function(){ S.shown += 10; renderFeed(); };
+  document.addEventListener('click', function(e){ var b = e.target.closest('[data-go]'); if(b){ location.hash = b.dataset.go; } });
+
+  /* ---------- profile ---------- */
+  function renderProfile(iso){
+    var c = S.countries[iso], name = nameOf(iso);
+    var items = S.items.filter(function(i){ return i.iso3 === iso; });
+    var legal = items.filter(function(i){ return LEGAL[i.kind]; }), news = items.filter(function(i){ return !LEGAL[i.kind]; });
+    var status = c ? c.status : 'none';
+    var peers = c ? S.list.filter(function(x){ return x.status === c.status && x.iso3 !== iso; }) : [];
+    var facts = c ? [['Rate', c.rate, true], ['Threshold', c.threshold, true], ['Revenue', c.revenue, true], ['Latest move', fmt(c.updated), false, true]] : [];
+    $('#profile').innerHTML = '<div class="wrap">'
+      + '<nav class="crumb" aria-label="Breadcrumb"><button type="button" id="back">The map</button><span aria-hidden="true">/</span><span>' + esc(name) + '</span></nav>'
+      + '<div class="p-head"><div><span class="badge ' + status + '">' + (c ? esc(STATUS[c.status]) : iso === 'GLB' ? 'Multilateral' : 'Not tracked') + '</span><h1>' + esc(name) + '</h1>'
+      + (c ? '<p class="hl">' + esc(c.headline) + '</p>' : '') + '</div>'
+      + (iso !== 'GLB' ? '<svg id="pmini" viewBox="0 0 300 170" aria-hidden="true"></svg>' : '') + '</div>'
+      + (facts.length ? '<dl class="facts">' + facts.map(function(f){ var v = f[1] || '—'; return '<div><dt>' + f[0] + '</dt><dd class="' + (f[2] && v.length > 14 ? 'sm' : '') + '">' + (f[3] ? dateLink(iso, c.updated) : esc(v)) + '</dd></div>'; }).join('') + '</dl>' : '')
+      + '<div class="p-body"><article>'
+      + (c ? '<p class="sum">' + esc(c.summary) + '</p>' : iso === 'GLB' ? '<p class="sum">G20, UN and other multilateral work on taxing the very wealthy.</p>' : '<p class="sum">We do not track ' + esc(name) + ' yet.</p>')
+      + '<h2>Legislation and proposals</h2>' + (legal.length ? '<ol class="tl">' + legal.map(function(i){ return '<li><time datetime="' + esc(i.date) + '">' + esc(fmt(i.date)) + '</time><div><span class="stage ' + (i.stage === 'rejected' ? 'rejected' : '') + '">' + esc(i.kind) + (i.stage ? ' · ' + esc(i.stage) : '') + '</span><h3>' + link(i) + '</h3>' + (i.summary ? '<p>' + esc(i.summary) + '</p>' : '') + (i.source ? '<span class="src">' + esc(i.source) + '</span>' : '') + '</div></li>'; }).join('') + '</ol>' : '<p class="muted">No legislative steps recorded yet.</p>')
+      + '<h2>News and reports</h2>' + (news.length ? '<ul class="feed" style="grid-template-columns:minmax(0,1fr)">' + news.map(function(i){ return feedItem(i, false); }).join('') + '</ul>' : '<p class="muted">No news recorded yet.</p>')
+      + '</article><div class="aside">'
+      + '<section><h4>On record</h4><p style="margin:0;font-family:var(--display);font-size:40px;line-height:1">' + items.length + '</p><p class="muted">' + legal.length + ' legal steps, ' + news.length + ' news and reports</p></section>'
+      + (peers.length ? '<section><h4>Also ' + esc(SHORT[status].toLowerCase()) + '</h4><ul class="peers">' + peers.map(function(x){ return '<li><button type="button" data-go="' + x.iso3 + '"><i class="sw ' + x.status + '"></i>' + esc(x.name) + '</button></li>'; }).join('') + '</ul></section>' : '')
+      + '</div></div></div>';
+    $('#back').onclick = function(){ history.pushState('', document.title, location.pathname + location.search); route(); };
+    drawMini(iso);
+  }
+  function drawMini(iso){
+    var el = document.getElementById('pmini'); if(!el || !S.geo.length) return;
+    var f = S.geo.find(function(x){ return x.iso === iso; }), p = d3.geoEqualEarth(), pp = d3.geoPath(p);
+    var c = f ? d3.geoCentroid(f) : SMALL[iso];
+    if(c){
+      var span = 9; if(f){ var b = d3.geoBounds(f); var dx = Math.abs(b[1][0] - b[0][0]); span = Math.max(9, Math.max(dx > 180 ? 40 : dx, Math.abs(b[1][1] - b[0][1])) * .75); }
+      p.rotate([-c[0], 0]).fitExtent([[8,8],[292,162]], d3.geoCircle().center(c).radius(span)());
+    } else p.fitExtent([[4,4],[296,166]], { type:'FeatureCollection', features:S.geo });
+    var s = d3.select(el); s.selectAll('*').remove();
+    s.selectAll('path').data(S.geo).join('path').attr('class', function(x){ return 'c' + (x.iso === iso ? ' me' : ''); }).attr('d', pp);
+    if(!f && SMALL[iso]){ var pt = p(SMALL[iso]); s.append('circle').attr('cx', pt[0]).attr('cy', pt[1]).attr('r', 5); }
+  }
+
+  /* ---------- routing ---------- */
+  function route(){
+    var iso = location.hash.slice(1).toUpperCase();
+    if(/^[A-Z]{3}$/.test(iso) && S.loaded){
+      $('#home').hidden = true; $('#profile').hidden = false; renderProfile(iso);
+      document.title = nameOf(iso) + ' · The Wealth Tax Map'; window.scrollTo(0, 0);
+    } else {
+      $('#profile').hidden = true; $('#home').hidden = false; document.title = 'The Wealth Tax Map · Wealth Tax Watch';
+    }
+  }
+  window.addEventListener('hashchange', route);
+
+  /* ---------- load ---------- */
+  Promise.all([fetch('data.json').then(function(r){ return r.json(); }), fetch('countries-110m.json').then(function(r){ return r.json(); })]).then(function(res){
+    var data = res[0], topo = res[1];
+    S.updated = data.updated;
+    data.countries.forEach(function(c){ S.countries[c.iso3] = c; });
+    S.list = data.countries.slice();
+    S.items = data.items.slice().sort(function(a, b){ return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
+    S.geo = topojson.feature(topo, topo.objects.countries).features.filter(function(f){ return f.id !== '010'; })
+      .map(function(f){ f.iso = N2A[f.id] || null; if(f.iso) S.names[f.iso] = f.properties.name; return f; });
+    proj.fitExtent([[4,4],[W-4,H-4]], { type:'FeatureCollection', features:S.geo });
+    g.selectAll('path.c').data(S.geo).join('path').attr('class', 'c').attr('d', path)
+      .on('mousemove', function(e, f){ showTip(e, f.iso, f.properties.name); }).on('mouseleave', hideTip)
+      .on('click', function(e, f){ select(f.iso); })
+      .on('keydown', function(e, f){ if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); select(f.iso); } });
+    $('#kicker').textContent = 'The Wealth Tax Map · Updated ' + fmt(data.updated);
+    $('#foot').textContent = S.list.length + ' countries tracked · ' + S.items.length + ' updates · data updated ' + fmt(data.updated);
+    S.loaded = true;
+    renderSplit(); paint(); renderCard(); renderTableChips(); renderTable(); renderFeed(); route();
+  }).catch(function(){
+    $('#card').innerHTML = '<p class="muted">The map data could not load. Reload the page to try again.</p>';
+    $('#tbody').innerHTML = '<tr><td colspan="5" class="muted">The country data could not load. Reload the page to try again.</td></tr>';
+  });
+})();
+</script>
+</body>
+</html>
