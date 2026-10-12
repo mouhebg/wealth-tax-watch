@@ -235,7 +235,8 @@ def render(issue_dir, site_url):
     if lead:
         nav.append('<a href="#lead">%s</a>' % e(lead["nav"]))
     nav += ['<a href="#numbers">Numbers</a>', '<a href="#calendar">Calendar</a>',
-            '<a href="#dispatches">Dispatches</a>', '<a href="#sources">Sources</a>']
+            '<a href="#dispatches">Dispatches</a>', '<a href="#sources">Sources</a>',
+            '<a href="/map/" class="keep">Map</a>']
     countdowns = "".join('<div class="cd" data-date="%s"><div class="n" aria-hidden="true">–</div><div><div class="l">%s</div><div class="d">%s</div></div></div>'
                          % (c["date"], e(c["label"]), e(c["when"])) for c in d["countdowns"])
     overview_html = ""

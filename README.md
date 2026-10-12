@@ -18,6 +18,9 @@ templates/issue.html    The page design (CSS, flags, page script)
 scripts/build.py        Builds all generated files
 scripts/render_issue.py Renders one issue from issue.json + stories.html
 assets/og-image.png     Link-preview image
+map/index.html          The Wealth Tax Map page (hand-written, not generated)
+map/data.json           Map data: country statuses and dated news/legislation items. Edit.
+map/countries-110m.json World outlines (world-atlas 2.0.2)
 ```
 
 You only edit `issue.json` and `stories.html`. Everything else about an issue page comes from `templates/issue.html`, so a design change there applies to every issue the next time you build.
@@ -66,3 +69,13 @@ The address `https://wealth-tax-watch.vercel.app` appears in `scripts/build.py` 
 ## Link-preview image
 
 `assets/og-image.png` is rendered from `scripts/og-image.html`. After changing the template, regenerate it with `node scripts/og-image.mjs` after installing Playwright in the repo folder: `npm i --no-save playwright && npx playwright install chromium`.
+
+## The Wealth Tax Map (`/map/`)
+
+A world map of wealth tax status with a profile for each country (`/map/#NOR`) and a feed of the latest items. Everything it shows comes from `map/data.json`:
+
+- `countries[]`: `iso3`, `name`, `status` (`in_force`, `partial`, `debate` or `repealed`), `headline`, `summary`, `rate`, `threshold`, `revenue`, `updated` (`YYYY-MM-DD`).
+- `items[]`: `id`, `iso3` (`GLB` for global items), `date`, `kind` (`legislation`, `proposal`, `court`, `news`, `report`), `stage`, `title`, `summary`, `source`, `url`.
+- `updated`: the date shown in the hero. The "Activity" view counts items in the 12 months before it.
+
+No build step: edit the JSON and push.
