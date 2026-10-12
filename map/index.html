@@ -164,6 +164,7 @@ td.cn a{ text-decoration:none; }
 td.cn a:hover{ text-decoration:underline; }
 td .badge{ font-size:11px; padding:3px 8px; white-space:nowrap; }
 td.dt{ white-space:nowrap; color:var(--muted); }
+td.dt a, .kv dd a, .facts dd a{ color:inherit; text-decoration-color:var(--pink); text-underline-offset:3px; }
 td.hl{ color:var(--ink-2); min-width:260px; }
 
 /* feed */
@@ -364,6 +365,9 @@ footer a{ color:var(--night-ink); }
     var end = new Date((S.updated || new Date().toISOString().slice(0,10)) + 'T00:00:00Z'), start = new Date(end); start.setUTCFullYear(start.getUTCFullYear() - 1);
     return S.items.filter(function(i){ if(i.iso3 !== iso) return false; var d = new Date(i.date + 'T00:00:00Z'); return d >= start && d <= end; }).length;
   }
+  /* the newest item for a country, used to link 'latest move' to its source */
+  function latestItem(iso){ for(var k = 0; k < S.items.length; k++){ if(S.items[k].iso3 === iso && safeUrl(S.items[k].url)) return S.items[k]; } return null; }
+  function dateLink(iso, d){ var it = latestItem(iso); return it ? '<a href="' + esc(it.url) + '" target="_blank" rel="noopener" title="' + esc(it.source || 'Source') + '">' + esc(fmt(d)) + ' ↗</a>' : esc(fmt(d)); }
   function aClass(n){ return n >= 4 ? 'a3' : n >= 2 ? 'a2' : n >= 1 ? 'a1' : ''; }
 
   /* ---------- map ---------- */
@@ -448,7 +452,7 @@ footer a{ color:var(--night-ink); }
     var latest = S.items.filter(function(i){ return i.iso3 === c.iso3; }).slice(0, 2);
     el.innerHTML = '<span class="badge ' + c.status + '">' + esc(STATUS[c.status]) + '</span><h3>' + esc(c.name) + '</h3>'
       + '<p class="hl">' + esc(c.headline) + '</p>'
-      + '<dl class="kv">' + (c.rate ? '<dt>Rate</dt><dd>' + esc(c.rate) + '</dd>' : '') + (c.threshold ? '<dt>Threshold</dt><dd>' + esc(c.threshold) + '</dd>' : '') + '<dt>Latest</dt><dd>' + esc(fmt(c.updated)) + '</dd></dl>'
+      + '<dl class="kv">' + (c.rate ? '<dt>Rate</dt><dd>' + esc(c.rate) + '</dd>' : '') + (c.threshold ? '<dt>Threshold</dt><dd>' + esc(c.threshold) + '</dd>' : '') + '<dt>Latest</dt><dd>' + dateLink(c.iso3, c.updated) + '</dd></dl>'
       + (latest.length ? '<ul class="mini-list">' + latest.map(function(i){ return '<li><time>' + esc(fmt(i.date)) + '</time>' + link(i) + '</li>'; }).join('') + '</ul>' : '')
       + '<a class="cta" href="#' + c.iso3 + '">Open country profile →</a>';
   }
@@ -469,7 +473,7 @@ footer a{ color:var(--night-ink); }
       return (x > y ? 1 : x < y ? -1 : a.name.localeCompare(b.name)) * S.sortDir;
     });
     $('#tbody').innerHTML = rows.length ? rows.map(function(c){
-      return '<tr data-iso="' + c.iso3 + '"><td class="cn"><a href="#' + c.iso3 + '">' + esc(c.name) + '</a></td><td><span class="badge ' + c.status + '">' + SHORT[c.status] + '</span></td><td class="num">' + esc(c.rate || '—') + '</td><td class="hl">' + esc(c.headline) + '</td><td class="dt num">' + esc(fmt(c.updated)) + '</td></tr>';
+      return '<tr data-iso="' + c.iso3 + '"><td class="cn"><a href="#' + c.iso3 + '">' + esc(c.name) + '</a></td><td><span class="badge ' + c.status + '">' + SHORT[c.status] + '</span></td><td class="num">' + esc(c.rate || '—') + '</td><td class="hl">' + esc(c.headline) + '</td><td class="dt num">' + dateLink(c.iso3, c.updated) + '</td></tr>';
     }).join('') : '<tr><td colspan="5" class="muted">No country matches. Clear the search or pick another status.</td></tr>';
   }
   $('#tbody').addEventListener('click', function(e){ var tr = e.target.closest('tr[data-iso]'); if(tr && !e.target.closest('a')) location.hash = tr.dataset.iso; });
@@ -504,13 +508,13 @@ footer a{ color:var(--night-ink); }
     var legal = items.filter(function(i){ return LEGAL[i.kind]; }), news = items.filter(function(i){ return !LEGAL[i.kind]; });
     var status = c ? c.status : 'none';
     var peers = c ? S.list.filter(function(x){ return x.status === c.status && x.iso3 !== iso; }) : [];
-    var facts = c ? [['Rate', c.rate, true], ['Threshold', c.threshold, true], ['Revenue', c.revenue, true], ['Latest move', fmt(c.updated)]] : [];
+    var facts = c ? [['Rate', c.rate, true], ['Threshold', c.threshold, true], ['Revenue', c.revenue, true], ['Latest move', fmt(c.updated), false, true]] : [];
     $('#profile').innerHTML = '<div class="wrap">'
       + '<nav class="crumb" aria-label="Breadcrumb"><button type="button" id="back">The map</button><span aria-hidden="true">/</span><span>' + esc(name) + '</span></nav>'
       + '<div class="p-head"><div><span class="badge ' + status + '">' + (c ? esc(STATUS[c.status]) : iso === 'GLB' ? 'Multilateral' : 'Not tracked') + '</span><h1>' + esc(name) + '</h1>'
       + (c ? '<p class="hl">' + esc(c.headline) + '</p>' : '') + '</div>'
       + (iso !== 'GLB' ? '<svg id="pmini" viewBox="0 0 300 170" aria-hidden="true"></svg>' : '') + '</div>'
-      + (facts.length ? '<dl class="facts">' + facts.map(function(f){ var v = f[1] || '—'; return '<div><dt>' + f[0] + '</dt><dd class="' + (f[2] && v.length > 14 ? 'sm' : '') + '">' + esc(v) + '</dd></div>'; }).join('') + '</dl>' : '')
+      + (facts.length ? '<dl class="facts">' + facts.map(function(f){ var v = f[1] || '—'; return '<div><dt>' + f[0] + '</dt><dd class="' + (f[2] && v.length > 14 ? 'sm' : '') + '">' + (f[3] ? dateLink(iso, c.updated) : esc(v)) + '</dd></div>'; }).join('') + '</dl>' : '')
       + '<div class="p-body"><article>'
       + (c ? '<p class="sum">' + esc(c.summary) + '</p>' : iso === 'GLB' ? '<p class="sum">G20, UN and other multilateral work on taxing the very wealthy.</p>' : '<p class="sum">We do not track ' + esc(name) + ' yet.</p>')
       + '<h2>Legislation and proposals</h2>' + (legal.length ? '<ol class="tl">' + legal.map(function(i){ return '<li><time datetime="' + esc(i.date) + '">' + esc(fmt(i.date)) + '</time><div><span class="stage ' + (i.stage === 'rejected' ? 'rejected' : '') + '">' + esc(i.kind) + (i.stage ? ' · ' + esc(i.stage) : '') + '</span><h3>' + link(i) + '</h3>' + (i.summary ? '<p>' + esc(i.summary) + '</p>' : '') + (i.source ? '<span class="src">' + esc(i.source) + '</span>' : '') + '</div></li>'; }).join('') + '</ol>' : '<p class="muted">No legislative steps recorded yet.</p>')

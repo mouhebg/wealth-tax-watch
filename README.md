@@ -35,10 +35,10 @@ You only edit `issue.json` and `stories.html`. Everything else about an issue pa
 | `kicker`, `hero_lede`, `reading_time` | The dark hero |
 | `countdowns` | The day counters under the hero (they count down from each reader's date) |
 | `overview` | Heading for the intro; the text is the `overview` article in `stories.html` |
-| `tracker.items` | The idea-to-law board. `stage` is one of `research`, `proposal`, `official`, `vote`, `law`; `j` is the flag; `story` is the dispatch it links to |
+| `tracker.items` | The idea-to-law board. `stage` is one of `research`, `proposal`, `process` (in a legislature, on a ballot or in treaty talks), `law`; `origin` is `official` (government, parliament or a public body) or `outside` (parties out of government, campaigns, think tanks, researchers); `j` is the flag; `story` is the dispatch it links to; `url` (optional) is the source shown on the card |
 | `lead` | Optional lead-story block: `polls`, `trend` and `compare` are each optional |
-| `numbers` | The numbers wall. `kind` says what sort of claim each number is |
-| `calendar` | The to-scale calendar. `side` is `up` or `down` (alternate them); `range` draws a hatched band for an undated event |
+| `numbers` | The numbers wall. `kind` says what sort of claim each number is; `url` (optional) links its source |
+| `calendar` | The to-scale calendar. `side` is `up` or `down` (alternate them); `range` draws a hatched band for an undated event; `url` (optional) links its source |
 | `discussion` | The design comparison: one `answers` entry per `levers` heading |
 | `sources` | The source shelf |
 
