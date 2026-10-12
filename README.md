@@ -11,14 +11,15 @@ A personal tracker of wealth tax developments around the world: proposals, publi
 issues/01/issue.json    Issue 01 data: hero, tracker, polls, numbers, calendar, discussion, sources. Edit.
 issues/01/stories.html  Issue 01 prose: the overview and every dispatch, as plain HTML. Edit.
 issues/01/index.html    The issue page                      (generated)
-index.html              Copy of the latest issue            (generated)
+index.html              Homepage: the Wealth Tax Map        (generated from templates/home.html)
 archive.html            List of every issue                 (generated)
 feed.xml                RSS feed                            (generated)
-templates/issue.html    The page design (CSS, flags, page script)
+templates/issue.html    The issue page design (CSS, flags, page script)
+templates/home.html     The homepage design: the map, latest-issue banner, country index
 scripts/build.py        Builds all generated files
 scripts/render_issue.py Renders one issue from issue.json + stories.html
 assets/og-image.png     Link-preview image
-map/index.html          The Wealth Tax Map page (hand-written, not generated)
+map/index.html          Redirect from the old /map/ address to the homepage
 map/data.json           Map data: country statuses and dated news/legislation items. Edit.
 map/countries-110m.json World outlines (world-atlas 2.0.2)
 ```
@@ -70,12 +71,12 @@ The address `https://wealth-tax-watch.vercel.app` appears in `scripts/build.py` 
 
 `assets/og-image.png` is rendered from `scripts/og-image.html`. After changing the template, regenerate it with `node scripts/og-image.mjs` after installing Playwright in the repo folder: `npm i --no-save playwright && npx playwright install chromium`.
 
-## The Wealth Tax Map (`/map/`)
+## The Wealth Tax Map (homepage)
 
-A world map of wealth tax status with a profile for each country (`/map/#NOR`) and a feed of the latest items. Everything it shows comes from `map/data.json`:
+The homepage is a world map of wealth tax status with a profile for each country (`/#NOR`) and a feed of the latest items. Everything it shows comes from `map/data.json`:
 
 - `countries[]`: `iso3`, `name`, `status` (`in_force`, `partial`, `debate` or `repealed`), `headline`, `summary`, `rate`, `threshold`, `revenue`, `updated` (`YYYY-MM-DD`).
 - `items[]`: `id`, `iso3` (`GLB` for global items), `date`, `kind` (`legislation`, `proposal`, `court`, `news`, `report`), `stage`, `title`, `summary`, `source`, `url`.
 - `updated`: the date shown in the hero. The "Activity" view counts items in the 12 months before it.
 
-No build step: edit the JSON and push.
+Editing the JSON needs no build step. `scripts/build.py` fills in the homepage's latest-issue banner and links from the newest issue, so rerun it after adding an issue or changing `templates/home.html`.
