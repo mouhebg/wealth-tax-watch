@@ -487,7 +487,8 @@ footer a{ color:var(--night-ink); }
   function plural(n, w){ return n + ' ' + w + (n === 1 ? '' : 's'); }
   function link(it){ var u = safeUrl(it.url); return u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(it.title) + '</a>' : esc(it.title); }
   function latestItem(iso){ for(var k = 0; k < S.items.length; k++){ if(S.items[k].iso3 === iso && safeUrl(S.items[k].url)) return S.items[k]; } return null; }
-  function dateLink(iso, d){ var it = latestItem(iso); return it ? '<a href="' + esc(it.url) + '" target="_blank" rel="noopener" title="' + esc(it.source || 'Source') + '">' + esc(fmt(d)) + ' ↗</a>' : esc(fmt(d)); }
+  /* 'Latest move' shows the date of the item it links to, so the two always match */
+  function dateLink(iso, d){ var it = latestItem(iso); return it ? '<a href="' + esc(it.url) + '" target="_blank" rel="noopener" title="' + esc(it.source || 'Source') + '">' + esc(idate(it)) + ' ↗</a>' : esc(fmt(d)); }
   /* activity in the 12 months before the data's update date */
   var actCache = {};
   function activity(iso){
