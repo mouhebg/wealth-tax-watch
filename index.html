@@ -116,6 +116,7 @@ button, input{ font:inherit; color:inherit; }
 #map .dotc.sel{ stroke:var(--lime); stroke-width:2.5; }
 
 /* floating controls */
+.mapbox{ position:relative; }
 .float{ position:absolute; z-index:5; }
 .f-tl{ top:16px; left:16px; right:420px; display:flex; flex-wrap:wrap; gap:8px; align-items:flex-start; }
 .f-bl{ left:16px; bottom:16px; }
@@ -176,7 +177,7 @@ button, input{ font:inherit; color:inherit; }
 }
 @media (max-width:640px){
   .f-bl{ display:none; }
-  .mapframe{ display:flex; flex-direction:column; }
+  .mapbox{ display:flex; flex-direction:column; }
   .f-tl{ position:static; order:-1; padding:12px 12px 4px; }
   .search{ min-width:0; flex:1 1 100%; }
   .search kbd{ display:none; }
@@ -359,6 +360,7 @@ footer a{ color:var(--night-ink); }
       </div>
 
       <div class="mapframe" id="mapframe">
+        <div class="mapbox" id="mapbox">
         <svg id="map" viewBox="0 0 960 520" role="img" aria-label="World map coloured by wealth tax status. Select a country for details."></svg>
         <div class="float f-tl">
           <div class="glass search" id="searchBox">
@@ -383,6 +385,7 @@ footer a{ color:var(--night-ink); }
           <button class="zbtn" type="button" id="zout" aria-label="Zoom out">−</button>
         </div>
         <div class="tip" id="tip" hidden></div>
+        </div>
         <aside class="panel" id="panel" aria-live="polite"><div class="panel-in" id="panelIn"></div></aside>
       </div>
     </div>
@@ -555,7 +558,7 @@ footer a{ color:var(--night-ink); }
     renderLegend();
   }
   function showTip(e, iso, fallback){
-    var c = S.countries[iso], box = frame.getBoundingClientRect();
+    var c = S.countries[iso], box = $('#mapbox').getBoundingClientRect();
     var sub = S.view === 'status' ? (c ? '<i class="sw ' + c.status + '"></i>' + esc(STATUS[c.status]) : 'Not tracked') : esc(plural(activity(iso), 'update') + ' in 12 months');
     tip.innerHTML = esc(c ? c.name : fallback) + '<small>' + sub + '</small>';
     tip.hidden = false;
