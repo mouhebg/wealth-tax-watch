@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12",
+ "updated": "2026-10-28",
  "countries": [
   {
    "iso3": "ARG",
@@ -17,11 +17,11 @@
    "name": "Australia",
    "status": "debate",
    "headline": "Greens keep a billionaire wealth tax on the table as Labor targets property and super tax breaks instead",
-   "summary": "Australia has no wealth tax. The Greens, whose votes the government often needs in the Senate, took a billionaire tax to the May 2025 election. The Parliamentary Budget Office (PBO) costed a 5% annual tax on net wealth between A$100m and A$1bn and 10% above A$1bn. The Greens said an earlier 10% version would raise A$23bn over four years and about A$50bn over a decade. Labor has not adopted it. Instead, Parliament passed higher tax on earnings from super balances above A$3m from July 2026. The May 2026 budget plans to replace the 50% capital gains discount with indexation and a 30% minimum tax from July 2027, and to limit negative gearing to new homes.",
+   "summary": "Australia has no wealth tax. The Greens, whose votes the government often needs in the Senate, took a billionaire tax to the May 2025 election. The Parliamentary Budget Office (PBO) costed a 5% annual tax on net wealth between A$100m and A$1bn and 10% above A$1bn. The Greens said an earlier 10% version would raise A$23bn over four years and about A$50bn over a decade. Labor has not adopted it. Instead, Parliament passed higher tax on earnings from super balances above A$3m from July 2026. On 26 June 2026 Parliament passed Labor's law replacing the 50% capital gains discount with indexation and a 30% minimum tax from July 2027, and limiting negative gearing to new homes. In October 2026 the Greens said they would seek a Senate inquiry into Labor's weakened reform of discretionary trusts.",
    "rate": "",
    "threshold": "",
    "revenue": "",
-   "updated": "2026-05-12"
+   "updated": "2026-10-13"
   },
   {
    "iso3": "AUT",
@@ -71,12 +71,12 @@
    "iso3": "CAN",
    "name": "Canada",
    "status": "debate",
-   "headline": "NDP leader Avi Lewis pushes a 1–3% wealth tax, and BC Greens pitch one before the 24 October provincial vote",
-   "summary": "Canada has no wealth tax. Avi Lewis, elected leader of the federal New Democratic Party (NDP) on 29 March 2026, proposes 1% on net wealth above C$10m, 2% above C$50m and 3% above C$100m, which he says would raise about C$40bn a year. Prime Minister Carney's government shows no sign of backing it. Finance Minister Champagne has promised Budget 2026 this fall, most likely in November, but no date is set. In British Columbia, the Green Party proposes a one-time tax of 5%–20% on fortunes above C$50m, then an annual 2%–5% tax, ahead of the 24 October 2026 provincial election.",
+   "headline": "NDP leader Avi Lewis pushes a 1–3% wealth tax as Ottawa prepares a 5 November budget",
+   "summary": "Canada has no wealth tax. Avi Lewis, elected leader of the federal New Democratic Party (NDP) on 29 March 2026, proposes 1% on net wealth above C$10m, 2% above C$50m and 3% above C$100m, which he says would raise about C$40bn a year. Prime Minister Carney's government shows no sign of backing it. Finance Minister Champagne will table Budget 2026 on 5 November. In British Columbia, the Green Party campaigned on a one-time tax of 5%–20% on fortunes above C$50m, then an annual 2%–5% tax. The BC Conservatives won the 24 October 2026 provincial election with a majority.",
    "rate": "",
    "threshold": "",
    "revenue": "",
-   "updated": "2026-10-05"
+   "updated": "2026-10-24"
   },
   {
    "iso3": "CHL",
@@ -137,12 +137,12 @@
    "iso3": "FRA",
    "name": "France",
    "status": "partial",
-   "headline": "France's 2027 budget has no wealth tax, but MPs back a holding-company levy and the left revives Zucman",
-   "summary": "France replaced its net wealth tax in 2018 with a real-estate wealth tax (IFI), which taxes property only. The National Assembly rejected the Zucman 2% minimum tax on fortunes above €100m on 31 October 2025. The 2026 finance law, adopted in February 2026, created a tax on luxury non-business assets held in family holding companies. In September 2026 the Socialists' counter-budget brought back the Zucman tax, and the Court of Audit floated a 0.5% tax on non-business wealth above €5m. The government's 2027 budget bill, presented on 1 October, contains no new wealth tax. On 8 October the Assembly's finance committee backed a 2% annual tax on investment securities held in family holdings, but the floor debate restarts from the government's text.",
+   "headline": "France's 2027 budget has no wealth tax, MPs rejected Zucman again, and a holding-company levy is pending",
+   "summary": "France replaced its net wealth tax in 2018 with a real-estate wealth tax (IFI), which taxes property only. The National Assembly rejected the Zucman 2% minimum tax on fortunes above €100m on 31 October 2025. The 2026 finance law, adopted in February 2026, created a tax on luxury non-business assets held in family holding companies. In September 2026 the Socialists' counter-budget brought back the Zucman tax, and the Court of Audit floated a 0.5% tax on non-business wealth above €5m. The government's 2027 budget bill, presented on 1 October, contains no new wealth tax. On 8 October the Assembly's finance committee backed a 2% annual tax on investment securities held in family holdings, but the floor debate restarts from the government's text. On 16 October the Assembly rejected the Zucman tax again, 70–35, along with amendments to bring back the ISF. The vote on the budget's first part is set for 3 November.",
    "rate": "IFI 0.5%–1.5%",
    "threshold": "IFI €1.3m (real estate)",
    "revenue": "",
-   "updated": "2026-10-08"
+   "updated": "2026-10-16"
   },
   {
    "iso3": "DEU",
@@ -248,11 +248,11 @@
    "name": "Netherlands",
    "status": "partial",
    "headline": "Dutch cabinet now wants a capital gains tax for most Box 3 investments from 2028, as the Senate waits",
-   "summary": "Under transitional rules, the Netherlands taxes savings and investments (Box 3) on an assumed return, with a refund if the actual return was lower. The lower house passed the Box 3 Actual Return Act on 12 February 2026, but the Senate postponed its vote on 30 June 2026. On 29 September 2026 the cabinet proposed amending the bill so that about 90% of Box 3 wealth that changes in value is taxed on realised capital gains from 2028, with other assets to follow in 2030. To pay for it, the cabinet would cut the tax-free allowance to €30,846 in 2027, which drew criticism in the lower house. The government aims to send the amendment by 2 November, and the Senate wants to decide before Christmas.",
+   "summary": "Under transitional rules, the Netherlands taxes savings and investments (Box 3) on an assumed return, with a refund if the actual return was lower. The lower house passed the Box 3 Actual Return Act on 12 February 2026, but the Senate postponed its vote on 30 June 2026. On 29 September 2026 the cabinet proposed amending the bill so that about 90% of Box 3 wealth that changes in value is taxed on realised capital gains from 2028, with other assets to follow in 2030. To pay for it, the cabinet would cut the tax-free allowance to €30,846 in 2027, which drew criticism in the lower house. The government aims to send the amendment by 2 November, and the Senate wants to decide before Christmas. On 13 October the Senate finance committee said it will wait for the lower house to handle the amendment before deciding on the bill.",
    "rate": "36% on deemed/actual return",
    "threshold": "€59,357 tax-free allowance per person (2026)",
    "revenue": "",
-   "updated": "2026-09-29"
+   "updated": "2026-10-13"
   },
   {
    "iso3": "NZL",
@@ -325,22 +325,22 @@
    "name": "Spain",
    "status": "in_force",
    "headline": "Spain has a regional wealth tax and a permanent 'solidarity' tax above €3m, and Sumar seeks 3% above €50m",
-   "summary": "Spain has a regional net wealth tax. It also has a national Solidarity Tax on Large Fortunes (ISGF) on net wealth above €3m, at 1.7%–3.5%, which has been extended indefinitely. Revenue from the ISGF fell sharply after regions such as Madrid and Andalusia reinstated their own wealth tax, because regional tax paid is credited against it. Provisional Finance Ministry figures show about €2.5bn due on 2025 wealth tax returns. In September 2026 Sumar, the junior coalition partner, registered a bill in Congress for a 3% levy on fortunes above €50m to fund a universal child-rearing benefit.",
+   "summary": "Spain has a regional net wealth tax. It also has a national Solidarity Tax on Large Fortunes (ISGF) on net wealth above €3m, at 1.7%–3.5%, which has been extended indefinitely. Revenue from the ISGF fell sharply after regions such as Madrid and Andalusia reinstated their own wealth tax, because regional tax paid is credited against it. Provisional Finance Ministry figures show about €2.5bn due on 2025 wealth tax returns. In September 2026 Sumar, the junior coalition partner, registered a bill in Congress for a 3% levy on fortunes above €50m to fund a universal child-rearing benefit. An October 2026 Work Inequality Lab study estimated the ISGF recouped about €500m of Madrid's wealth tax rebates.",
    "rate": "ISGF 1.7%–3.5%",
    "threshold": "€3m (ISGF); €700k regional exemption",
    "revenue": "~€2.51bn due on 2025 wealth tax returns (provisional, Finance Ministry, July 2026)",
-   "updated": "2026-09-17"
+   "updated": "2026-10-27"
   },
   {
    "iso3": "SWE",
    "name": "Sweden",
    "status": "debate",
-   "headline": "Sweden's left bloc won in September 2026, but its biggest party rejects the wealth tax its allies want",
-   "summary": "Sweden abolished its wealth tax in 2007. The Left Party wants an inquiry into a tax on fortunes above SEK 1bn, which it says would cover about 540 people. The Greens want a billionaire tax based on Gabriel Zucman's plan. Social Democrat leader Magdalena Andersson rejects a wealth tax and called the claimed SEK 50bn in revenue a fantasy figure. The four opposition parties won 176 of 349 seats on 13 September 2026. Andersson handed back her first mandate to form a government on 28 September, after the Left Party backed the Moderate candidate for Speaker. The Speaker gave her a second mandate from 5 October.",
+   "headline": "Sweden's left bloc won in September 2026 but has no government yet, and its biggest party rejects a wealth tax",
+   "summary": "Sweden abolished its wealth tax in 2007. The Left Party wants an inquiry into a tax on fortunes above SEK 1bn, which it says would cover about 540 people. The Greens want a billionaire tax based on Gabriel Zucman's plan. Social Democrat leader Magdalena Andersson rejects a wealth tax and called the claimed SEK 50bn in revenue a fantasy figure. The four opposition parties won 176 of 349 seats on 13 September 2026. Andersson handed back her first mandate to form a government on 28 September, after the Left Party backed the Moderate candidate for Speaker. The Speaker gave her a second mandate from 5 October. Andersson lost a Riksdag vote on 15 October, and Centre leader Elisabeth Thand Ringqvist handed back a second attempt on 26 October. Ulf Kristersson stays on as caretaker prime minister.",
    "rate": "",
    "threshold": "",
    "revenue": "",
-   "updated": "2026-09-28"
+   "updated": "2026-10-26"
   },
   {
    "iso3": "CHE",
@@ -368,12 +368,12 @@
    "iso3": "USA",
    "name": "United States",
    "status": "debate",
-   "headline": "California votes on 3 November on a one-time 5% billionaire tax, with rival measures that could cancel it",
-   "summary": "There is no federal wealth tax. Bills from Sen. Warren (2% a year above $50m), Sen. Sanders and Rep. Khanna (5% a year on billionaires) and Sen. Wyden (annual tax on billionaires' gains) sit in committee with no chance of passing this Congress. California's Proposition 40, a one-time 5% tax on billionaires' net worth, is on the 3 November 2026 ballot. September polls show it narrowly ahead (45%–52% yes), but rival Propositions 41 and 42 also poll above 50%. If either gets more votes than Prop 40, the billionaire tax dies. Opponents have raised about $187m against roughly $31m for supporters. Washington enacted a 9.9% tax on income above $1m, and repeal Initiative 645 is on the same ballot. Oregon unions filed a wealth-tax initiative for 2028.",
+   "headline": "California votes on 3 November on a one-time 5% billionaire tax, which now trails in the polls",
+   "summary": "There is no federal wealth tax. Bills from Sen. Warren (2% a year above $50m), Sen. Sanders and Rep. Khanna (5% a year on billionaires) and Sen. Wyden (annual tax on billionaires' gains) sit in committee with no chance of passing this Congress. California's Proposition 40, a one-time 5% tax on billionaires' net worth, is on the 3 November 2026 ballot. It led in September polls, but an October PPIC poll found 46% yes and 52% no, with rival Prop 42 at 51%. If Prop 41 or 42 gets more votes than Prop 40, the billionaire tax dies. Opponents have raised about $187m against roughly $31m for supporters. Washington enacted a 9.9% tax on income above $1m, and repeal Initiative 645 is on the same ballot. Oregon unions filed a wealth-tax initiative for 2028. New York's tax on luxury second homes faces two court challenges.",
    "rate": "California Prop 40: one-time 5% of net worth (proposed)",
    "threshold": "California Prop 40: net worth of $1bn or more, residents on 1 January 2026",
    "revenue": "California Prop 40: tens of billions of dollars spread over several years from 2027 (Legislative Analyst's Office estimate)",
-   "updated": "2026-10-08"
+   "updated": "2026-10-27"
   },
   {
    "iso3": "URY",
@@ -388,6 +388,102 @@
   }
  ],
  "items": [
+  {
+   "id": "ca-prop40-ppic-oct",
+   "iso3": "USA",
+   "date": "2026-10-27",
+   "kind": "news",
+   "stage": "ballot",
+   "level": "subnational",
+   "title": "PPIC poll: support for California's billionaire tax falls to 46%, behind a rival measure",
+   "summary": "Likely voters split 46% yes and 52% no (16–22 October), down from 52% support in September. Prop 42, which would ban wealth taxes, polled 51% and Prop 41 was tied.",
+   "source": "The San Francisco Standard",
+   "url": "https://sfstandard.com/2026/10/27/billionaire-tax-prop-40-ppic-poll-october/"
+  },
+  {
+   "id": "es-wil-solidarity-study",
+   "iso3": "ESP",
+   "date": "2026-10-27",
+   "kind": "report",
+   "stage": "",
+   "level": "national",
+   "title": "Study finds the solidarity tax recouped about €500m of Madrid's wealth tax rebates",
+   "summary": "Work by the Piketty-linked Work Inequality Lab finds wealth and solidarity tax revenue rose 45% between 2021 and 2023, and proposes minimum taxation of wealth from €700,000.",
+   "source": "Qué! (citing infoLibre)",
+   "url": "https://www.que.es/2026/10/27/impuesto-grandes-fortunas-compensa-madrid/"
+  },
+  {
+   "id": "se-formation-deadlock",
+   "iso3": "SWE",
+   "date": "2026-10-26",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "Sweden still has no government after the Centre leader hands back her mandate",
+   "summary": "Andersson lost a vote in the Riksdag on 15 October. Centre leader Elisabeth Thand Ringqvist then found no majority for a centrist government. The Speaker can call a new vote or ask another leader to try.",
+   "source": "The Irish Times",
+   "url": "https://www.irishtimes.com/world/europe/2026/10/26/swedens-centre-party-leader-hands-task-of-forming-government-back-to-parliament-speaker/"
+  },
+  {
+   "id": "ca-bc-election-conservatives",
+   "iso3": "CAN",
+   "date": "2026-10-24",
+   "kind": "news",
+   "stage": "",
+   "level": "subnational",
+   "title": "BC Conservatives win a majority in the provincial election, ending nine years of NDP government",
+   "summary": "The Greens, who campaigned on a tax on fortunes above C$50m, won at least two seats on election night.",
+   "source": "CP24",
+   "url": "https://www.cp24.com/politics/2026/10/24/voters-head-to-the-polls-in-bcs-2026-snap-election-live-updates-here/"
+  },
+  {
+   "id": "ca-budget-nov5",
+   "iso3": "CAN",
+   "date": "2026-10-21",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "Champagne sets 5 November for Budget 2026 as the budget officer warns deficits are deepening",
+   "summary": "The Parliamentary Budget Officer says new spending adds about C$3bn a year to deficits compared with June and puts the 2030-31 deficit above C$63bn.",
+   "source": "The Hub",
+   "url": "https://thehub.ca/2026/10/21/champagne-sets-nov-5-budget-date-as-watchdog-warns-deficits-are-deepening/"
+  },
+  {
+   "id": "fr-zucman-rejected-plf2027",
+   "iso3": "FRA",
+   "date": "2026-10-16",
+   "kind": "legislation",
+   "stage": "rejected",
+   "level": "national",
+   "title": "French National Assembly rejects the Zucman 2% minimum tax again, this time in the 2027 budget",
+   "summary": "The plenary voted 70–35 against the left's amendment, a far smaller turnout than the 228–172 vote in October 2025. Socialist and ecologist versions and amendments to bring back the ISF also failed. The vote on the budget's first part was moved to 3 November.",
+   "source": "NosParlementaires",
+   "url": "https://nosparlementaires.fr/actualites/impot-plancher-2-ultrariches-taxe-zucman-parlement"
+  },
+  {
+   "id": "au-greens-trust-inquiry",
+   "iso3": "AUS",
+   "date": "2026-10-13",
+   "kind": "news",
+   "stage": "",
+   "level": "national",
+   "title": "Greens to seek a Senate inquiry into Labor's weakened tax reform for discretionary trusts",
+   "summary": "The Greens say concessions have watered the plan down and they won't back a bill that doesn't make wealthy Australians pay their fair share. The bill had not yet reached Parliament.",
+   "source": "Australian Greens",
+   "url": "https://greens.org.au/news/media-release/greens-seek-senate-inquiry-labors-watered-down-trust-reforms"
+  },
+  {
+   "id": "nl-senate-waits-novelle",
+   "iso3": "NLD",
+   "date": "2026-10-13",
+   "kind": "legislation",
+   "stage": "introduced",
+   "level": "national",
+   "title": "Dutch Senate finance committee will wait for the amending bill before deciding on Box 3",
+   "summary": "The committee provisionally agreed with the cabinet's route and will wait for the lower house to handle the amending bill. No Senate vote date is set.",
+   "source": "Eerste Kamer",
+   "url": "https://www.eerstekamer.nl/wetsvoorstel/36748_wet_werkelijk_rendement_box"
+  },
   {
    "id": "de-bverfg-inheritance-hearing",
    "iso3": "DEU",
@@ -591,6 +687,18 @@
    "source": "Berliner Zeitung",
    "url": "https://www.berliner-zeitung.de/article/vermoegensteuer-gruene-wollen-deutsche-milliardaere-staerker-zur-kasse-bitten-10442664",
    "level": "national"
+  },
+  {
+   "id": "ny-pied-a-terre-court",
+   "iso3": "USA",
+   "date": "2026-09-29",
+   "kind": "court",
+   "stage": "",
+   "level": "subnational",
+   "title": "Judge orders New York City to redo the rollout of its tax on luxury second homes",
+   "summary": "The state-enacted surcharge targets second homes worth $5m or more. A Staten Island judge ordered new notices to owners, and Florida residents Stephen Wynn and Wilbur Ross filed a separate suit calling the tax unconstitutional. The city will appeal.",
+   "source": "Gothamist",
+   "url": "https://gothamist.com/news/mamdanis-pied-a-terre-tax-faces-2-new-legal-hurdles-from-staten-island-judge-and-florida-billionaires"
   },
   {
    "id": "se-andersson-returns-mandate",
@@ -881,6 +989,18 @@
    "summary": "The California governor called for a federal minimum tax on people worth over $100m, arguing the fight belongs at the federal level.",
    "source": "AP via ABC7",
    "url": "https://abc7.com/post/newsom-urges-national-billionaires-tax-fighting-california/19387745/"
+  },
+  {
+   "id": "au-cgt-reform-passed",
+   "iso3": "AUS",
+   "date": "2026-06-26",
+   "kind": "legislation",
+   "stage": "passed",
+   "level": "national",
+   "title": "Parliament passes the law replacing the 50% capital gains discount with indexation",
+   "summary": "The package adds a 30% minimum tax on capital gains and limits negative gearing to new housing. The capital gains changes apply to gains accruing from 1 July 2027.",
+   "source": "KPMG",
+   "url": "https://kpmg.com/us/en/taxnewsflash/news/2026/06/tnf-australia-legislation-amending-capital-gains-tax-and-introduce-new-tax-reform-measures-passes-parliament-with-amendments.html"
   },
   {
    "id": "no-tax-commission-2026",
